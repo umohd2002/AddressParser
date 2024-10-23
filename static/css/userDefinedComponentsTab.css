@@ -1,0 +1,296 @@
+.userDefinedComponentsTab-container {
+    body {
+        padding-top: 50px;
+        /* This should be the height of your navbar */
+    }
+
+    /* If your page content is within a main tag or a div with a specific class, add padding or margin to that element */
+    main,
+    .main-content {
+        margin-top: 50px;
+        /* Adjust this value to match your navbar's height */
+    }
+
+    .tabcontent {
+        display: none;
+        /* other styling */
+    }
+
+    .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .navbar a:hover {
+        background-color: #3867d6;
+        color: white;
+    }
+
+    .navbar a.active {
+        background-color: #3867d6;
+        /* or any color that indicates the active state */
+        color: white;
+    }
+
+    /* Tab links */
+    .tablink {
+        background-color: #f1f1f1;
+        /* Light grey background */
+        float: left;
+        /* Align tabs to the left side */
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        /* Padding inside the tab */
+        transition: 0.3s;
+        /* Smooth transition effect */
+    }
+
+    .tablink:hover,
+    .tablink.active {
+        /* background-color:#bec9e2; */
+        color: #2e4c8c;
+        text-decoration: underline;
+    }
+    .addedclass{
+        color: #2e4c8c;
+        text-decoration: underline;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+        display: none;
+        /* Hide content by default */
+        padding: 20px;
+        /* Some padding */
+        border: 1px solid #ccc;
+        /* A border */
+        border-top: none;
+        /* Remove top border */
+    }
+
+    @media screen and (max-width: 600px) {
+        .tablink {
+            font-size: 15px;
+            /* Smaller font size on smaller screens */
+        }
+    }
+
+    /* Add padding to the top of the body to push the main content down */
+    body {
+        padding-top: 50px;
+        /* This should be the height of your navbar */
+    }
+
+
+    /* Main content area */
+    .container {
+        padding: 20px;
+        max-width: 800px;
+        margin: 30px auto;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .downloadcontainer {
+        padding: 20px;
+        max-width: 800px;
+        margin: 30px auto;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+
+    /* Style for the form input groups */
+    .input-group {
+        margin-bottom: 20px;
+    }
+
+    .input-group label {
+        display: block;
+        margin-bottom: 5px;
+        color: #333;
+    }
+
+    .input-group input[type="text"],
+    .input-group input[type="file"] {
+        width: calc(100% - 22px);
+        /* Adjust width to account for padding and border */
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccd1d9;
+        border-radius: 4px;
+    }
+
+    /* Style for the submit button */
+    .input-group button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #20bf6b;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 17px;
+    }
+
+    .input-group button:hover {
+        background-color: #0b8457;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .buttons button {
+        display: block;
+        flex: 1;
+        margin-right: 5px;
+        width: 20%;
+        padding: 10px;
+        background-color: #20bf6b;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 17px;
+        background-color: #2b74b7;
+    }
+
+    .navbar {
+        background-color: blue;
+    }
+
+    .edit-btn {
+        width: 30%;
+        padding: 8px;
+        font-size: 15px;
+        margin: 5px;
+        border-radius: 10px;
+        border: 2px solid #2b74b7;
+        color: #2b74b7;
+        background-color: #fff;
+    }
+    .delete-btn {
+        width: 30%;
+        padding: 8px;
+        font-size: 15px;
+        margin: 5px;
+        border-radius: 10px;
+        border: 2px solid #2b74b7;
+        color: #2b74b7;
+        background-color: #fff;
+    }
+
+    .edit-btn {
+        margin-left: 50px;
+    }
+
+    .edit-btn:hover,
+    .delete-btn:hover {
+        transition: 0.2s ease-in-out;
+    }
+
+    .buttons button:hover {
+        background-color: #2e4c8c;
+        transition: 0.2s ease-in-out;
+    }
+
+    .udresult-box table tbody tr td input {
+        width: 80%;
+        padding: 5px;
+        border: 1px solid black;
+    }
+
+    .udresult-box table tbody tr td .save-btn,
+    .udresult-box table tbody tr td .cancel-btn {
+        width: 30%;
+        padding: 8px;
+        font-size: 15px;
+        margin: 5px;
+        border-radius: 10px;
+        color: #2b74b7;
+        background-color: #fff;
+        border: 2px solid #2b74b7;
+        transition: 0.2s ease-in-out;
+
+    }
+
+    .thead-dark tr th {
+        border-bottom: 2px solid #2b74b7;
+    }
+
+    /* .udresult-box table tbody tr td .save-btn:hover,
+    .udresult-box table tbody tr td .cancel-btn:hover{
+        background-color: #2e4c8c;
+        transition: 0.2s ease-in-out;
+    } */
+
+    .udresult-box table tbody tr td .save-btn {
+        margin-left: 50px;
+    }
+
+    #udresultbody tr td {
+        text-align: center;
+    }
+
+    .download-container {
+        width: 200px;
+        background-color: transparent;
+        border-radius: 5px;
+    }
+
+
+    .download-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .download-label {
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    #downloadButton {
+        padding: 5px 15px;
+        background-color: #2e4c8c;
+        /* Adjust to match your color scheme */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #downloadButton:hover {
+        background-color: #0056b3;
+        /* Adjust for hover effect */
+    }
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 80px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: url(../static/image.png);
+    background-size: 110%;
+    color: white;
+    text-align: left;
+    height: 100px;
+}

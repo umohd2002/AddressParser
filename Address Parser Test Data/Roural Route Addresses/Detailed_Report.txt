@@ -1,0 +1,480 @@
+Exception and Mask Report
+Output From Active Learning
+
+{
+    "1": {
+        "USAD_RNO": "15",
+        "USAD_CTY": "AUSTIN",
+        "USAD_STA": "PA",
+        "USAD_ZIP": "16720",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "36",
+        "USAD_RNM": "RR"
+    },
+    "2": {
+        "USAD_RNO": "22",
+        "USAD_CTY": "MCGREGOR",
+        "USAD_STA": "IA",
+        "USAD_ZIP": "52157",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "71",
+        "USAD_RNM": "RR"
+    },
+    "3": {
+        "USAD_RNO": "2",
+        "USAD_CTY": "LAWTON",
+        "USAD_STA": "IA",
+        "USAD_ZIP": "51030",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "22",
+        "USAD_RNM": "RR"
+    },
+    "4": {
+        "USAD_CTY": "TOPMOST",
+        "USAD_STA": "KY",
+        "USAD_ZIP": "41862",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "19",
+        "USAD_RNM": "RR",
+        "USAD_RNO": "12"
+    },
+    "5": {
+        "USAD_RNO": "15",
+        "USAD_CTY": "CAPRON",
+        "USAD_STA": "IL",
+        "USAD_ZIP": "61012",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "73",
+        "USAD_RNM": "RR"
+    },
+    "6": {
+        "USAD_RNO": "16",
+        "USAD_CTY": "SARCOXIE",
+        "USAD_STA": "MO",
+        "USAD_ZIP": "64862",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "90",
+        "USAD_RNM": "RR"
+    },
+    "7": {
+        "USAD_RNO": "4",
+        "USAD_CTY": "MARMADUKE",
+        "USAD_STA": "AR",
+        "USAD_ZIP": "72443",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "98",
+        "USAD_RNM": "RR"
+    },
+    "8": {
+        "USAD_CTY": "PUTNEY",
+        "USAD_STA": "KY",
+        "USAD_ZIP": "40865",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "10",
+        "USAD_RNM": "RR",
+        "USAD_RNO": "5"
+    },
+    "9": {
+        "USAD_RNO": "11",
+        "USAD_CTY": "ROSEDALE",
+        "USAD_STA": "IN",
+        "USAD_ZIP": "47874",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "76",
+        "USAD_RNM": "RR"
+    },
+    "10": {
+        "USAD_RNO": "6",
+        "USAD_CTY": "STUART",
+        "USAD_STA": "VA",
+        "USAD_ZIP": "24171",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "45",
+        "USAD_RNM": "RR"
+    },
+    "11": {
+        "USAD_RNO": "3",
+        "USAD_CTY": "SIBLEY",
+        "USAD_STA": "LA",
+        "USAD_ZIP": "71073",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "27",
+        "USAD_RNM": "RR"
+    },
+    "12": {
+        "USAD_RNO": "1",
+        "USAD_CTY": "LARNED",
+        "USAD_STA": "KS",
+        "USAD_ZIP": "67550",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "69",
+        "USAD_RNM": "RR"
+    },
+    "13": {
+        "USAD_RNO": "4",
+        "USAD_CTY": "GRAFTON",
+        "USAD_STA": "ND",
+        "USAD_ZIP": "58237",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "72",
+        "USAD_RNM": "RR"
+    },
+    "14": {
+        "USAD_RNO": "2",
+        "USAD_CTY": "MULINO",
+        "USAD_STA": "OR",
+        "USAD_ZIP": "97042",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "16",
+        "USAD_RNM": "RR"
+    },
+    "15": {
+        "USAD_RNO": "5",
+        "USAD_CTY": "MOULTON",
+        "USAD_STA": "IA",
+        "USAD_ZIP": "52572",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "42",
+        "USAD_RNM": "RR"
+    },
+    "16": {
+        "USAD_RNO": "8",
+        "USAD_CTY": "CASCADE",
+        "USAD_STA": "WI",
+        "USAD_ZIP": "53011",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "70",
+        "USAD_RNM": "RR"
+    },
+    "17": {
+        "USAD_RNO": "9",
+        "USAD_CTY": "HOMER",
+        "USAD_STA": "MI",
+        "USAD_ZIP": "49245",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "84",
+        "USAD_RNM": "RR"
+    },
+    "18": {
+        "USAD_CTY": "BURNSIDE",
+        "USAD_STA": "KY",
+        "USAD_ZIP": "42519",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "44",
+        "USAD_RNM": "RR",
+        "USAD_RNO": "11"
+    },
+    "19": {
+        "USAD_RNO": "12",
+        "USAD_CTY": "FAIRFIELD",
+        "USAD_STA": "WA",
+        "USAD_ZIP": "99012",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "25",
+        "USAD_RNM": "RR"
+    },
+    "20": {
+        "USAD_RNO": "13",
+        "USAD_CTY": "ATWOOD",
+        "USAD_STA": "KS",
+        "USAD_ZIP": "67730",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "61",
+        "USAD_RNM": "RR"
+    },
+    "21": {
+        "USAD_RNO": "14",
+        "USAD_CTY": "GREENCASTLE",
+        "USAD_STA": "IN",
+        "USAD_ZIP": "46135",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "94",
+        "USAD_RNM": "RR"
+    },
+    "22": {
+        "USAD_RNO": "15",
+        "USAD_CTY": "KIRBYVILLE",
+        "USAD_STA": "TX",
+        "USAD_ZIP": "75956",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "38",
+        "USAD_RNM": "RR"
+    },
+    "23": {
+        "USAD_RNO": "17",
+        "USAD_CTY": "BONESTEEL",
+        "USAD_STA": "SD",
+        "USAD_ZIP": "57317",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "86",
+        "USAD_RNM": "RR"
+    },
+    "24": {
+        "USAD_RNO": "18",
+        "USAD_CTY": "CHEWELAH",
+        "USAD_STA": "WA",
+        "USAD_ZIP": "99109",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "52",
+        "USAD_RNM": "RR"
+    },
+    "25": {
+        "USAD_RNO": "20",
+        "USAD_CTY": "RUTLEDGE",
+        "USAD_STA": "TN",
+        "USAD_ZIP": "37861",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "10",
+        "USAD_RNM": "RR"
+    },
+    "26": {
+        "USAD_RNO": "21",
+        "USAD_CTY": "ROSCOMMON",
+        "USAD_STA": "MI",
+        "USAD_ZIP": "48653",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "77",
+        "USAD_RNM": "RR"
+    },
+    "27": {
+        "USAD_RNO": "23",
+        "USAD_CTY": "SHERWOOD",
+        "USAD_STA": "OR",
+        "USAD_ZIP": "97140",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "32",
+        "USAD_RNM": "RR"
+    },
+    "28": {
+        "USAD_RNO": "24",
+        "USAD_CTY": "COLFAX",
+        "USAD_STA": "WI",
+        "USAD_ZIP": "54730",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "67",
+        "USAD_RNM": "RR"
+    },
+    "29": {
+        "USAD_RNO": "25",
+        "USAD_CTY": "ALICE",
+        "USAD_STA": "TX",
+        "USAD_ZIP": "78332",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "99",
+        "USAD_RNM": "RR"
+    },
+    "30": {
+        "USAD_RNO": "27",
+        "USAD_CTY": "VANCEBORO",
+        "USAD_STA": "ME",
+        "USAD_ZIP": "04491",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "46",
+        "USAD_RNM": "RR"
+    },
+    "31": {
+        "USAD_RNO": "28",
+        "USAD_CTY": "TIPTON",
+        "USAD_STA": "IN",
+        "USAD_ZIP": "46072",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "80",
+        "USAD_RNM": "RR"
+    },
+    "32": {
+        "USAD_RNO": "30",
+        "USAD_CTY": "CHEROKEE",
+        "USAD_STA": "TX",
+        "USAD_ZIP": "76832",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "47",
+        "USAD_RNM": "RR"
+    },
+    "33": {
+        "USAD_RNO": "31",
+        "USAD_CTY": "EASTON",
+        "USAD_STA": "MN",
+        "USAD_ZIP": "56025",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "73",
+        "USAD_RNM": "RR"
+    },
+    "34": {
+        "USAD_RNO": "33",
+        "USAD_CTY": "MATTITUCK",
+        "USAD_STA": "NY",
+        "USAD_ZIP": "11952",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "68",
+        "USAD_RNM": "RR"
+    },
+    "35": {
+        "USAD_RNO": "35",
+        "USAD_CTY": "ELLSWORTH",
+        "USAD_STA": "KS",
+        "USAD_ZIP": "67439",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "17",
+        "USAD_RNM": "RR"
+    },
+    "36": {
+        "USAD_RNO": "37",
+        "USAD_CTY": "KNOXVILLE",
+        "USAD_STA": "PA",
+        "USAD_ZIP": "16928",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "55",
+        "USAD_RNM": "RR"
+    },
+    "37": {
+        "USAD_CTY": "PUEBLO",
+        "USAD_STA": "CO",
+        "USAD_ZIP": "81001",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "87",
+        "USAD_RNM": "RR",
+        "USAD_RNO": "39"
+    },
+    "38": {
+        "USAD_RNO": "40",
+        "USAD_CTY": "LACONIA",
+        "USAD_STA": "NH",
+        "USAD_ZIP": "03246",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "31",
+        "USAD_RNM": "RR"
+    },
+    "39": {
+        "USAD_RNO": "42",
+        "USAD_CTY": "WILLISTON",
+        "USAD_STA": "VT",
+        "USAD_ZIP": "05495",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "64",
+        "USAD_RNM": "RR"
+    },
+    "40": {
+        "USAD_CTY": "CANMER",
+        "USAD_STA": "KY",
+        "USAD_ZIP": "42722",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "99",
+        "USAD_RNM": "RR",
+        "USAD_RNO": "44"
+    },
+    "41": {
+        "USAD_RNO": "45",
+        "USAD_CTY": "BEAVERVILLE",
+        "USAD_STA": "IL",
+        "USAD_ZIP": "60912",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "22",
+        "USAD_RNM": "RR"
+    },
+    "42": {
+        "USAD_CTY": "SOUTH COLTON",
+        "USAD_STA": "NY",
+        "USAD_ZIP": "13687",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "47",
+        "USAD_RNM": "RR",
+        "USAD_RNO": "47"
+    },
+    "43": {
+        "USAD_RNO": "49",
+        "USAD_CTY": "MINNEOTA",
+        "USAD_STA": "MN",
+        "USAD_ZIP": "56264",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "82",
+        "USAD_RNM": "RR"
+    },
+    "44": {
+        "USAD_RNO": "50",
+        "USAD_CTY": "PUTNAMVILLE",
+        "USAD_STA": "IN",
+        "USAD_ZIP": "46170",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "13",
+        "USAD_RNM": "RR"
+    },
+    "45": {
+        "USAD_RNO": "52",
+        "USAD_CTY": "KOSHKONONG",
+        "USAD_STA": "MO",
+        "USAD_ZIP": "65692",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "88",
+        "USAD_RNM": "RR"
+    },
+    "46": {
+        "USAD_RNO": "54",
+        "USAD_CTY": "CHAPARRAL",
+        "USAD_STA": "NM",
+        "USAD_ZIP": "88081",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "30",
+        "USAD_RNM": "RR"
+    },
+    "47": {
+        "USAD_RNO": "56",
+        "USAD_CTY": "BLUEFIELD",
+        "USAD_STA": "WV",
+        "USAD_ZIP": "24701",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "66",
+        "USAD_RNM": "RR"
+    },
+    "48": {
+        "USAD_CTY": "MOUND VALLEY",
+        "USAD_STA": "KS",
+        "USAD_ZIP": "67354",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "91",
+        "USAD_RNM": "RR",
+        "USAD_RNO": "57"
+    },
+    "49": {
+        "USAD_RNO": "59",
+        "USAD_CTY": "HARWICH",
+        "USAD_STA": "MA",
+        "USAD_ZIP": "02645",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "45",
+        "USAD_RNM": "RR"
+    },
+    "50": {
+        "USAD_RNO": "61",
+        "USAD_CTY": "WASHBURN",
+        "USAD_STA": "WI",
+        "USAD_ZIP": "54891",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "98",
+        "USAD_RNM": "RR"
+    }
+}
+
+Output Fron Rule Based Approach
+
+{}
+
+Number of Exceptions Thrown: -	0
+Number of Parsed Address: -	50
+Percentage of Parsed Result: -	100.0
+List of Exception Mask(s): -	
+
+--
+
+ Evaluation Metrics
+
+          index  precision    recall  f1-score     support
+0      USAD_CTY   1.000000  0.943396  0.970874   53.000000
+1      USAD_STA   0.959184  1.000000  0.979167   47.000000
+2      USAD_ZIP   0.979167  0.979167  0.979167   48.000000
+3      USAD_BNM   1.000000  1.000000  1.000000   50.000000
+4      USAD_BNO   0.980392  1.000000  0.990099   50.000000
+5      USAD_RNM   0.980000  1.000000  0.989899   49.000000
+6      USAD_RNO   1.000000  0.980000  0.989899   50.000000
+7      accuracy   0.985591  0.985591  0.985591    0.985591
+8     macro avg   0.985535  0.986080  0.985586  347.000000
+9  weighted avg   0.985940  0.985591  0.985539  347.000000

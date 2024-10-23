@@ -1,0 +1,503 @@
+Exception and Mask Report
+Output From Active Learning
+
+{
+    "1": {
+        "USAD_SNO": "1000",
+        "USAD_SNM": "PONCE DE LEON",
+        "USAD_SFX": "AVENIDA",
+        "USAD_ANM": "STE",
+        "USAD_ANO": "5",
+        "USAD_CTY": "SAN JUAN",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00907"
+    },
+    "2": {
+        "USAD_SNO": "234",
+        "USAD_SNM": "DEL PARQUE",
+        "USAD_SFX": "CALLE",
+        "USAD_ANM": "APT",
+        "USAD_ANO": "3A",
+        "USAD_CTY": "SAN JUAN",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00912"
+    },
+    "3": {
+        "USAD_SNO": "345",
+        "USAD_SNM": "FERNANDEZ JUNCOS",
+        "USAD_SFX": "AVENIDA",
+        "USAD_ANM": "STE",
+        "USAD_ANO": "2B",
+        "USAD_CTY": "SAN JUAN",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00901"
+    },
+    "4": {
+        "USAD_SNO": "456",
+        "USAD_SNM": "MUNOZ RIVERA",
+        "USAD_SFX": "BOULEVARD",
+        "USAD_ANM": "APT",
+        "USAD_ANO": "10",
+        "USAD_CTY": "SAN JUAN",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00918"
+    },
+    "5": {
+        "USAD_SNO": "678",
+        "USAD_SNM": "PADIAL",
+        "USAD_SFX": "CALLE",
+        "USAD_ANM": "STE",
+        "USAD_ANO": "4",
+        "USAD_CTY": "SAN JUAN",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00926"
+    },
+    "6": {
+        "USAD_SNO": "789",
+        "USAD_SNM": "JUAN PONCE DE LEON",
+        "USAD_SFX": "AVENIDA",
+        "USAD_ANM": "STE",
+        "USAD_ANO": "6A",
+        "USAD_CTY": "SAN JUAN",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00915"
+    },
+    "7": {
+        "USAD_SNO": "890",
+        "USAD_SNM": "ARROYO",
+        "USAD_SFX": "CALLE",
+        "USAD_ANM": "APT",
+        "USAD_ANO": "7B",
+        "USAD_CTY": "SAN JUAN",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00919"
+    },
+    "8": {
+        "USAD_SNO": "901",
+        "USAD_SNM": "CARRERA DE DIEGO",
+        "USAD_ANM": "STE",
+        "USAD_ANO": "2",
+        "USAD_CTY": "SAN JUAN",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00908"
+    },
+    "9": {
+        "USAD_SNO": "1234",
+        "USAD_SNM": "CERRA",
+        "USAD_SFX": "CALLE",
+        "USAD_ANM": "APT",
+        "USAD_ANO": "8",
+        "USAD_CTY": "SAN JUAN",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00920"
+    },
+    "10": {
+        "USAD_SNO": "5678",
+        "USAD_SNM": "ASHFORD",
+        "USAD_SFX": "CARRERA",
+        "USAD_ANM": "STE",
+        "USAD_ANO": "3A",
+        "USAD_CTY": "SAN JUAN",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00907"
+    },
+    "11": {
+        "USAD_SNM": "LAS FLORES",
+        "USAD_SFX": "CALLE",
+        "USAD_ANM": "CASA",
+        "USAD_ANO": "10",
+        "USAD_CTY": "AGUADILLA",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00603"
+    },
+    "12": {
+        "USAD_SNM": "ISLA VERDE",
+        "USAD_SFX": "AVENIDA",
+        "USAD_ANM": "CASA",
+        "USAD_ANO": "3",
+        "USAD_CTY": "CAROLINA",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00979"
+    },
+    "13": {
+        "USAD_SNM": "LOS PINOS",
+        "USAD_SFX": "BOULEVARD",
+        "USAD_ANM": "CASA",
+        "USAD_ANO": "21",
+        "USAD_CTY": "BAYAMON",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00959"
+    },
+    "14": {
+        "USAD_SNM": "PALMA REAL",
+        "USAD_SFX": "CARRERA",
+        "USAD_ANM": "CASA",
+        "USAD_ANO": "7",
+        "USAD_CTY": "HUMACAO",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00791"
+    },
+    "15": {
+        "USAD_SNM": "LOS COCOS",
+        "USAD_SFX": "CALLE",
+        "USAD_ANM": "CASA",
+        "USAD_ANO": "15",
+        "USAD_CTY": "GUAYNABO",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00969"
+    },
+    "16": {
+        "USAD_SNM": "MAGNOLIA",
+        "USAD_SFX": "CARRERA",
+        "USAD_ANM": "CASA",
+        "USAD_ANO": "8",
+        "USAD_CTY": "PONCE",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00731"
+    },
+    "17": {
+        "USAD_SNM": "LOS FLAMBOYANES",
+        "USAD_SFX": "CALLE",
+        "USAD_ANM": "CASA",
+        "USAD_ANO": "11",
+        "USAD_CTY": "CAGUAS",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00725"
+    },
+    "18": {
+        "USAD_SNM": "SAN PATRICIO",
+        "USAD_SFX": "AVENIDA",
+        "USAD_ANM": "CASA",
+        "USAD_ANO": "4",
+        "USAD_CTY": "SAN JUAN",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00968"
+    },
+    "19": {
+        "USAD_SNM": "44",
+        "USAD_SFX": "CALLE",
+        "USAD_ANM": "CASA",
+        "USAD_ANO": "13",
+        "USAD_CTY": "FAJARDO",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00738"
+    },
+    "20": {
+        "USAD_SNM": "LAS BRISAS",
+        "USAD_SFX": "CALLE",
+        "USAD_ANM": "CASA",
+        "USAD_ANO": "6",
+        "USAD_CTY": "MANATI",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00674"
+    },
+    "21": {
+        "USAD_SNM": "23",
+        "USAD_SFX": "C",
+        "USAD_SPT": "SE",
+        "USAD_ANM": "APT",
+        "USAD_ANO": "4B",
+        "USAD_CTY": "SAN JUAN",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00912"
+    },
+    "22": {
+        "USAD_SNM": "12",
+        "USAD_SFX": "A",
+        "USAD_ANM": "BLDG",
+        "USAD_ANO": "3A",
+        "USAD_CTY": "PONCE",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00730"
+    },
+    "23": {
+        "USAD_SNM": "45",
+        "USAD_SFX": "C",
+        "USAD_SPT": "NE",
+        "USAD_ANM": "APT",
+        "USAD_ANO": "2C",
+        "USAD_CTY": "CAROLINA",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00987"
+    },
+    "24": {
+        "USAD_SNM": "56",
+        "USAD_SFX": "C",
+        "USAD_ANM": "STE",
+        "USAD_ANO": "1B",
+        "USAD_CTY": "BAYAMÓN",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00961"
+    },
+    "25": {
+        "USAD_SNM": "78",
+        "USAD_SFX": "B",
+        "USAD_ANM": "BLK",
+        "USAD_ANO": "5D",
+        "USAD_CTY": "GUAYNABO",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00966"
+    },
+    "26": {
+        "USAD_SNM": "67",
+        "USAD_SFX": "C",
+        "USAD_ANM": "APT",
+        "USAD_ANO": "6C",
+        "USAD_CTY": "FAJARDO",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00738"
+    },
+    "27": {
+        "USAD_SNM": "89",
+        "USAD_SFX": "B",
+        "USAD_SPT": "SE",
+        "USAD_ANM": "BLDG",
+        "USAD_ANO": "7A",
+        "USAD_CTY": "AGUADILLA",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00603"
+    },
+    "28": {
+        "USAD_SNM": "34",
+        "USAD_SFX": "C",
+        "USAD_ANM": "APT",
+        "USAD_ANO": "8B",
+        "USAD_CTY": "MAYAGÜEZ",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00682"
+    },
+    "29": {
+        "USAD_SNM": "90",
+        "USAD_SFX": "A",
+        "USAD_ANM": "APT",
+        "USAD_ANO": "9C",
+        "USAD_CTY": "HUMACAO",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00791"
+    },
+    "30": {
+        "USAD_SNM": "12",
+        "USAD_SFX": "C",
+        "USAD_ANM": "APT",
+        "USAD_ANO": "10D",
+        "USAD_CTY": "ARECIBO",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00612"
+    },
+    "31": {
+        "USAD_SNO": "20 00927",
+        "USAD_SNM": "DEL PARQUE",
+        "USAD_SFX": "C",
+        "USAD_ANM": "BLK",
+        "USAD_ANO": "5",
+        "USAD_CTY": "SAN JUAN",
+        "USAD_STA": "PR"
+    },
+    "32": {
+        "USAD_SNO": "25",
+        "USAD_SNM": "DE LA LUNA",
+        "USAD_SFX": "C",
+        "USAD_ANM": "BLK",
+        "USAD_ANO": "2",
+        "USAD_CTY": "BAYAMÓN",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00959"
+    },
+    "33": {
+        "USAD_SNO": "8",
+        "USAD_SNM": "LAS BRISAS",
+        "USAD_SFX": "C",
+        "USAD_ANM": "BLK",
+        "USAD_ANO": "1",
+        "USAD_CTY": "CAROLINA",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00987"
+    },
+    "34": {
+        "USAD_SNO": "30",
+        "USAD_SNM": "DE LA FUENTE",
+        "USAD_SFX": "C",
+        "USAD_ANM": "BLK",
+        "USAD_ANO": "4",
+        "USAD_CTY": "HUMACAO",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00791"
+    },
+    "35": {
+        "USAD_SNO": "18",
+        "USAD_SNM": "DE LA ROSA",
+        "USAD_SFX": "C",
+        "USAD_ANM": "BLK",
+        "USAD_ANO": "3",
+        "USAD_CTY": "GUAYNABO",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00966"
+    },
+    "36": {
+        "USAD_SNO": "22",
+        "USAD_SNM": "DE LA MONTAÑA",
+        "USAD_SFX": "C",
+        "USAD_ANM": "BLK",
+        "USAD_ANO": "6",
+        "USAD_CTY": "MAYAGÜEZ",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00682"
+    },
+    "37": {
+        "USAD_SNO": "11",
+        "USAD_SNM": "DE LA PLAYA",
+        "USAD_SFX": "C",
+        "USAD_ANM": "BLK",
+        "USAD_ANO": "7",
+        "USAD_CTY": "DORADO",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00646"
+    },
+    "38": {
+        "USAD_SNO": "6",
+        "USAD_SNM": "DE LA COSTA",
+        "USAD_SFX": "C",
+        "USAD_ANM": "BLK",
+        "USAD_ANO": "10",
+        "USAD_CTY": "ARECIBO",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00612"
+    },
+    "39": {
+        "USAD_SNO": "20",
+        "USAD_SNM": "10",
+        "USAD_SFX": "C",
+        "USAD_SPT": "NE",
+        "USAD_ANM": "B",
+        "USAD_ANO": "6",
+        "USAD_CTY": "SAN JUAN",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00925"
+    },
+    "40": {
+        "USAD_SNO": "15",
+        "USAD_SNM": "22",
+        "USAD_SFX": "C",
+        "USAD_SPT": "SW",
+        "USAD_ANM": "B",
+        "USAD_ANO": "8",
+        "USAD_CTY": "PONCE",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00730"
+    },
+    "41": {
+        "USAD_SNO": "25",
+        "USAD_SNM": "8",
+        "USAD_SFX": "C",
+        "USAD_SPT": "NW",
+        "USAD_ANM": "B",
+        "USAD_ANO": "2",
+        "USAD_CTY": "BAYAMÓN",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00959"
+    },
+    "42": {
+        "USAD_SNO": "8",
+        "USAD_SNM": "16",
+        "USAD_SFX": "C",
+        "USAD_SPT": "SE",
+        "USAD_ANM": "B",
+        "USAD_ANO": "1",
+        "USAD_CTY": "CAROLINA",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00987"
+    },
+    "43": {
+        "USAD_SNO": "30",
+        "USAD_SNM": "26",
+        "USAD_SFX": "C",
+        "USAD_SPT": "NE",
+        "USAD_ANM": "B",
+        "USAD_ANO": "4",
+        "USAD_CTY": "HUMACAO",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00791"
+    },
+    "44": {
+        "USAD_SNO": "18",
+        "USAD_SNM": "12",
+        "USAD_SFX": "C",
+        "USAD_SPT": "NW",
+        "USAD_ANM": "B",
+        "USAD_ANO": "3",
+        "USAD_CTY": "GUAYNABO",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00966"
+    },
+    "45": {
+        "USAD_SNO": "12",
+        "USAD_SNM": "2",
+        "USAD_SFX": "C",
+        "USAD_SPT": "SE",
+        "USAD_ANM": "B",
+        "USAD_ANO": "9",
+        "USAD_CTY": "FAJARDO",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00738"
+    },
+    "46": {
+        "USAD_SNO": "22",
+        "USAD_SNM": "18",
+        "USAD_SFX": "C",
+        "USAD_SPT": "SW",
+        "USAD_ANM": "B",
+        "USAD_ANO": "6",
+        "USAD_CTY": "MAYAGÜEZ",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00682"
+    },
+    "47": {
+        "USAD_SNO": "11",
+        "USAD_SNM": "6",
+        "USAD_SFX": "C",
+        "USAD_SPT": "NE",
+        "USAD_ANM": "B",
+        "USAD_ANO": "7",
+        "USAD_CTY": "DORADO",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00646"
+    },
+    "48": {
+        "USAD_SNO": "6",
+        "USAD_SNM": "28",
+        "USAD_SFX": "C",
+        "USAD_SPT": "SE",
+        "USAD_ANM": "B",
+        "USAD_ANO": "10",
+        "USAD_CTY": "ARECIBO",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00612"
+    }
+}
+
+Output Fron Rule Based Approach
+
+{}
+
+Number of Exceptions Thrown: -	0
+Number of Parsed Address: -	48
+Percentage of Parsed Result: -	100.0
+List of Exception Mask(s): -	
+
+--
+
+ Evaluation Metrics
+
+           index  precision  recall  f1-score  support
+0       USAD_SNO        1.0     1.0       1.0     26.0
+1       USAD_SNM        1.0     1.0       1.0     45.0
+2       USAD_SFX        1.0     1.0       1.0     45.0
+3       USAD_SPT        1.0     1.0       1.0     12.0
+4       USAD_ANM        1.0     1.0       1.0     47.0
+5       USAD_ANO        1.0     1.0       1.0     47.0
+6       USAD_CTY        1.0     1.0       1.0     46.0
+7       USAD_STA        1.0     1.0       1.0     46.0
+8       USAD_ZIP        1.0     1.0       1.0     45.0
+9       accuracy        1.0     1.0       1.0      1.0
+10     macro avg        1.0     1.0       1.0    359.0
+11  weighted avg        1.0     1.0       1.0    359.0

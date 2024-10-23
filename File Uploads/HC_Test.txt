@@ -1,0 +1,59 @@
+1	|	HC 68 BOX 23 Chicago IL 44432-11323
+2	|	HC 32 BOX 12 Raeford NC 28376
+3	|	HC 02 BOX 45 Sterling Heights MI 48310
+4	|	HC 94 BOX 41 Buffalo Grove IL 60089
+5	|	HC 81 BOX 32 Lancaster NY 14086
+6	|	HC 22 BOX 12 Baton Rouge LA 70806
+7	|	HC 5323 BOX 25 Feasterville Trevose PA 19053
+8	|	HC 91 BOX 54 Blacksburg VA 24060
+9	|	HC 55 BOX 83 Nazareth PA 18064
+10	|	HC 13 BOX 56 Hoboken NJ 07030
+11	|	HC 2342 BOX 5 Lewis Center OH 43035
+12	|	HC 4013 BOX 4 Wanette Oklahoma 74878
+13	|	Hc 432 BOX 410 Cecil Ohio 45821
+14	|	HC 002 BOX 11 South Bend IN 46614
+15	|	HC 9900 BOX 9 Fort Worth TX 76110
+16	|	HC 103 BOX 001 Titusville FL 32780
+17	|	HC 44W BOX 840 Pembroke Pines FL 33028
+18	|	HC 84K BOX 0 Ambler PA 19002
+19	|	HC 665N BOX 3 Freeport NY 11520
+20	|	HC 09 BOX 31 East Haven CT 06512
+21	|	HC 44 BOX 840 Pembroke Pines, FL 33028
+22	|	HC 651 BOX 35 Oklahoma City,Oklahoma 73109
+23	|	HC 34 BOX 408 Bismarck,North Dakota 58501
+24	|	HC 665 BOX 3 Freeport, NY 11523
+25	|	HC 009 BOX 378 Southfield,Michigan 48034
+26	|	HC 661 BOX 288 Plano, Texas 75074
+27	|	HC 885 BOX 07 Bear Lake,Minnesota 55110
+28	|	HC 110 BOX 260 Kelso,Washington 98626
+29	|	HC 2 BOX 31 Germantown,Kentucky 41044
+30	|	HC 21 BOX 48 Westford, MA 01886
+31	|	HC 3 BOX 316 Savannah,Georgia 31401
+32	|	HC 67 BOX 85 Dublin,Ohio 43017
+33	|	HC 5 BOX 23 Lambertville,New Jersey 08530
+34	|	Hc 98 Box 323 Winston Salem, NC 27103
+35	|	HC 88 BOX 769 White Lake,South Dakota 57383
+36	|	HC 02 box 34 Oxon Hill, MD 20745
+37	|	HC 99 BOX 67 Collyer,Kansas 67631
+38	|	HC 223 BOX 19 Jacksonville,Florida 32202
+39	|	HC 09 BOX 31 Denton,North Carolina 27239
+40	|	HC 33 BOX 27 Gulf Breeze,Florida 32561
+41	|	HC 22 Box 028 Waynesboro, PA 17268
+42	|	HC 68 BOX 372 Burbank,California 91504
+43	|	hc 72 box 124 Waynesboro, PA 17268
+44	|	HC 987 BOX 36 Birmingham,Alabama 35209
+45	|	HC 27 bOX 321 Lithonia, GA 30038
+46	|	HC 76 BOX 81 Farmerville,Louisiana 71241
+47	|	HC 65 BOX 289 Mcrae,Arkansas 72102
+48	|	HC 37 box 6 Stow, OH 44224
+49	|	HC 24 BOX 883 Carmel, NY 10512
+50	|	HC 432 BOX 88 San Martin,California 95046
+51	|	hc 42 BOX 86 Fairfax, VA 22030
+52	|	HC 54 BOX 303 Fort Valley,Georgia 31030
+53	|	hc 80 box 23 Downingtown, PA 19335
+54	|	HC 74 BOX 87 Warren, MI 48089
+55	|	HC 87 BOX 493 Portland,Pennsylvania 97205
+56	|	HC 75 BOX 160 Richmond,Virginia 23233
+57	|	HC 653 BOX 51 Hollywood,Florida 33023
+58	|	hC 32 BOX 72 Utica, NY 13501
+59	|	HC 98 BOX 16 Los Angeles,California 90017

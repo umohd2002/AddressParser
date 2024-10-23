@@ -1,0 +1,70 @@
+1 |  HC 68 BOX 23 Chicago, IL 44432
+2 |  HC 32 BOX 12 Raeford, NC 28376
+3 |  HC 02 BOX 45 Sterling Heights, MI 48310
+4 |  HC 94 BOX 41 Buffalo Grove, IL 60089
+5 |  HC 81 BOX 32 Lancaster, NY 14086
+6 |  HC 22 BOX 12 Baton Rouge, LA 70806
+7 |  HC 5323 BOX 25 Feasterville Trevose, PA 19053
+8 |  HC 91 BOX 54 Blacksburg, VA 24060
+9 |  HC 55 BOX 83 Nazareth, PA 18064
+10 | HC 13 BOX 56 Hoboken, NJ 07030
+11 |  HC 2342 BOX 5 Lewis Center, OH 43035
+12 |  HC 4013 BOX 4 Wanette, Oklahoma, 74878
+13 |  Hc 432 BOX 410 Cecil, Ohio, 45821
+14 |  HC 002 BOX 11 South Bend, IN 46614
+15 |  HC 9900 BOX 9 Fort Worth, TX 76110
+16 |  HC 103 BOX 001 Titusville, FL 32780
+17 |  HC 44W BOX 840 Pembroke Pines, FL 33028
+18 |  HC 84K BOX 0 Ambler, PA 19002
+19 |  HC 665N BOX 3 Freeport, NY 11520
+20 |  HC 09 BOX 31 East Haven, CT 06512
+21 |  HC 45 BOX 8 Aliquippa, PA 15001
+22 |  HC 88 BOX 9O Cranston, RI 02920
+23 |  HC 023 BOX 3 Madison Heights, MI 48071
+24 |  HC 83 BOX 77 Nottingham, MD 21236
+25 |  HC 21 BOX 48 Westford, MA 01886
+26 |  Hc 98 Box 323 Winston Salem, NC 27103
+27 |  hc 02 box 34 Oxon Hill, MD 20745
+28 |  hC 573 BOx 2 Round Lake, IL 60073
+29 |  HC 42 bOX 64 Milledgeville, GA 31061
+30 |  hC 24 BOX 543 Davison, MI 48423
+31 |  hc 981 BOX 21 Pearl, MS 39208
+32 |  HC 83422 Box 028 Waynesboro, PA 17268
+33 |  hc 72 box 4324 Waynesboro, PA 17268
+34 |  HC 27 bOX 321 Lithonia, GA 30038
+35 |  HC 878 BOX 44 Elizabethtown, PA 17022
+36 |  HC 902 box Waterford, MI 48329
+37 |  Hc 787 box 2 Henderson, KY 42420
+38 |  HC 3 box 33 Coram, NY 11727
+39 |  HC 21 box 39 Henrico, VA 23228
+40 |  HC 37 box 6 Stow, OH 44224
+41 |  HC 6224 BOX 883 Carmel, NY 10512
+42 |  hc 42 BOX 86 Fairfax, VA 22030
+43 |  HC 72 BOX 012 Hopewell, VA 2386
+44 |  Hc 82 BOX 92 Wilmington, MA 01887
+45 |  HC 23 BOX 32 Crofton, MD 21114
+46 |  hC 97 Box 765 Bluffton, SC 29910
+47 |  HC 90 box 2 Southfield, MI 48076
+48 |  Hc 32 BOx 53 Waukesha, WI 53186
+49 |  hc 80w box 23 Downingtown, PA 19335
+50 |  HC 74 BOX 87 Warren, MI 48089
+51 |  hC 32 BOX 72 Utica, NY 13501
+52 |  Hc 291 BOX 32 Coram, NY 11727
+53 |  HC 292 BOx 23 Bay Shore, NY 11706
+54 |  hc 706 BOX 11 Point Pleasant Beach, NJ 08742
+55 |  HC 12 BOX 13 Chatsworth, GA 30705
+56 |  HC 70 BOX 10 Ballston Spa, NY 12020
+57 |  Hc 89 box 201 Nanuet, NY 10954
+58 |  HC 954 BOX 9 Valley Stream, NY 11580
+59 |  hc 580 box 706 Libertyville, IL 60048
+60 |  HC 89 box 98 Tuckerton, NJ 08087
+61 |  hC 087 BOX 82 Copperas Cove, TX 76522
+62 |  HC 523 Box 522 Graham, NC 27253
+63 |  Hc 253 BOx 253 North Bergen, NJ 07047
+64 |  Hc 047 box 42l Lacey, WA 98503
+65 |  hc 503 BOX 98 Groton, CT 06340
+66 |  HC 340 BOX 06 Logansport, IN 46947
+67 |  HC 947 BOX 46 Glastonbury, CT 06033
+68 |  hc 033 box 228 San Angelo, TX 76901
+69 |  HC 76 BOX 29 Hinesville, GA 31313
+70 |  hc 31 box 901 Billings, MT 59101

@@ -1,0 +1,50 @@
+1|Yale University Department of Psychology Harkness Hall, Suite 300, New Haven, CT 06520-8205
+2|University of California Los Angeles Anderson School of Management, 110 Westwood Plaza, Suite B402, Los Angeles, CA 90095-1481
+3|Harvard University Department of Physics Jefferson Physical Laboratory, Room 455, Cambridge, MA 02138-2019
+4|Stanford University Graduate School of Business Knight Management Center, 655 Knight Way, Suite 245, Stanford, CA 94305-7298
+5|University of California Merced School of Engineering Science and Engineering Building 2, Room 264, 5200 North Lake Road, Merced, CA 95343-5603
+6|Columbia University Department of Economics International Affairs Building, Room 834, 420 West 118th Street, New York, NY 10027-7297
+7|University of Pennsylvania Wharton School Jon M Huntsman Hall, 3730 Walnut Street, Suite 500, Philadelphia, PA 19104-6340
+8|California Institute of Technology Division of Engineering and Applied Science, 1200 East California Boulevard, Room 301, Pasadena, CA 91125-3200
+9|University of Michigan Department of Computer Science and Engineering Beyster Building, Room 3750, 2260 Hayward Street, Ann Arbor, MI 48109-2121
+10|Brown University Department of Biology and Medicine Sidney Frank Hall, Room 220, 185 Meeting Street, Providence, RI 02912-0108
+11|University of Virginia Darden School of Business, 100 Darden Boulevard, Charlottesville, VA 22903-5268
+12|Duke University Department of Political Science Gross Hall, Room 200, 140 Science Drive, Durham, NC 27708-0208
+13|Northwestern University Kellogg School of Management Global Hub, 2211 Campus Drive, Room 4235, Evanston, IL 60208-2800
+14|University of Texas at Austin Department of Chemical Engineering CPE Building, Room 5208, 200 E Dean Keeton St, Austin, TX 78712-1589
+15|University of California San Diego Department of Cognitive Science McGill Hall, Room 3340, 9500 Gilman Drive, La Jolla, CA 92093-0515
+16|University of Chicago Booth School of Business Harper Center, 5807 South Woodlawn Avenue, Suite 204, Chicago, IL 60637-1610
+17|Princeton University Department of Chemistry Frick Laboratory, Room B322, Princeton, NJ 08544-1009
+18|Cornell University Johnson Graduate School of Management Sage Hall, Room 222, 114 East Avenue, Ithaca, NY 14853-6201
+19|University of California Berkeley Department of History, 3229 Dwinelle Hall, Berkeley, CA 94720-2550
+20|University of Missouri Department of Chemistry Chemistry Building, Room 325, 601 South College Avenue, Columbia, MO 65211-7600
+21|Georgia Institute of Technology School of Mechanical Engineering George W Woodruff School of Mechanical Engineering, Room 200, 801 Ferst Drive NW, Atlanta, GA 30332-0405
+22|University of California Irvine Department of Mathematics Rowland Hall, Room 621, 501 East Peltason Drive, Irvine, CA 92697-3875
+23|University of Wisconsin-Madison Department of Chemistry, 1101 University Avenue, Room 7417, Madison, WI 53706-1396
+24|University of Southern California Gould School of Law, 699 Exposition Boulevard, Los Angeles, CA 90089-0071
+25|University of Illinois at Urbana-Champaign Department of Civil and Environmental Engineering Newmark Civil Engineering Laboratory, Room 2110, 205 North Mathews Avenue, Urbana, IL 61801-2352
+26|University of Maryland College of Computer Mathematical and Natural Sciences Chemistry Building, Room 2240, College Park, MD 20742-2021
+27|University of Minnesota Twin Cities College of Biological Sciences Snyder Hall, Room 140, 1475 Gortner Avenue, Saint Paul, MN 55108-1095
+28|University of Washington Department of Psychology Guthrie Hall, Room 222, Seattle, WA 98195-1525
+29|Ohio State University Department of Physics Physics Research Building, Room 1120, 191 West Woodruff Avenue, Columbus, OH 43210-1117
+30|University of California Santa Barbara Department of Mechanical Engineering Harold Frank Hall, Room 3164, Santa Barbara, CA 93106-5070
+31|University of Notre Dame Department of Economics 328 Malloy Hall, Notre Dame, IN 46556-4643
+32|Emory University School of Medicine Whitehead Biomedical Research Building, Room 1003, 615 Michael Street, Atlanta, GA 30322-3030
+33|University of Pittsburgh School of Law Barco Law Building, Room 304, 3900 Forbes Avenue, Pittsburgh, PA 15260-6101
+34|University of California Davis Department of Physics Physics Building, Room 2123, One Shields Avenue, Davis, CA 95616-5270
+35|University of Arizona Department of Astronomy Steward Observatory, Room N204, 933 North Cherry Avenue, Tucson, AZ 85721-0065
+36|University of Colorado Boulder Department of Computer Science Engineering Center, Room ECCR 150, 1111 Engineering Drive, Boulder, CO 80309-4300
+37|Michigan State University College of Engineering Engineering Building, Room 428, 428 South Shaw Lane, East Lansing, MI 48824-1226
+38|University of Florida Department of Psychology Psychology Building, Room 352, Gainesville, FL 32611-2250
+39|University of California Riverside Department of Chemistry Chemical Sciences Building, Room 1400, 900 University Avenue, Riverside, CA 92521-0403
+40|University of Oregon School of Journalism and Communication Allen Hall, Room 321, 1275 University of Oregon, Eugene, OR 97403-1275
+41|University of Kansas Department of Psychology Fraser Hall, Room 426, 1415 Jayhawk Boulevard, Lawrence, KS 66045-7556
+42|University of Texas at Austin College of Education George I Sanchez Building, Room 222, 1912 Speedway, Austin, TX 78712-1292
+43|University of Iowa Department of Physics and Astronomy Van Allen Hall, Room W290, Iowa City, IA 52242-1479
+44|University of Cincinnati College of Engineering and Applied Science Rhodes Hall, Room 320, 2901 Woodside Drive, Cincinnati, OH 45221-0072
+45|University of California San Diego Department of Computer Science and Engineering Computer Science and Engineering Building, Room 4119, 9500 Gilman Drive, La Jolla, CA 92093-0404
+46|University of Alabama College of Arts and Sciences Clark Hall, Room 202, Tuscaloosa, AL 35487-0211
+47|University of Virginia Department of History Nau Hall, Room 341, Charlottesville, VA 22903-2447
+48|University of Wisconsin-Eau Claire Department of Geography and Anthropology Centennial Hall, Room 2212, 1698 Park Avenue, Eau Claire, WI 54701-4004
+49|University of California Santa Cruz Department of Earth and Planetary Sciences Earth and Marine Sciences Building, Room A316, 1156 High Street, Santa Cruz, CA 95064-1077
+50|University of Arkansas Department of Biological Sciences Science Engineering Hall, Room 604, Fayetteville, AR 72701-1201

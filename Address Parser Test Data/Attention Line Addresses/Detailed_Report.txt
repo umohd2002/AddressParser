@@ -1,0 +1,458 @@
+Exception and Mask Report
+Output From Active Learning
+
+{
+    "1": {
+        "USAD_MGN": "1401",
+        "USAD_SNM": "MAIN",
+        "USAD_SFX": "ST",
+        "USAD_CTY": "FALLS CHURCH",
+        "USAD_STA": "VA",
+        "USAD_ZIP": "22042-1441",
+        "USAD_ORG": "POWER COMPANY"
+    },
+    "2": {
+        "USAD_SNO": "42",
+        "USAD_SNM": "SHUB",
+        "USAD_SFX": "FARM LANE",
+        "USAD_CTY": "SODDY DAISY",
+        "USAD_STA": "TN",
+        "USAD_ZIP": "37379",
+        "USAD_ORG": "HAMIL PLC"
+    },
+    "3": {
+        "USAD_SNO": "7383",
+        "USAD_SNM": "BIRCH",
+        "USAD_SFX": "HILL STREET",
+        "USAD_CTY": "SILVER SPRING",
+        "USAD_STA": "MD",
+        "USAD_ZIP": "20901",
+        "USAD_ORG": "ROWE LTD"
+    },
+    "4": {
+        "USAD_SNO": "6",
+        "USAD_SNM": "MYRTLE",
+        "USAD_SFX": "CIRCLE",
+        "USAD_CTY": "ROCKLEDGE",
+        "USAD_STA": "FL",
+        "USAD_ZIP": "32955",
+        "USAD_ORG": "LACY VASQUEZ GOYETTE GROUP"
+    },
+    "5": {
+        "USAD_SNO": "33",
+        "USAD_SNM": "HAMILTON",
+        "USAD_SFX": "RD",
+        "USAD_CTY": "DEFIANCE",
+        "USAD_STA": "OH",
+        "USAD_ZIP": "43512",
+        "USAD_ORG": "HUEL LTD"
+    },
+    "6": {
+        "USAD_SNO": "84",
+        "USAD_SPR": "N",
+        "USAD_SNM": "ANN",
+        "USAD_SFX": "DR",
+        "USAD_CTY": "OXNARD",
+        "USAD_STA": "CA",
+        "USAD_ZIP": "93035",
+        "USAD_ORG": "FARRELL-GRANT INC"
+    },
+    "7": {
+        "USAD_SNO": "7024",
+        "USAD_SPR": "WEST",
+        "USAD_SNM": "SANTA CLARA",
+        "USAD_SFX": "AVE",
+        "USAD_CTY": "COACHELLA",
+        "USAD_STA": "CA",
+        "USAD_ZIP": "92236",
+        "USAD_ORG": "KUHIC AND SONS"
+    },
+    "8": {
+        "USAD_SNO": "262",
+        "USAD_SPR": "EAST",
+        "USAD_SNM": "CENTRAL",
+        "USAD_SFX": "ST",
+        "USAD_CTY": "ALTAMONTE SPRINGS",
+        "USAD_STA": "FL",
+        "USAD_ZIP": "32714",
+        "USAD_ORG": "ORN LLC"
+    },
+    "9": {
+        "USAD_SNO": "642",
+        "USAD_SNM": "PLEASANT",
+        "USAD_SFX": "AVE",
+        "USAD_CTY": "UNIONTOWN",
+        "USAD_STA": "PA",
+        "USAD_ZIP": "15401",
+        "USAD_ORG": "ACCENT-E-TECHNOLOGY"
+    },
+    "10": {
+        "USAD_SNO": "752",
+        "USAD_SNM": "SUNBEAM",
+        "USAD_SFX": "AVE",
+        "USAD_CTY": "SAINT CHARLES",
+        "USAD_STA": "IL",
+        "USAD_ZIP": "60174",
+        "USAD_ORG": "TECH RAYANINC"
+    },
+    "11": {
+        "USAD_SNO": "8046",
+        "USAD_SNM": "PRIMROSE",
+        "USAD_SFX": "ST",
+        "USAD_CTY": "TAMPA",
+        "USAD_STA": "FL",
+        "USAD_ZIP": "33604",
+        "USAD_ORG": "DESIGN GRAPHIC CO"
+    },
+    "12": {
+        "USAD_SNO": "9497",
+        "USAD_SNM": "BROAD",
+        "USAD_SFX": "ST",
+        "USAD_CTY": "SHEPHERDSVILLE",
+        "USAD_STA": "KY",
+        "USAD_ZIP": "40165",
+        "USAD_ORG": "ALPHALINX INDIA PVT LTD"
+    },
+    "13": {
+        "USAD_SNO": "838",
+        "USAD_SNM": "ST PAUL",
+        "USAD_SFX": "DRIVE",
+        "USAD_CTY": "RAVENNA",
+        "USAD_STA": "OH",
+        "USAD_ZIP": "44266",
+        "USAD_ORG": "PHOENIX SOLUTIONS"
+    },
+    "14": {
+        "USAD_SNO": "42",
+        "USAD_SPR": "SOUTH",
+        "USAD_SNM": "HILLDALE",
+        "USAD_SFX": "CIRCLE",
+        "USAD_CTY": "NEW PHILADELPHIA",
+        "USAD_STA": "OH",
+        "USAD_ZIP": "44663",
+        "USAD_ORG": "ALPHA ORG"
+    },
+    "15": {
+        "USAD_SNO": "9193",
+        "USAD_SNM": "BANK",
+        "USAD_SFX": "STREET",
+        "USAD_CTY": "INDEPENDENCE",
+        "USAD_STA": "KY",
+        "USAD_ZIP": "41051",
+        "USAD_ORG": "ALPHA DATA SOLUTIONS"
+    },
+    "16": {
+        "USAD_MGN": "9465",
+        "USAD_SNM": "SULPHUR",
+        "USAD_SFX": "SPRINGS",
+        "USAD_CTY": "AVE WATERTOWN",
+        "USAD_STA": "MA",
+        "USAD_ZIP": "02472",
+        "USAD_ORG": "HELIOS INNOVATIONS"
+    },
+    "17": {
+        "USAD_SNO": "22",
+        "USAD_SNM": "BEN",
+        "USAD_SFX": "STREET",
+        "USAD_CTY": "BENTONVILLE",
+        "USAD_STA": "AR",
+        "USAD_ZIP": "84934",
+        "USAD_ORG": "STEEL ONE LLC"
+    },
+    "18": {
+        "USAD_SNO": "52",
+        "USAD_SNM": "NASH",
+        "USAD_SFX": "DRIVE",
+        "USAD_CTY": "JACKSONVILLE",
+        "USAD_STA": "FL",
+        "USAD_ZIP": "38492",
+        "USAD_ORG": "INVENT INC"
+    },
+    "19": {
+        "USAD_SNO": "123",
+        "USAD_SNM": "MAIN",
+        "USAD_SFX": "ST",
+        "USAD_CTY": "NEW YORK",
+        "USAD_STA": "NY",
+        "USAD_ZIP": "10001",
+        "USAD_ORG": "JOHNSON INC"
+    },
+    "20": {
+        "USAD_SNO": "456",
+        "USAD_SNM": "PARK",
+        "USAD_SFX": "AVE",
+        "USAD_CTY": "LOS ANGELES",
+        "USAD_STA": "CA",
+        "USAD_ZIP": "90001",
+        "USAD_ORG": "SMITH ENTERPRISES"
+    },
+    "21": {
+        "USAD_SNO": "789",
+        "USAD_SNM": "MARKET",
+        "USAD_SFX": "ST",
+        "USAD_CTY": "HOUSTON",
+        "USAD_STA": "TX",
+        "USAD_ZIP": "77024",
+        "USAD_ORG": "BROWN CORPORATION"
+    },
+    "22": {
+        "USAD_SNO": "111",
+        "USAD_SNM": "MARKET",
+        "USAD_SFX": "PL",
+        "USAD_CTY": "CHICAGO",
+        "USAD_STA": "IL",
+        "USAD_ZIP": "60601",
+        "USAD_ORG": "DAVIS LLC"
+    },
+    "23": {
+        "USAD_SNO": "333",
+        "USAD_SNM": "MAIN",
+        "USAD_SFX": "ST",
+        "USAD_CTY": "MIAMI",
+        "USAD_STA": "FL",
+        "USAD_ZIP": "33102",
+        "USAD_ORG": "WILSON INC"
+    },
+    "24": {
+        "USAD_SNO": "444",
+        "USAD_SNM": "MARKET",
+        "USAD_SFX": "ST",
+        "USAD_CTY": "SAN FRANCISCO",
+        "USAD_STA": "CA",
+        "USAD_ZIP": "94102",
+        "USAD_ORG": "ANDERSON LLC"
+    },
+    "25": {
+        "USAD_SNO": "555",
+        "USAD_SNM": "MAIN",
+        "USAD_SFX": "ST",
+        "USAD_CTY": "PHILADELPHIA",
+        "USAD_STA": "PA",
+        "USAD_ZIP": "19102",
+        "USAD_ORG": "THOMAS INC"
+    },
+    "26": {
+        "USAD_SNO": "666",
+        "USAD_SNM": "MARKET",
+        "USAD_SFX": "ST",
+        "USAD_CTY": "DALLAS",
+        "USAD_STA": "TX",
+        "USAD_ZIP": "75201",
+        "USAD_ORG": "JACKSON ENTERPRISES"
+    },
+    "27": {
+        "USAD_SNO": "777",
+        "USAD_SNM": "MAIN",
+        "USAD_SFX": "ST",
+        "USAD_CTY": "ATLANTA",
+        "USAD_STA": "GA",
+        "USAD_ZIP": "30301",
+        "USAD_ORG": "BAKER CORPORATION"
+    },
+    "28": {
+        "USAD_SNO": "888",
+        "USAD_SNM": "MARKET",
+        "USAD_SFX": "ST",
+        "USAD_CTY": "SEATTLE",
+        "USAD_STA": "WA",
+        "USAD_ZIP": "98109",
+        "USAD_ORG": "NELSON LLC"
+    },
+    "29": {
+        "USAD_SNO": "123",
+        "USAD_SNM": "MAIN",
+        "USAD_SFX": "ST",
+        "USAD_CTY": "HOUSTON",
+        "USAD_STA": "TX",
+        "USAD_ZIP": "77002",
+        "USAD_ORG": "ACME INC"
+    },
+    "30": {
+        "USAD_SNO": "456",
+        "USAD_SNM": "PARK",
+        "USAD_SFX": "AVE",
+        "USAD_CTY": "LOS ANGELES",
+        "USAD_STA": "CA",
+        "USAD_ZIP": "90001",
+        "USAD_ORG": "SMITH ENTERPRISES"
+    },
+    "31": {
+        "USAD_SNO": "789",
+        "USAD_SNM": "MARKET",
+        "USAD_SFX": "ST",
+        "USAD_CTY": "NEW YORK",
+        "USAD_STA": "NY",
+        "USAD_ZIP": "10001",
+        "USAD_ORG": "BROWN CORPORATION"
+    },
+    "32": {
+        "USAD_SNO": "111",
+        "USAD_SNM": "MARKET",
+        "USAD_SFX": "PL",
+        "USAD_CTY": "CHICAGO",
+        "USAD_STA": "IL",
+        "USAD_ZIP": "60601",
+        "USAD_ORG": "DAVIS LLC"
+    },
+    "33": {
+        "USAD_SNO": "333",
+        "USAD_SNM": "MAIN",
+        "USAD_SFX": "ST",
+        "USAD_CTY": "MIAMI",
+        "USAD_STA": "FL",
+        "USAD_ZIP": "33102",
+        "USAD_ORG": "WILSON INC"
+    },
+    "34": {
+        "USAD_SNO": "444",
+        "USAD_SNM": "MARKET",
+        "USAD_SFX": "ST",
+        "USAD_CTY": "SAN FRANCISCO",
+        "USAD_STA": "CA",
+        "USAD_ZIP": "94102",
+        "USAD_ORG": "ANDERSON LLC"
+    },
+    "35": {
+        "USAD_SNO": "555",
+        "USAD_SNM": "MAIN",
+        "USAD_SFX": "ST",
+        "USAD_CTY": "PHILADELPHIA",
+        "USAD_STA": "PA",
+        "USAD_ZIP": "19102",
+        "USAD_ORG": "THOMAS INC"
+    },
+    "36": {
+        "USAD_SNO": "666",
+        "USAD_SNM": "MARKET",
+        "USAD_SFX": "ST",
+        "USAD_CTY": "DALLAS",
+        "USAD_STA": "TX",
+        "USAD_ZIP": "75201",
+        "USAD_ORG": "JACKSON ENTERPRISES"
+    },
+    "37": {
+        "USAD_SNO": "777",
+        "USAD_SNM": "MAIN",
+        "USAD_SFX": "ST",
+        "USAD_CTY": "ATLANTA",
+        "USAD_STA": "GA",
+        "USAD_ZIP": "30301",
+        "USAD_ORG": "BAKER CORPORATION"
+    },
+    "38": {
+        "USAD_SNO": "888",
+        "USAD_SNM": "MARKET",
+        "USAD_SFX": "ST",
+        "USAD_CTY": "SEATTLE",
+        "USAD_STA": "WA",
+        "USAD_ZIP": "98109",
+        "USAD_ORG": "NELSON LLC"
+    },
+    "39": {
+        "USAD_SNO": "1243",
+        "USAD_SNM": "BAKER",
+        "USAD_SFX": "STREETLR",
+        "USAD_STA": "AR",
+        "USAD_ZIP": "72209",
+        "USAD_ORG": "JOHN INC"
+    },
+    "40": {
+        "USAD_SNO": "890",
+        "USAD_SNM": "MAIN",
+        "USAD_SFX": "STREET",
+        "USAD_CTY": "LA",
+        "USAD_STA": "CA",
+        "USAD_ZIP": "90001",
+        "USAD_ORG": "MAX ENTERPRISES"
+    },
+    "41": {
+        "USAD_SNO": "734",
+        "USAD_SNM": "HILLSIDE",
+        "USAD_SFX": "AVE",
+        "USAD_CTY": "CHI",
+        "USAD_STA": "IL",
+        "USAD_ZIP": "60601",
+        "USAD_ORG": "GREEN SOLUTIONS"
+    },
+    "42": {
+        "USAD_SNO": "123",
+        "USAD_SNM": "OAK",
+        "USAD_SFX": "DRIVE",
+        "USAD_CTY": "BOS",
+        "USAD_STA": "MA",
+        "USAD_ZIP": "02111",
+        "USAD_ORG": "FAST DELIVERY INC"
+    },
+    "43": {
+        "USAD_SNO": "567",
+        "USAD_SNM": "ELM",
+        "USAD_SFX": "STREET",
+        "USAD_CTY": "AUS",
+        "USAD_STA": "TX",
+        "USAD_ZIP": "78701",
+        "USAD_ORG": "BEST SERVICES LLC"
+    },
+    "44": {
+        "USAD_SNO": "4412",
+        "USAD_SNM": "MAPLE",
+        "USAD_SFX": "STREET",
+        "USAD_CTY": "MIN",
+        "USAD_STA": "MN",
+        "USAD_ZIP": "55406",
+        "USAD_ORG": "QUALITY PRODUCTS INC"
+    },
+    "45": {
+        "USAD_SNO": "987",
+        "USAD_SNM": "CEDAR",
+        "USAD_SFX": "STREET",
+        "USAD_CTY": "SEA",
+        "USAD_STA": "WA",
+        "USAD_ZIP": "98104",
+        "USAD_ORG": "TECH INNOVATIONS"
+    },
+    "46": {
+        "USAD_SNO": "789",
+        "USAD_SNM": "HILL",
+        "USAD_SFX": "ROAD",
+        "USAD_CTY": "PHX",
+        "USAD_STA": "AZ",
+        "USAD_ZIP": "85022",
+        "USAD_ORG": "GLOBAL TRADERS"
+    },
+    "47": {
+        "USAD_SNO": "1256",
+        "USAD_SNM": "SOUTH",
+        "USAD_SFX": "STREET",
+        "USAD_CTY": "DAL",
+        "USAD_STA": "TX",
+        "USAD_ZIP": "75201",
+        "USAD_ORG": "MODERN DESIGNS"
+    }
+}
+
+Output Fron Rule Based Approach
+
+{}
+
+Number of Exceptions Thrown: -	0
+Number of Parsed Address: -	47
+Percentage of Parsed Result: -	100.0
+List of Exception Mask(s): -	
+
+--
+
+ Evaluation Metrics
+
+           index  precision    recall  f1-score     support
+0       USAD_SNO   1.000000  0.956522  0.977778   46.000000
+1       USAD_SPR   0.750000  0.750000  0.750000    4.000000
+2       USAD_SNM   0.975000  1.000000  0.987342   39.000000
+3       USAD_SFX   1.000000  0.976190  0.987952   42.000000
+4       USAD_CTY   1.000000  1.000000  1.000000   45.000000
+5       USAD_STA   1.000000  1.000000  1.000000   46.000000
+6       USAD_ZIP   1.000000  0.978723  0.989247   47.000000
+7       USAD_ORG   0.978261  1.000000  0.989011   45.000000
+8       USAD_MGN   0.000000  0.000000  0.000000    0.000000
+9       accuracy   0.984076  0.984076  0.984076    0.984076
+10     macro avg   0.855918  0.851271  0.853481  314.000000
+11  weighted avg   0.990595  0.984076  0.987192  314.000000

@@ -1,0 +1,533 @@
+.mapCreationFormTab-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Split the space evenly between left and right containers */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 4px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.navbar {
+    background-color: white;
+    background-image: url(../image.png);
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 65px;
+    z-index: 1030;
+    padding: 15px;
+    display: flex;
+}
+
+.navbar a {
+    top: 20%;
+}
+
+.tablink {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.2s ease-in;
+}
+
+.tabdiv {
+    margin-top: 15px;
+    margin-left: 40px;
+}
+
+.tablink:hover,
+.tablink.active {
+    /* background-color:#bec9e2; */
+    color: #2e4c8c;
+    text-decoration: underline;
+}
+.addedclass{
+    color: #2e4c8c;
+    text-decoration: underline;
+}
+/* .tabdiv:last-child {
+    margin-left: auto ;
+    padding-right: 25px;
+    margin-top: 10px;
+} */
+
+/* Padding-top for the content to ensure it doesn't hide behind the fixed navbar */
+.tabcontent {
+    padding-top: 60px;
+    /* Height of navbar plus some extra space */
+}
+
+/* Rest of the styles */
+
+.map-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+.map-container input,
+.map-container button {
+    margin: 5px;
+}
+
+.leftContainer,
+.rightContainer {
+    padding: 20px;
+    overflow: hidden;
+}
+
+.mapCreationFormTab-container .rightContainer label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+    color: black;
+}
+
+.mapCreationFormTab-container .rightContainer input[type="text"],
+.mapCreationFormTab-container .rightContainer select,
+.mapCreationFormTab-container .rightContainer textarea {
+    width: 100%;
+    padding: 6px;
+    margin-top: 5px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: black;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: none;
+    border: 2px solid #2e4c8c;
+    border-radius: 5;
+    /* border-radius: 0.25rem; */
+}
+.mapCreationFormTab-container .rightContainer #inputValue{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mapCreationFormTab-container .rightContainer input[type="text"]:focus,
+.mapCreationFormTab-container .rightContainer select:focus,
+.mapCreationFormTab-container .rightContainer textarea:focus {
+    color: black;
+    background-color: #fff;
+    border-color: #2e4c8c;
+    outline: 0;
+    /* border: 3px solid #2e4c8c; */
+    transition: 0.3s ease-in;
+    /* box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25); */
+}
+
+.mapCreationFormTab-container .rightContainer button {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /* margin-left: 10px; */
+    color: #2b74b7;
+    transition: 0.3s ease-in-out;
+}
+
+.mapCreationFormTab-container .rightContainer .btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.mapCreationFormTab-container .rightContainer .btn-primary:hover {
+    color: #fff;
+    background-color: #2e4c8c;
+    border-color: #0062cc;
+}
+
+.mapCreationFormTab-container .rightContainer .btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.mapCreationFormTab-container .rightContainer .btn-secondary:hover {
+    color: #fff;
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+.mapCreationFormTab-container .rightContainer .btn-info {
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.mapCreationFormTab-container .rightContainer .btn-info:hover {
+    color: #fff;
+    background-color: #138496;
+    border-color: #117a8b;
+}
+
+.mapCreationFormTab-container .rightContainer .btn-light {
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+.mapCreationFormTab-container .rightContainer .btn-light:hover {
+    color: #212529;
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
+    text-decoration: underline;
+}
+
+.mapCreationFormTab-container .rightContainer .btn-dark {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+.mapCreationFormTab-container .rightContainer .btn-dark:hover {
+    color: #fff;
+    background-color: #23272b;
+    border-color: #1d2124;
+}
+
+.mapCreationFormTab-container .rightContainer .btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.mapCreationFormTab-container .rightContainer .btn-outline-primary:hover {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.mapCreationFormTab-container .rightContainer .btn-outline-secondary {
+    color: #6c757d;
+    border-color: #6c757d;
+}
+
+.mapCreationFormTab-container .rightContainer .btn-outline-secondary:hover {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.mapCreationFormTab-container .rightContainer .btn-outline-info {
+    color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.mapCreationFormTab-container .rightContainer .btn-outline-info:hover {
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.mapCreationFormTab-container .rightContainer .btn-outline-light {
+    color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+.mapCreationFormTab-container .rightContainer .btn-outline-light:hover {
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+.mapCreationFormTab-container .rightContainer .btn-outline-dark {
+    color: #343a40;
+    border-color: #343a40;
+}
+
+.mapCreationFormTab-container .rightContainer .btn-outline-dark:hover {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+.mapCreationFormTab-container .rightContainer .btn-success {
+    color: #fff;
+    background-color: #2b74b7;
+}
+
+.mapCreationFormTab-container .rightContainer .btn-success:hover {
+    color: #fff;
+    background-color: #2e4c8c;
+}
+
+.mapCreationFormTab-container .rightContainer .btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.mapCreationFormTab-container .rightContainer .btn-danger:hover {
+    color: #fff;
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.mapCreationFormTab-container .rightContainer .btn-warning {
+    color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.mapCreationFormTab-container .rightContainer .btn-warning:hover {
+    color: #212529;
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+
+.mapCreationFormTab-container .rightContainer .btn-outline-success {
+    color: #28a745;
+    border-color: #28a745;
+}
+
+.mapCreationFormTab-container .rightContainer .btn-outline-success:hover {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.mapCreationFormTab-container .rightContainer .btn-outline-danger {
+    color: #dc3545;
+    border-color: #dc3545;
+}
+
+.mapCreationFormTab-container .rightContainer .btn-outline-danger:hover {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.mapCreationFormTab-container .rightContainer .btn-outline-warning {
+    color: #ffc107;
+    border-color: #ffc107;
+}
+
+.mapCreationFormTab-container .rightContainer .btn-outline-warning:hover {
+    color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+.spinner-border{
+    color: #2e4c8c;
+}
+.rightContainer label {
+    /* margin-top: 5px; */
+    margin: 5px;
+}
+
+
+.map-result-box {
+    width: 90%;
+}
+
+.map-result-box tbody tr td select {
+    padding: 5px;
+    border: 2px solid #2e4c8c;
+}
+
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    margin-bottom: 20px;
+}
+
+table tr td {
+    text-align: center;
+}
+
+th {
+    border: none;
+    padding: 8px;
+    border-bottom: 2px solid #2b74b7;
+}
+
+th {
+    background-color: white;
+    color: #2e4c8c;
+    font-size: 120%;
+}
+
+tr {
+    background-color: white;
+    color: black;
+    padding: 8px;
+    font-size: 100%;
+    transition: 0.3s ease-in;
+}
+
+td {
+    padding: 8px;
+}
+
+tr:hover {
+    background-color: #2e4c8c;
+    color: white;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+.input-group label,
+.input-group input,
+.input-group select,
+.input-group textarea,
+.input-group button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+#run-dropdown,
+#user-dropdown,
+#timestamp-dropdown {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 3px;
+    width: 150px;
+}
+
+input[type="text"],
+select,
+textarea {
+    border: 10px solid #ccc;
+    border-radius: 4px;
+}
+
+.map-container input[type="file"] {
+    text-align: center;
+    /* margin: 10px; */
+    /* margin-left: 320px; */
+    font-size: 14px;
+    padding: 10px;
+    width: 20%;
+}
+
+#loadFileBtn {
+    width: 150px;
+    /* Allow the button to fit the content */
+    padding: 10px 20px;
+    /* Uniform padding */
+    margin-bottom: 10px;
+    background-color: #2b74b7;
+    transition: 0.3s ease-in;
+}
+
+#loadFileBtn:hover {
+    background-color: #2e4c8c;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    gap: 10px;
+    justify-content: start;
+}
+
+#approvedby {
+    margin-bottom: 20px;
+}
+
+/* Container for the buttons */
+.button-container {
+
+    padding: 10px;
+    display: flex;
+    /* Use flexbox to layout the buttons */
+    justify-content: start;
+    /* Align buttons to the start of the container */
+    gap: 10px;
+    /* Space between the buttons */
+
+}
+
+/* Individual buttons */
+.button-container button {
+    flex: none;
+    /* Do not allow the buttons to grow or shrink */
+    /* Other styles for buttons can go here */
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .mapCreationFormTab-container {
+        grid-template-columns: 1fr;
+        /* Stack the containers on small screens */
+        gap: 10px;
+    }
+
+    .leftContainer,
+    .rightContainer {
+        width: 100%;
+        /* Ensure full width on small screens */
+    }
+
+
+    #loadFileBtn {
+        /* width: 100%; */
+        padding: 5px;
+        /* Full width button on small screens */
+    }
+
+    footer {
+        position: absolute;
+        color: #fff;
+        bottom: 0;
+        width: 100%;
+    }
+    html,
+body {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+}
+}
+
+
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: url(../static/image.png);
+    background-size: 110%;
+    color: white;
+    text-align: left;
+    height: 100px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#uploads select{
+    height: 12rem;
+}

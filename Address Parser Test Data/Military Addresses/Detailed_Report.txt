@@ -1,0 +1,151 @@
+Exception and Mask Report
+Output From Active Learning
+
+{
+    "1": {
+        "USAD_MGN": "AE",
+        "USAD_ZIP": "09427",
+        "USAD_MDG": "APO"
+    },
+    "2": {
+        "USAD_MGN": "AP",
+        "USAD_ZIP": "96377",
+        "USAD_MDG": "FPO"
+    },
+    "3": {
+        "USAD_MGN": "AA",
+        "USAD_ZIP": "09539",
+        "USAD_MDG": "APO"
+    },
+    "4": {
+        "USAD_MGN": "AE",
+        "USAD_ZIP": "09631",
+        "USAD_MDG": "FPO"
+    },
+    "5": {
+        "USAD_MGN": "AP",
+        "USAD_ZIP": "96373",
+        "USAD_MDG": "APO"
+    },
+    "6": {
+        "USAD_MGN": "AA",
+        "USAD_ZIP": "34002",
+        "USAD_MDG": "FPO"
+    },
+    "7": {
+        "USAD_MGN": "AE",
+        "USAD_ZIP": "09096",
+        "USAD_MDG": "APO"
+    },
+    "8": {
+        "USAD_MGN": "AP",
+        "USAD_ZIP": "96517",
+        "USAD_MDG": "FPO"
+    },
+    "9": {
+        "USAD_MGN": "AA",
+        "USAD_ZIP": "09208",
+        "USAD_MDG": "APO"
+    },
+    "10": {
+        "USAD_MGN": "AE",
+        "USAD_ZIP": "09861",
+        "USAD_MDG": "FPO"
+    },
+    "11": {
+        "USAD_MGN": "AE",
+        "USAD_ZIP": "09428",
+        "USAD_MDG": "APO"
+    },
+    "12": {
+        "USAD_MGN": "AP",
+        "USAD_ZIP": "96251",
+        "USAD_MDG": "APO"
+    },
+    "13": {
+        "USAD_MGN": "AA",
+        "USAD_ZIP": "09287",
+        "USAD_MDG": "APO"
+    },
+    "14": {
+        "USAD_MGN": "AE",
+        "USAD_ZIP": "09826",
+        "USAD_MDG": "FPO"
+    },
+    "15": {
+        "USAD_MGN": "AP",
+        "USAD_ZIP": "96548",
+        "USAD_MDG": "FPO"
+    },
+    "16": {
+        "USAD_MGN": "AA",
+        "USAD_ZIP": "09116",
+        "USAD_MDG": "APO"
+    },
+    "17": {
+        "USAD_MGN": "AE",
+        "USAD_ZIP": "09609",
+        "USAD_MDG": "APO"
+    },
+    "18": {
+        "USAD_MGN": "AP",
+        "USAD_ZIP": "96373",
+        "USAD_MDG": "FPO"
+    },
+    "19": {
+        "USAD_MGN": "AA",
+        "USAD_ZIP": "09516",
+        "USAD_MDG": "APO"
+    },
+    "20": {
+        "USAD_MGN": "AE",
+        "USAD_ZIP": "09377",
+        "USAD_MDG": "APO"
+    },
+    "21": {
+        "USAD_MGN": "AP",
+        "USAD_ZIP": "96206",
+        "USAD_MDG": "APO"
+    },
+    "22": {
+        "USAD_MGN": "AE",
+        "USAD_ZIP": "09844",
+        "USAD_MDG": "FPO"
+    },
+    "23": {
+        "USAD_MGN": "AA",
+        "USAD_ZIP": "09434",
+        "USAD_MDG": "APO"
+    },
+    "24": {
+        "USAD_MGN": "AE",
+        "USAD_ZIP": "09680",
+        "USAD_MDG": "APO"
+    },
+    "25": {
+        "USAD_MGN": "AP",
+        "USAD_ZIP": "96239",
+        "USAD_MDG": "APO"
+    }
+}
+
+Output Fron Rule Based Approach
+
+{}
+
+Number of Exceptions Thrown: -	0
+Number of Parsed Address: -	25
+Percentage of Parsed Result: -	100.0
+List of Exception Mask(s): -	
+
+--
+
+ Evaluation Metrics
+
+          index  precision  recall  f1-score  support
+0      USAD_ZIP        1.0     1.0       1.0     25.0
+1      USAD_MDG        1.0     1.0       1.0     25.0
+2      USAD_MGN        1.0     1.0       1.0     25.0
+3      accuracy        1.0     1.0       1.0      1.0
+4     macro avg        1.0     1.0       1.0     75.0
+5  weighted avg        1.0     1.0       1.0     75.0

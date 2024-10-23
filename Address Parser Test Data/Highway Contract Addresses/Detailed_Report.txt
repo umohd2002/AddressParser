@@ -1,0 +1,659 @@
+Exception and Mask Report
+Output From Active Learning
+
+{
+    "1": {
+        "USAD_CTY": "CHICAGO",
+        "USAD_STA": "IL",
+        "USAD_ZIP": "44432",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "23",
+        "USAD_HNO": "68",
+        "USAD_HNM": "HC"
+    },
+    "2": {
+        "USAD_CTY": "RAEFORD",
+        "USAD_STA": "NC",
+        "USAD_ZIP": "28376",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "12",
+        "USAD_HNO": "32",
+        "USAD_HNM": "HC"
+    },
+    "3": {
+        "USAD_CTY": "STERLING HEIGHTS",
+        "USAD_STA": "MI",
+        "USAD_ZIP": "48310",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "45",
+        "USAD_HNO": "02",
+        "USAD_HNM": "HC"
+    },
+    "4": {
+        "USAD_CTY": "BUFFALO GROVE",
+        "USAD_STA": "IL",
+        "USAD_ZIP": "60089",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "41",
+        "USAD_HNO": "94",
+        "USAD_HNM": "HC"
+    },
+    "5": {
+        "USAD_CTY": "LANCASTER",
+        "USAD_STA": "NY",
+        "USAD_ZIP": "14086",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "32",
+        "USAD_HNO": "81",
+        "USAD_HNM": "HC"
+    },
+    "6": {
+        "USAD_CTY": "BATON ROUGE",
+        "USAD_STA": "LA",
+        "USAD_ZIP": "70806",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "12",
+        "USAD_HNO": "22",
+        "USAD_HNM": "HC"
+    },
+    "7": {
+        "USAD_CTY": "FEASTERVILLE TREVOSE",
+        "USAD_STA": "PA",
+        "USAD_ZIP": "19053",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "25",
+        "USAD_HNO": "5323",
+        "USAD_HNM": "HC"
+    },
+    "8": {
+        "USAD_CTY": "BLACKSBURG",
+        "USAD_STA": "VA",
+        "USAD_ZIP": "24060",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "54",
+        "USAD_HNO": "91",
+        "USAD_HNM": "HC"
+    },
+    "9": {
+        "USAD_CTY": "NAZARETH",
+        "USAD_STA": "PA",
+        "USAD_ZIP": "18064",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "83",
+        "USAD_HNO": "55",
+        "USAD_HNM": "HC"
+    },
+    "10": {
+        "USAD_CTY": "HOBOKEN",
+        "USAD_STA": "NJ",
+        "USAD_ZIP": "07030",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "56",
+        "USAD_HNO": "13",
+        "USAD_HNM": "HC"
+    },
+    "11": {
+        "USAD_CTY": "LEWIS CENTER",
+        "USAD_STA": "OH",
+        "USAD_ZIP": "43035",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "5",
+        "USAD_HNO": "2342",
+        "USAD_HNM": "HC"
+    },
+    "12": {
+        "USAD_CTY": "WANETTE",
+        "USAD_STA": "OKLAHOMA",
+        "USAD_ZIP": "74878",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "4",
+        "USAD_HNO": "4013",
+        "USAD_HNM": "HC"
+    },
+    "13": {
+        "USAD_CTY": "CECIL",
+        "USAD_STA": "OHIO",
+        "USAD_ZIP": "45821",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "410",
+        "USAD_HNO": "432",
+        "USAD_HNM": "HC"
+    },
+    "14": {
+        "USAD_CTY": "SOUTH BEND",
+        "USAD_STA": "IN",
+        "USAD_ZIP": "46614",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "11",
+        "USAD_HNO": "002",
+        "USAD_HNM": "HC"
+    },
+    "15": {
+        "USAD_CTY": "FORT WORTH",
+        "USAD_STA": "TX",
+        "USAD_ZIP": "76110",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "9",
+        "USAD_HNO": "9900",
+        "USAD_HNM": "HC"
+    },
+    "16": {
+        "USAD_CTY": "TITUSVILLE",
+        "USAD_STA": "FL",
+        "USAD_ZIP": "32780",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "001",
+        "USAD_HNO": "103",
+        "USAD_HNM": "HC"
+    },
+    "17": {
+        "USAD_CTY": "PEMBROKE PINES",
+        "USAD_STA": "FL",
+        "USAD_ZIP": "33028",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "840",
+        "USAD_HNO": "44W",
+        "USAD_HNM": "HC"
+    },
+    "18": {
+        "USAD_CTY": "AMBLER",
+        "USAD_STA": "PA",
+        "USAD_ZIP": "19002",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "0",
+        "USAD_HNO": "84K",
+        "USAD_HNM": "HC"
+    },
+    "19": {
+        "USAD_CTY": "FREEPORT",
+        "USAD_STA": "NY",
+        "USAD_ZIP": "11520",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "3",
+        "USAD_HNO": "665N",
+        "USAD_HNM": "HC"
+    },
+    "20": {
+        "USAD_CTY": "EAST HAVEN",
+        "USAD_STA": "CT",
+        "USAD_ZIP": "06512",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "31",
+        "USAD_HNO": "09",
+        "USAD_HNM": "HC"
+    },
+    "21": {
+        "USAD_CTY": "ALIQUIPPA",
+        "USAD_STA": "PA",
+        "USAD_ZIP": "15001",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "8",
+        "USAD_HNO": "45",
+        "USAD_HNM": "HC"
+    },
+    "22": {
+        "USAD_CTY": "CRANSTON",
+        "USAD_STA": "RI",
+        "USAD_ZIP": "02920",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "9O",
+        "USAD_HNO": "88",
+        "USAD_HNM": "HC"
+    },
+    "23": {
+        "USAD_CTY": "MADISON HEIGHTS",
+        "USAD_STA": "MI",
+        "USAD_ZIP": "48071",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "3",
+        "USAD_HNO": "023",
+        "USAD_HNM": "HC"
+    },
+    "24": {
+        "USAD_CTY": "NOTTINGHAM",
+        "USAD_STA": "MD",
+        "USAD_ZIP": "21236",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "77",
+        "USAD_HNO": "83",
+        "USAD_HNM": "HC"
+    },
+    "25": {
+        "USAD_CTY": "WESTFORD",
+        "USAD_STA": "MA",
+        "USAD_ZIP": "01886",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "48",
+        "USAD_HNO": "21",
+        "USAD_HNM": "HC"
+    },
+    "26": {
+        "USAD_CTY": "WINSTON SALEM",
+        "USAD_STA": "NC",
+        "USAD_ZIP": "27103",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "323",
+        "USAD_HNO": "98",
+        "USAD_HNM": "HC"
+    },
+    "27": {
+        "USAD_CTY": "OXON HILL",
+        "USAD_STA": "MD",
+        "USAD_ZIP": "20745",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "34",
+        "USAD_HNO": "02",
+        "USAD_HNM": "HC"
+    },
+    "28": {
+        "USAD_CTY": "ROUND LAKE",
+        "USAD_STA": "IL",
+        "USAD_ZIP": "60073",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "2",
+        "USAD_HNO": "573",
+        "USAD_HNM": "HC"
+    },
+    "29": {
+        "USAD_CTY": "MILLEDGEVILLE",
+        "USAD_STA": "GA",
+        "USAD_ZIP": "31061",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "64",
+        "USAD_HNO": "42",
+        "USAD_HNM": "HC"
+    },
+    "30": {
+        "USAD_CTY": "DAVISON",
+        "USAD_STA": "MI",
+        "USAD_ZIP": "48423",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "543",
+        "USAD_HNO": "24",
+        "USAD_HNM": "HC"
+    },
+    "31": {
+        "USAD_CTY": "PEARL",
+        "USAD_STA": "MS",
+        "USAD_ZIP": "39208",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "21",
+        "USAD_HNO": "981",
+        "USAD_HNM": "HC"
+    },
+    "32": {
+        "USAD_CTY": "WAYNESBORO",
+        "USAD_STA": "PA",
+        "USAD_ZIP": "17268",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "028",
+        "USAD_HNO": "83422",
+        "USAD_HNM": "HC"
+    },
+    "33": {
+        "USAD_CTY": "WAYNESBORO",
+        "USAD_STA": "PA",
+        "USAD_ZIP": "17268",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "4324",
+        "USAD_HNO": "72",
+        "USAD_HNM": "HC"
+    },
+    "34": {
+        "USAD_CTY": "LITHONIA",
+        "USAD_STA": "GA",
+        "USAD_ZIP": "30038",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "321",
+        "USAD_HNO": "27",
+        "USAD_HNM": "HC"
+    },
+    "35": {
+        "USAD_CTY": "ELIZABETHTOWN",
+        "USAD_STA": "PA",
+        "USAD_ZIP": "17022",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "44",
+        "USAD_HNO": "878",
+        "USAD_HNM": "HC"
+    },
+    "36": {
+        "USAD_CTY": "WATERFORD",
+        "USAD_STA": "MI",
+        "USAD_ZIP": "48329",
+        "USAD_BNM": "BOX",
+        "USAD_HNO": "902",
+        "USAD_HNM": "HC"
+    },
+    "37": {
+        "USAD_CTY": "HENDERSON",
+        "USAD_STA": "KY",
+        "USAD_ZIP": "42420",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "2",
+        "USAD_HNO": "787",
+        "USAD_HNM": "HC"
+    },
+    "38": {
+        "USAD_CTY": "CORAM",
+        "USAD_STA": "NY",
+        "USAD_ZIP": "11727",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "3",
+        "USAD_HNO": "3",
+        "USAD_HNM": "HC"
+    },
+    "39": {
+        "USAD_CTY": "HENRICO",
+        "USAD_STA": "VA",
+        "USAD_ZIP": "23228",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "39",
+        "USAD_HNO": "21",
+        "USAD_HNM": "HC"
+    },
+    "40": {
+        "USAD_CTY": "STOW",
+        "USAD_STA": "OH",
+        "USAD_ZIP": "44224",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "6",
+        "USAD_HNO": "37",
+        "USAD_HNM": "HC"
+    },
+    "41": {
+        "USAD_CTY": "CARMEL",
+        "USAD_STA": "NY",
+        "USAD_ZIP": "10512",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "883",
+        "USAD_HNO": "6224",
+        "USAD_HNM": "HC"
+    },
+    "42": {
+        "USAD_CTY": "FAIRFAX",
+        "USAD_STA": "VA",
+        "USAD_ZIP": "22030",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "86",
+        "USAD_HNO": "42",
+        "USAD_HNM": "HC"
+    },
+    "43": {
+        "USAD_CTY": "HOPEWELL",
+        "USAD_STA": "VA",
+        "USAD_ZIP": "2386",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "012",
+        "USAD_HNO": "72",
+        "USAD_HNM": "HC"
+    },
+    "44": {
+        "USAD_CTY": "WILMINGTON",
+        "USAD_STA": "MA",
+        "USAD_ZIP": "01887",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "92",
+        "USAD_HNO": "82",
+        "USAD_HNM": "HC"
+    },
+    "45": {
+        "USAD_CTY": "CROFTON",
+        "USAD_STA": "MD",
+        "USAD_ZIP": "21114",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "32",
+        "USAD_HNO": "23",
+        "USAD_HNM": "HC"
+    },
+    "46": {
+        "USAD_CTY": "BLUFFTON",
+        "USAD_STA": "SC",
+        "USAD_ZIP": "29910",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "765",
+        "USAD_HNO": "97",
+        "USAD_HNM": "HC"
+    },
+    "47": {
+        "USAD_CTY": "SOUTHFIELD",
+        "USAD_STA": "MI",
+        "USAD_ZIP": "48076",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "2",
+        "USAD_HNO": "90",
+        "USAD_HNM": "HC"
+    },
+    "48": {
+        "USAD_CTY": "WAUKESHA",
+        "USAD_STA": "WI",
+        "USAD_ZIP": "53186",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "53",
+        "USAD_HNO": "32",
+        "USAD_HNM": "HC"
+    },
+    "49": {
+        "USAD_CTY": "DOWNINGTOWN",
+        "USAD_STA": "PA",
+        "USAD_ZIP": "19335",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "23",
+        "USAD_HNO": "80W",
+        "USAD_HNM": "HC"
+    },
+    "50": {
+        "USAD_CTY": "WARREN",
+        "USAD_STA": "MI",
+        "USAD_ZIP": "48089",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "87",
+        "USAD_HNO": "74",
+        "USAD_HNM": "HC"
+    },
+    "51": {
+        "USAD_CTY": "UTICA",
+        "USAD_STA": "NY",
+        "USAD_ZIP": "13501",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "72",
+        "USAD_HNO": "32",
+        "USAD_HNM": "HC"
+    },
+    "52": {
+        "USAD_CTY": "CORAM",
+        "USAD_STA": "NY",
+        "USAD_ZIP": "11727",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "32",
+        "USAD_HNO": "291",
+        "USAD_HNM": "HC"
+    },
+    "53": {
+        "USAD_CTY": "BAY SHORE",
+        "USAD_STA": "NY",
+        "USAD_ZIP": "11706",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "23",
+        "USAD_HNO": "292",
+        "USAD_HNM": "HC"
+    },
+    "54": {
+        "USAD_CTY": "POINT PLEASANT BEACH",
+        "USAD_STA": "NJ",
+        "USAD_ZIP": "08742",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "11",
+        "USAD_HNO": "706",
+        "USAD_HNM": "HC"
+    },
+    "55": {
+        "USAD_CTY": "CHATSWORTH",
+        "USAD_STA": "GA",
+        "USAD_ZIP": "30705",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "13",
+        "USAD_HNO": "12",
+        "USAD_HNM": "HC"
+    },
+    "56": {
+        "USAD_CTY": "BALLSTON SPA",
+        "USAD_STA": "NY",
+        "USAD_ZIP": "12020",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "10",
+        "USAD_HNO": "70",
+        "USAD_HNM": "HC"
+    },
+    "57": {
+        "USAD_CTY": "NANUET",
+        "USAD_STA": "NY",
+        "USAD_ZIP": "10954",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "201",
+        "USAD_HNO": "89",
+        "USAD_HNM": "HC"
+    },
+    "58": {
+        "USAD_CTY": "VALLEY STREAM",
+        "USAD_STA": "NY",
+        "USAD_ZIP": "11580",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "9",
+        "USAD_HNO": "954",
+        "USAD_HNM": "HC"
+    },
+    "59": {
+        "USAD_CTY": "LIBERTYVILLE",
+        "USAD_STA": "IL",
+        "USAD_ZIP": "60048",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "706",
+        "USAD_HNO": "580",
+        "USAD_HNM": "HC"
+    },
+    "60": {
+        "USAD_CTY": "TUCKERTON",
+        "USAD_STA": "NJ",
+        "USAD_ZIP": "08087",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "98",
+        "USAD_HNO": "89",
+        "USAD_HNM": "HC"
+    },
+    "61": {
+        "USAD_CTY": "COPPERAS COVE",
+        "USAD_STA": "TX",
+        "USAD_ZIP": "76522",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "82",
+        "USAD_HNO": "087",
+        "USAD_HNM": "HC"
+    },
+    "62": {
+        "USAD_CTY": "GRAHAM",
+        "USAD_STA": "NC",
+        "USAD_ZIP": "27253",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "522",
+        "USAD_HNO": "522",
+        "USAD_HNM": "HC"
+    },
+    "63": {
+        "USAD_CTY": "NORTH BERGEN",
+        "USAD_STA": "NJ",
+        "USAD_ZIP": "07047",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "253",
+        "USAD_HNO": "253",
+        "USAD_HNM": "HC"
+    },
+    "64": {
+        "USAD_CTY": "LACEY",
+        "USAD_STA": "WA",
+        "USAD_ZIP": "98503",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "42L",
+        "USAD_HNO": "047",
+        "USAD_HNM": "HC"
+    },
+    "65": {
+        "USAD_CTY": "GROTON",
+        "USAD_STA": "CT",
+        "USAD_ZIP": "06340",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "98",
+        "USAD_HNO": "503",
+        "USAD_HNM": "HC"
+    },
+    "66": {
+        "USAD_CTY": "LOGANSPORT",
+        "USAD_STA": "IN",
+        "USAD_ZIP": "46947",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "06",
+        "USAD_HNO": "340",
+        "USAD_HNM": "HC"
+    },
+    "67": {
+        "USAD_CTY": "GLASTONBURY",
+        "USAD_STA": "CT",
+        "USAD_ZIP": "06033",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "46",
+        "USAD_HNO": "947",
+        "USAD_HNM": "HC"
+    },
+    "68": {
+        "USAD_CTY": "SAN ANGELO",
+        "USAD_STA": "TX",
+        "USAD_ZIP": "76901",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "228",
+        "USAD_HNO": "033",
+        "USAD_HNM": "HC"
+    },
+    "69": {
+        "USAD_CTY": "HINESVILLE",
+        "USAD_STA": "GA",
+        "USAD_ZIP": "31313",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "29",
+        "USAD_HNO": "76",
+        "USAD_HNM": "HC"
+    },
+    "70": {
+        "USAD_CTY": "BILLINGS",
+        "USAD_STA": "MT",
+        "USAD_ZIP": "59101",
+        "USAD_BNM": "BOX",
+        "USAD_BNO": "901",
+        "USAD_HNO": "31",
+        "USAD_HNM": "HC"
+    }
+}
+
+Output Fron Rule Based Approach
+
+{}
+
+Number of Exceptions Thrown: -	0
+Number of Parsed Address: -	70
+Percentage of Parsed Result: -	100.0
+List of Exception Mask(s): -	
+
+--
+
+ Evaluation Metrics
+
+          index  precision    recall  f1-score     support
+0      USAD_CTY   0.971429  0.985507  0.978417   69.000000
+1      USAD_STA   0.985714  1.000000  0.992806   69.000000
+2      USAD_ZIP   1.000000  1.000000  1.000000   70.000000
+3      USAD_BNM   0.985714  1.000000  0.992806   69.000000
+4      USAD_BNO   0.958333  0.971831  0.965035   71.000000
+5      USAD_HNM   1.000000  1.000000  1.000000   70.000000
+6      USAD_HNO   1.000000  0.943662  0.971014   71.000000
+7      accuracy   0.985685  0.985685  0.985685    0.985685
+8     macro avg   0.985884  0.985857  0.985725  489.000000
+9  weighted avg   0.985887  0.985685  0.985639  489.000000

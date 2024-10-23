@@ -1,0 +1,51 @@
+123 Calle de la Rosa, Apt 2B, Guaynabo, PR 00966
+456 Avenida del Sol, Apt 4C, Carolina, PR 00979
+789 Calle del Mar, Apt 3A, San Juan, PR 00907
+1011 Callejón del Río, Apt 2D, Bayamón, PR 00961
+1213 Boulevard del Mar, Apt 1A, Ponce, PR 00730
+1415 Camino de la Montaña, Apt 3B, Caguas, PR 00725
+1617 Carretera del Sur, Apt 2C, Toa Baja, PR 00949
+1819 Avenida de la Playa, Apt 4D, Fajardo, PR 00738
+2021 Calle de la Luna, Apt 3C, Mayagüez, PR 00680
+2223 Paseo de las Palmas, Apt 1B, Aguadilla, PR 00603
+2425 Carrera del Este, Apt 2A, Arecibo, PR 00612
+2627 Camino de los Almendros, Apt 4C, Cidra, PR 00739
+2829 Avenida del Bosque, Apt 3B, Gurabo, PR 00778
+3031 Calle del Campo, Apt 2D, Humacao, PR 00791
+3233 Callejón de los Pinos, Apt 1A, Juncos, PR 00777
+3435 Boulevard de la Isla, Apt 3C, Vega Baja, PR 00694
+3637 Paseo de los Flamboyanes, Apt 4B, Naguabo, PR 00718
+3839 Avenida de los Robles, Apt 2D, Orocovis, PR 00720
+4041 Camino de los Girasoles, Apt 1C, Patillas, PR 00723
+4243 Carretera del Oeste, Apt 3B, Quebradillas, PR 00678
+4445 Calle de la Sierra, Apt 4D, Rincón, PR 00677
+4647 Callejón de las Flores, Apt 2A, Sabana Grande, PR 00637
+4849 Boulevard de los Laureles, Apt 3C, Salinas, PR 00751
+5051 Avenida del Cielo, Apt 1B, San Germán, PR 00683
+5253 Calle del Sol, Apt 2D, San Lorenzo, PR 00754
+5455 Paseo del Mar, Apt 3A, Santa Isabel, PR 00757
+5657 Camino del Río, Apt 4C, Trujillo Alto, PR 00976
+5859 Carrera de la Montaña, Apt 2B, Utuado, PR 00641
+6061 Avenida de los Jardines, Apt 1C, Vega Alta, PR 00692
+6263 Calle de la Playa, Apt 3D, Vieques, PR 00765
+6465 Boulevard de las Flores, Apt 4A, Yabucoa, PR 00767
+6667 Calle de los Pájaros, Apt 2B, Aguada, PR 00602
+6869 Avenida de los Vientos, Apt 1D, Aguas Buenas, PR 00703
+7071 Calle de los Sauces, Apt 3C, Aibonito, PR 00705
+727 Avenida de la Montaña, Apt 3A, Bayamón, PR 00961
+929 Calle del Bosque, Apt 2B, Carolina, PR 00987
+1131 Camino del Sol, Apt 4C, Guaynabo, PR 00969
+1333 Carretera de la Playa, Apt 1A, San Juan, PR 00909
+1535 Boulevard de la Luna, Apt 3D, Ponce, PR 00731
+1737 Calle del Mar, Apt 2C, Caguas, PR 00726
+1939 Avenida de la Isla, Apt 4B, Toa Baja, PR 00952
+2141 Calle de la Sierra, Apt 3A, Fajardo, PR 00740
+2343 Camino del Río, Apt 2D, Mayagüez, PR 00681
+2545 Paseo de las Flores, Apt 1B, Aguadilla, PR 00604
+2747 Carrera de los Girasoles, Apt 4C, Arecibo, PR 00613
+2949 Callejón de los Almendros, Apt 2D, Cidra, PR 00740
+3151 Boulevard del Este, Apt 3B, Gurabo, PR 00779
+3353 Camino del Campo, Apt 1A, Humacao, PR 00792
+3555 Avenida de los Pinos, Apt 4D, Vega Baja, PR 00695
+3757 Calle de las Flores, Apt 2C, Naguabo, PR 00718
+

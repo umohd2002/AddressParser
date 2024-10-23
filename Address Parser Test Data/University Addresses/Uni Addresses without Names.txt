@@ -1,0 +1,50 @@
+1|Department of Chemistry, Arizona State University, 245 E Orange St, Ave, Tempe, AZ 85287
+2|Department of English, University of California Los Angeles, 301 Royce Dr, Los Angeles, CA 90095
+3|Department of Mathematics, Harvard University, 1 Oxford St, Cambridge, MA 02138
+4|Department of Physics, University of Chicago, 5720 S Ellis Ave, Chicago, IL 60637
+5|Department of Psychology, Yale University, 2 Hillhouse Ave, New Haven, CT 06511
+6|Department of Biology, Stanford University, 450 Serra Mall, Stanford, CA 94305
+7|Department of History, Princeton University, 129 Dickinson Hall, Princeton, NJ 08544
+8|Department of Economics, Massachusetts Institute of Technology, 77 Massachusetts Ave, Cambridge, MA 02139
+9|Department of Chemistry, University of Maryland, 1175 Paint Branch Dr, College Park, MD 20742
+10|Department of English, University of California, 1160 Morrison Dr, Davis, CA 95616
+11|Department of Physics, Stanford University, 382 Via Pueblo Mall, Stanford, CA 94305
+12|Department of Psychology, University of Michigan, 530 Church St, Ann Arbor, MI 48109
+13|Department of Biology, Harvard University, 16 Divinity Ave, Cambridge, MA 02138
+14|Department of History, Princeton University, 1 Nassau Hall, Princeton, NJ 08544
+15|Department of Mathematics, University of Chicago, 5734 S University Ave, Chicago, IL 60637
+16|Department of Economics, Yale University, 28 Hillhouse Ave, New Haven, CT 06511
+17|Department of Computer Science, University of Washington, 185 E Stevens Way NE, Seattle, WA 98195
+18|Department of Philosophy, Massachusetts Institute of Technology, 77 Massachusetts Ave, Cambridge, MA 02139
+19|Department of Sociology, University of California, 3219 Tolman Hall, Berkeley, CA 94720
+20|Department of Political Science, Columbia University, 420 W 118th St, New York, NY 10027
+21|Department of Computer Science, Columbia University, 116th Street, Amsterdam Avenue, New York, NY 10027
+22|Department of Mathematics, University of Chicago, 5801 South Ellis Avenue, Chicago, IL 60637
+23|Department of English, Harvard University, 6 Linden Street, Cambridge, MA 02138
+24|Department of Psychology, University of California, 3210 Tolman Hall, Berkeley, CA 94720
+25|Department of History, Princeton University, 1 Nassau Hall, Princeton, NJ 08544
+26|Department of Physics, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, MA 02139
+27|Department of Economics, Stanford University, 579 Jane Stanford Way, Stanford, CA 94305
+28|Department of Chemistry, Yale University, 225 Prospect Street, New Haven, CT 06511
+29|Department of Political Science, University of Michigan, 500 S State St, Ann Arbor, MI 48109
+30|Department of Biology, Duke University, 1 Towerview Drive, Durham, NC 27708
+31|Department of Philosophy, University of Toronto, 215 Huron St, Toronto, ON M5S 1A2, Canada
+32|Department of Music, Indiana University, 1201 E 3rd St, Bloomington, IN 47405
+33|Department of Sociology, University of California, 410 Barrows Hall, Berkeley, CA 94720
+34|Department of Anthropology, University of Pennsylvania, 3260 South St, Philadelphia, PA 19104
+35|Department of Art History, University of Oxford, Littlegate House, 16/17 St Ebbes St, Oxford OX1 1PT, UK
+36|Department of Mechanical Engineering, Georgia Institute of Technology, 225 North Avenue NW, Atlanta, GA 30332
+37|Department of Linguistics, University of Arizona, 1103 E 2nd St, Tucson, AZ 85721
+38|Department of Religious Studies, University of California, 240 Royce Hall, Los Angeles, CA 90095
+39|Department of Geology, University of Texas at Austin, 10100 Burnet Road, Austin, TX 78758
+40|Department of Architecture, Cornell University, 139 W Sibley Hall, Ithaca, NY 14853
+41|Department of Physics, University of Maryland, 8000 Regents Drive, College Park, MD 20740
+42|Department of History, University of California, 1156 High St, Santa Cruz, CA 95064
+43|Department of Psychology, University of Texas, 108 E Dean Keeton St, Austin, TX 78705
+44|Department of Mathematics, Duke University, 2138 Campus Dr, Durham, NC 27708
+45|Department of English, University of Toronto, 121 St Joseph St, Toronto, ON M5S 1J4, Canada
+46|Department of Chemistry, University of California, 501 Bigelow Blvd, Pittsburgh, PA 15260
+47|Department of Political Science, University of Pennsylvania, 3451 Walnut St, Philadelphia, PA 19104
+48|Department of Computer Science, Stanford University, 353 Serra Mall, Stanford, CA 94305
+49|Department of Biology, University of Michigan, 1105 N University Ave, Ann Arbor, MI 48109
+50|Department of Philosophy, Harvard University, 1 Oxford St, Cambridge, MA 02138

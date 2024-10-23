@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../static/back.webp);
+            background-size: cover;
+        }
+
+        .col-md-6 {
+            padding-top: 170px;
+        }
+
+        .form-group label {
+            color: white;
+        }
+
+        #username,
+        #password {
+            width: 300px;
+        }
+
+        .container {
+            color: white;
+            display: flex;
+        }
+
+        .leftcontainer,
+        .rightcontainer {
+            width: 50%;
+            box-sizing: border-box;
+        }
+        img {
+            padding-top: 10%;
+            height: 20%;
+            filter: invert(100%);
+            margin-top: 10%;
+        }
+
+        .leftcontainer h1{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="leftcontainer">
+            <img src="../static/logo.png" alt=""><br><br>
+            <h1>Welcome To the Address Parser</h1><br><br><br>
+            <p>We Believe in the Power of Quality Data <br> to Impact Public Life </p>
+        </div>
+        <div class="rightcontainer">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <!-- <h2>Login</h2> -->
+                    {% with messages = get_flashed_messages(with_categories=true) %}
+                        {% if messages %}
+                            {% for category, message in messages %}
+                                <div class="alert alert-{{ category }}">{{ message }}</div>
+                            {% endfor %}
+                        {% endif %}
+                    {% endwith %}
+                    <form method="POST" action="">
+                        {{ form.hidden_tag() }}
+                        <div class="form-group">
+                            {{ form.username.label(class="form-control-label") }}
+                            {{ form.username(class="form-control") }}
+                            {% for error in form.username.errors %}
+                                <div class="alert alert-danger">{{ error }}</div>
+                            {% endfor %}
+                        </div>
+                        <div class="form-group">
+                            {{ form.password.label(class="form-control-label") }}
+                            {{ form.password(class="form-control") }}
+                            {% for error in form.password.errors %}
+                                <div class="alert alert-danger">{{ error }}</div>
+                            {% endfor %}
+                        </div>
+                        <div class="form-group">
+                            {{ form.submit(class="btn btn-primary") }}
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

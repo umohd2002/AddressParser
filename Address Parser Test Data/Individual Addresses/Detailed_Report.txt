@@ -1,0 +1,426 @@
+Exception and Mask Report
+Output From Active Learning
+
+{
+    "1": {
+        "USAD_SNO": "43",
+        "USAD_SNM": "STATE",
+        "USAD_SFX": "AVE",
+        "USAD_CTY": "NEW ALBANY",
+        "USAD_STA": "IN",
+        "USAD_ZIP": "47150"
+    },
+    "2": {
+        "USAD_SNO": "815",
+        "USAD_SNM": "MARVON",
+        "USAD_SFX": "ST",
+        "USAD_CTY": "SOUTH OZONE PARK",
+        "USAD_STA": "NY",
+        "USAD_ZIP": "11420"
+    },
+    "3": {
+        "USAD_SNO": "6678",
+        "USAD_SNM": "UNIVERSITY",
+        "USAD_SFX": "AVENUE",
+        "USAD_CTY": "SAN JUAN",
+        "USAD_STA": "PR",
+        "USAD_ZIP": "00926"
+    },
+    "4": {
+        "USAD_SNO": "109",
+        "USAD_SNM": "MARKHAN",
+        "USAD_SFX": "ST",
+        "USAD_CTY": "CORONA",
+        "USAD_STA": "NY",
+        "USAD_ZIP": "11368"
+    },
+    "5": {
+        "USAD_SNO": "81",
+        "USAD_SNM": "MCCAIN",
+        "USAD_SFX": "RD",
+        "USAD_CTY": "CHICAGO",
+        "USAD_STA": "IL",
+        "USAD_ZIP": "60629"
+    },
+    "6": {
+        "USAD_SNO": "8190",
+        "USAD_SNM": "MARSH",
+        "USAD_SFX": "AVE",
+        "USAD_CTY": "THE VILLAGES",
+        "USAD_STA": "FL",
+        "USAD_ZIP": "32162"
+    },
+    "7": {
+        "USAD_SNO": "7966",
+        "USAD_SNM": "BEACON",
+        "USAD_SFX": "ST",
+        "USAD_CTY": "SUN PRAIRIE",
+        "USAD_STA": "WI",
+        "USAD_ZIP": "53590"
+    },
+    "8": {
+        "USAD_SNO": "44",
+        "USAD_SNM": "SUNBEAM",
+        "USAD_SFX": "AVENUE",
+        "USAD_CTY": "PATASKALA",
+        "USAD_STA": "OH",
+        "USAD_ZIP": "43062"
+    },
+    "9": {
+        "USAD_SNO": "151",
+        "USAD_SNM": "MEADOW",
+        "USAD_SFX": "LANE",
+        "USAD_CTY": "TOMS RIVER",
+        "USAD_STA": "NJ",
+        "USAD_ZIP": "08753"
+    },
+    "10": {
+        "USAD_SNO": "88",
+        "USAD_SNM": "NORTH",
+        "USAD_SFX": "LOCKPORT",
+        "USAD_CTY": "LOCKPORT",
+        "USAD_STA": "NY",
+        "USAD_ZIP": "14094"
+    },
+    "11": {
+        "USAD_SNO": "4456",
+        "USAD_SNM": "MARKHAN",
+        "USAD_SFX": "AVE",
+        "USAD_CTY": "FRANKLIN SQUARE",
+        "USAD_STA": "NY",
+        "USAD_ZIP": "11010"
+    },
+    "12": {
+        "USAD_SNO": "106",
+        "USAD_SNM": "DOYERS",
+        "USAD_SFX": "ST",
+        "USAD_CTY": "LOS ANGELES",
+        "USAD_STA": "CA",
+        "USAD_ZIP": "90011"
+    },
+    "13": {
+        "USAD_SNO": "599",
+        "USAD_SNM": "BAY",
+        "USAD_SFX": "BLVD",
+        "USAD_CTY": "PACOIMA",
+        "USAD_STA": "CA",
+        "USAD_ZIP": "91331"
+    },
+    "14": {
+        "USAD_SNO": "72",
+        "USAD_SNM": "ANDERSON",
+        "USAD_SFX": "PL",
+        "USAD_CTY": "KETCHIKAN",
+        "USAD_STA": "AK",
+        "USAD_ZIP": "99950"
+    },
+    "15": {
+        "USAD_SNO": "4459",
+        "USAD_SNM": "JEFFERSON",
+        "USAD_SFX": "STREET",
+        "USAD_CTY": "CHESAPEAKE",
+        "USAD_STA": "VIRGINIA",
+        "USAD_ZIP": "23321"
+    },
+    "16": {
+        "USAD_SNO": "2005",
+        "USAD_SNM": "CONIFER",
+        "USAD_SFX": "DRIVE",
+        "USAD_CTY": "TUKWILA",
+        "USAD_STA": "WASHINGTON",
+        "USAD_ZIP": "98168"
+    },
+    "17": {
+        "USAD_SNO": "3864",
+        "USAD_SNM": "CAMEL BACK",
+        "USAD_SFX": "ROAD",
+        "USAD_CTY": "TULSA",
+        "USAD_STA": "OKLAHOMA",
+        "USAD_ZIP": "74145"
+    },
+    "18": {
+        "USAD_SNO": "2169",
+        "USAD_SNM": "GREEN HILL",
+        "USAD_SFX": "ROAD",
+        "USAD_CTY": "BENTONVILLE",
+        "USAD_STA": "ARKANSAS",
+        "USAD_ZIP": "72712"
+    },
+    "19": {
+        "USAD_SNO": "245",
+        "USAD_SNM": "LINDEN",
+        "USAD_SFX": "AVENUE",
+        "USAD_CTY": "WINTER PARK",
+        "USAD_STA": "FLORIDA",
+        "USAD_ZIP": "32789"
+    },
+    "20": {
+        "USAD_SNO": "4806",
+        "USAD_SNM": "TENMILE",
+        "USAD_CTY": "LOS ANGELES",
+        "USAD_STA": "CALIFORNIA",
+        "USAD_ZIP": "90017"
+    },
+    "21": {
+        "USAD_SNO": "634",
+        "USAD_SNM": "WILLOW GREENE",
+        "USAD_SFX": "DRIVE",
+        "USAD_CTY": "MONTGOMERY",
+        "USAD_STA": "ALABAMA",
+        "USAD_ZIP": "36116"
+    },
+    "22": {
+        "USAD_SNO": "3863",
+        "USAD_SNM": "BERKSHIRE",
+        "USAD_SFX": "CIRCLE",
+        "USAD_CTY": "KNOXVILLE",
+        "USAD_STA": "TENNESSEE",
+        "USAD_ZIP": "37917"
+    },
+    "23": {
+        "USAD_SNO": "3960",
+        "USAD_SNM": "HILLTOP",
+        "USAD_SFX": "STREET",
+        "USAD_CTY": "COLRAIN",
+        "USAD_STA": "MASSACHUSETTS",
+        "USAD_ZIP": "01340"
+    },
+    "24": {
+        "USAD_SNO": "4535",
+        "USAD_SNM": "OLIVERIO",
+        "USAD_SFX": "DRIVE",
+        "USAD_CTY": "MOUNDRIDGE",
+        "USAD_STA": "KANSAS",
+        "USAD_ZIP": "67107"
+    },
+    "25": {
+        "USAD_SNO": "3006",
+        "USAD_SNM": "HAVANNA",
+        "USAD_SFX": "STREET",
+        "USAD_CTY": "GREENSBORO",
+        "USAD_STA": "NORTH CAROLINA",
+        "USAD_ZIP": "27401"
+    },
+    "26": {
+        "USAD_SNO": "3168",
+        "USAD_SNM": "OAK",
+        "USAD_SFX": "AVENUE CEDAR KNOLLS",
+        "USAD_CTY": "NEW JERSEY",
+        "USAD_ZIP": "07927"
+    },
+    "27": {
+        "USAD_SNO": "951",
+        "USAD_SNM": "TERRA",
+        "USAD_SFX": "STREET",
+        "USAD_CTY": "GEORGETOWN",
+        "USAD_STA": "FLORIDA",
+        "USAD_ZIP": "32139"
+    },
+    "28": {
+        "USAD_SNO": "1990",
+        "USAD_SNM": "RICHARDS",
+        "USAD_SFX": "AVENUE",
+        "USAD_CTY": "SAN GABRIEL",
+        "USAD_STA": "CALIFORNIA",
+        "USAD_ZIP": "91775"
+    },
+    "29": {
+        "USAD_SNO": "4858",
+        "USAD_SNM": "STONEYBROOK",
+        "USAD_SFX": "ROAD",
+        "USAD_CTY": "ORLANDO",
+        "USAD_STA": "FLORIDA",
+        "USAD_ZIP": "32801"
+    },
+    "30": {
+        "USAD_SNO": "963",
+        "USAD_SNM": "FREEDOM",
+        "USAD_SFX": "LANE",
+        "USAD_CTY": "LODI",
+        "USAD_STA": "CALIFORNIA",
+        "USAD_ZIP": "95240"
+    },
+    "31": {
+        "USAD_SNO": "3662",
+        "USAD_SNM": "BICETOWN",
+        "USAD_SFX": "ROAD",
+        "USAD_CTY": "CORONA",
+        "USAD_STA": "NEW YORK",
+        "USAD_ZIP": "11368"
+    },
+    "32": {
+        "USAD_SNO": "4325",
+        "USAD_SNM": "HIDDEN MEADOW",
+        "USAD_SFX": "DRIVE",
+        "USAD_CTY": "CAMP HILL",
+        "USAD_STA": "PENNSYLVANIA",
+        "USAD_ZIP": "17012"
+    },
+    "33": {
+        "USAD_SNO": "2588",
+        "USAD_SNM": "ARMBRESTER",
+        "USAD_SFX": "DRIVE",
+        "USAD_CTY": "GARDENA",
+        "USAD_STA": "CALIFORNIA",
+        "USAD_ZIP": "90248"
+    },
+    "34": {
+        "USAD_SNO": "1980",
+        "USAD_SNM": "ALEXANDER",
+        "USAD_SFX": "DRIVE",
+        "USAD_CTY": "TRUSCOTT",
+        "USAD_STA": "TEXAS",
+        "USAD_ZIP": "79260"
+    },
+    "35": {
+        "USAD_SNO": "2738",
+        "USAD_SNM": "PATTERSON",
+        "USAD_SFX": "STREET",
+        "USAD_CTY": "HOUSTON",
+        "USAD_STA": "TEXAS",
+        "USAD_ZIP": "77092"
+    },
+    "36": {
+        "USAD_SNO": "1778",
+        "USAD_SNM": "SNYDER",
+        "USAD_SFX": "AVENUE",
+        "USAD_CTY": "CHARLOTTE",
+        "USAD_STA": "NORTH CAROLINA",
+        "USAD_ZIP": "28202"
+    },
+    "37": {
+        "USAD_SNO": "4096",
+        "USAD_SNM": "HILLCREST",
+        "USAD_SFX": "DRIVE",
+        "USAD_CTY": "TUKWILA",
+        "USAD_STA": "WASHINGTON",
+        "USAD_ZIP": "98168"
+    },
+    "38": {
+        "USAD_SNO": "2453",
+        "USAD_SNM": "WALNUT",
+        "USAD_SFX": "DRIVE",
+        "USAD_CTY": "DAHLEN",
+        "USAD_STA": "NORTH DAKOTA",
+        "USAD_ZIP": "58224"
+    },
+    "39": {
+        "USAD_SNO": "2026",
+        "USAD_SNM": "LOWLAND",
+        "USAD_SFX": "DRIVE",
+        "USAD_CTY": "BELOIT",
+        "USAD_STA": "ILLINOIS",
+        "USAD_ZIP": "53511"
+    },
+    "40": {
+        "USAD_SNO": "693",
+        "USAD_SNM": "JERRY DOVE",
+        "USAD_SFX": "DRIVE",
+        "USAD_CTY": "BEAUFORT",
+        "USAD_STA": "SOUTH CAROLINA",
+        "USAD_ZIP": "29902"
+    },
+    "41": {
+        "USAD_SNO": "396",
+        "USAD_SNM": "NICKEL",
+        "USAD_SFX": "ROAD",
+        "USAD_CTY": "ALHAMBRA",
+        "USAD_STA": "CALIFORNIA",
+        "USAD_ZIP": "91801"
+    },
+    "42": {
+        "USAD_SNO": "2388",
+        "USAD_SNM": "KUHL",
+        "USAD_SFX": "AVENUE",
+        "USAD_CTY": "ATLANTA",
+        "USAD_STA": "GEORGIA",
+        "USAD_ZIP": "30303"
+    },
+    "43": {
+        "USAD_SNO": "254",
+        "USAD_SNM": "MIDWAY",
+        "USAD_SFX": "ROAD",
+        "USAD_CTY": "BOLES",
+        "USAD_STA": "ARKANSAS",
+        "USAD_ZIP": "72926"
+    },
+    "44": {
+        "USAD_SNO": "1310",
+        "USAD_SNM": "BREEZEWOOD",
+        "USAD_SFX": "COURT",
+        "USAD_CTY": "ARMA",
+        "USAD_STA": "KANSAS",
+        "USAD_ZIP": "66712"
+    },
+    "45": {
+        "USAD_SNO": "3551",
+        "USAD_SNM": "RUBAIYAT",
+        "USAD_SFX": "ROAD",
+        "USAD_CTY": "GRAND RAPIDS",
+        "USAD_STA": "MICHIGAN",
+        "USAD_ZIP": "49503"
+    },
+    "46": {
+        "USAD_SNO": "1405",
+        "USAD_SNM": "SPRING",
+        "USAD_SFX": "AVENUE FORT",
+        "USAD_CTY": "WASHINGTON",
+        "USAD_STA": "PENNSYLVANIA",
+        "USAD_ZIP": "19034"
+    },
+    "47": {
+        "USAD_SNO": "4705",
+        "USAD_SNM": "PRESTON",
+        "USAD_SFX": "STREET",
+        "USAD_CTY": "PLAINFIELD",
+        "USAD_STA": "ILLINOIS",
+        "USAD_ZIP": "60586"
+    },
+    "48": {
+        "USAD_SNO": "1977",
+        "USAD_SNM": "LAUREL LEE",
+        "USAD_CTY": "MINNEAPOLIS",
+        "USAD_STA": "MINNESOTA",
+        "USAD_ZIP": "55415"
+    },
+    "49": {
+        "USAD_SNO": "1254",
+        "USAD_SNM": "RODNEY",
+        "USAD_SFX": "STREET",
+        "USAD_CTY": "CHESTERFIELD",
+        "USAD_STA": "MISSOURI",
+        "USAD_ZIP": "63005"
+    },
+    "50": {
+        "USAD_SNO": "3759",
+        "USAD_SNM": "COLLINS",
+        "USAD_SFX": "STREET",
+        "USAD_CTY": "TAMPA",
+        "USAD_STA": "FLORIDA",
+        "USAD_ZIP": "33619"
+    }
+}
+
+Output Fron Rule Based Approach
+
+{}
+
+Number of Exceptions Thrown: -	0
+Number of Parsed Address: -	50
+Percentage of Parsed Result: -	100.0
+List of Exception Mask(s): -	
+
+--
+
+ Evaluation Metrics
+
+          index  precision    recall  f1-score     support
+0      USAD_SNO   1.000000  1.000000  1.000000   50.000000
+1      USAD_SNM   1.000000  1.000000  1.000000   49.000000
+2      USAD_SFX   0.978723  1.000000  0.989247   46.000000
+3      USAD_CTY   0.979167  0.979167  0.979167   48.000000
+4      USAD_STA   1.000000  0.980000  0.989899   50.000000
+5      USAD_ZIP   1.000000  1.000000  1.000000   50.000000
+6      accuracy   0.993174  0.993174  0.993174    0.993174
+7     macro avg   0.992982  0.993194  0.993052  293.000000
+8  weighted avg   0.993247  0.993174  0.993175  293.000000

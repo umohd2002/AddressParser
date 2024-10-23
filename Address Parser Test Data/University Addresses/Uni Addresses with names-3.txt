@@ -1,0 +1,50 @@
+Dr John Smith, PhD, Department of Biology, Eastern University, 123 Main St, Suite 100, Anytown, NY 10001
+Professor Jane Doe, MD, Department of Medicine, Western State University, 456 Elm St, Suite 200, Midtown, TX 77001
+Dr William Johnson, EdD, Department of Education, Northern University, 789 Pine Ave, Suite 300, Southside, FL 33901
+Professor Sarah Lee, PhD, Department of Computer Science, Southern Tech University, 111 Oak St, Suite 400, Westside, CA 92602
+Dr David Brown, MD, Department of Psychiatry, Atlantic Coast College, 222 Cedar Ave, Suite 500, Gulfport, NC 27510
+Professor Maria Hernandez, PhD, Department of Sociology, Pacific Northwest University, 333 Birch St, Suite 600, Seattle, WA 98101
+Dr James Wilson, EdD, Department of Education, Mountainview College, 444 Maple Ave, Suite 700, Boulder, CO 80202
+Professor Laura Nguyen, PhD, Department of Chemistry, Great Lakes University, 555 Elmwood Dr, Suite 800, Detroit, MI 48001
+Dr Michael Brown, MD, Department of Medicine, Eastern State University, 666 Walnut St, Suite 900, State College, VA 24001
+Professor Emily Kim, PhD, Department of Physics, Westside College, 777 Oak St, Suite 1000, Worcester, MA 02090
+Dr William Lee, EdD, Department of Education, South Central University, 888 Cedar Ave, Suite 1100, Houston, TX 77001
+Professor Maria Hernandez, MD, Department of Psychiatry, Midtown College, 999 Pine St, Suite 1200, Atlanta, GA 30301
+Dr Robert Brown, PhD, Department of Mathematics, Prairie State University, 1010 Cherry St, Suite 1300, Chicago, IL 60007
+Professor Karen Wilson, EdD, Department of Education, Gulf Coast College, 1111 Elm St, Suite 1400, Naples, FL 33901
+Dr Anthony Lee, MD, Department of Medicine, Rocky Mountain University, 1212 Cedar St, Suite 1500, Salt Lake City, UT 84101
+Professor Sarah Kim, PhD, Department of Biology, Northeastern Tech University, 1313 Maple Ave, Suite 1600, Providence, RI 02860
+Dr Jennifer Hernandez, EdD, Department of Education, Central State University, 1414 Birchwood Dr, Suite 1700, Columbus, OH 43078
+Professor David Brown, PhD, Department of Computer Science, West Coast University, 1515 Pine St, Suite 1800, San Francisco, CA 94102
+Dr Elizabeth Kim, MD, Department of Medicine, Northern State College, 1616 Oak Ave, Suite 1900, Fargo, ND 58078
+Professor Jessica Lee, PhD, Department of Chemistry, Southern California University, 1717 Walnut St, Suite 2000, Los Angeles, CA 92602
+Dr Mark Johnson, EdD, Department of Education, Eastern Tech University, 1818 Cedar St, Suite 2100, Flagstaff, AZ 85001
+Professor Rachel Hernandez, MD, Department of Psychiatry, Midwestern University, 1919 Pine St, Suite 2200, St Louis, MO 6310
+Professor Michael Johnson, PhD, Department of English, Central State College, 2020 Cedar St, Suite 2300, Columbus, OH 43078
+Dr Rachel Lee, MD, Department of Medicine, West Coast University, 2121 Elmwood Dr, Suite 2400, San Francisco, CA 94102
+Professor Andrew Brown, PhD, Department of History, Northern State University, 2222 Pine Ave, Suite 2600, Fargo, ND 58078
+Dr Katherine Hernandez, EdD, Department of Education, Eastern College, 2323 Main St, Suite 2800, Anytown, CA 90001
+Professor David Kim, PhD, Department of Computer Science, Western Tech University, 2424 Maple Ave, Suite 3000, Phoenix, AZ 85001
+Dr Amanda Wilson, MD, Department of Psychiatry, Southern State College, 2525 Oak St, Suite 3200, Gulfport, FL 33901
+Professor John Lee, PhD, Department of Physics, Atlantic Coast University, 2626 Cedar Ave, Suite 3400, Raleigh, NC 27510
+Dr Elizabeth Hernandez, EdD, Department of Education, Midtown University, 2727 Walnut St, Suite 3600, Atlanta, GA 30301
+Professor William Brown, MD, Department of Medicine, Prairie State College, 2828 Elm St, Suite 3800, Chicago, IL 60007
+Dr Sarah Kim, PhD, Department of Chemistry, Mountainview University, 2929 Pine St, Suite 4000, Boulder, CO 80202
+Professor Rachel Nguyen, EdD, Department of Education, Great Lakes College, 3030 Birch St, Suite 4200, Detroit, MI 48001
+Dr James Lee, MD, Department of Medicine, South Central University, 3131 Oak Ave, Suite 4400, Houston, TX 77001
+Professor Emily Kim, PhD, Department of Mathematics, Eastern State College, 3232 Maple Ave, Suite 4600, State College, VA 24001
+Dr William Johnson, EdD, Department of Education, Pacific Northwest College, 3333 Pine St, Suite 4800, Seattle, WA 98101
+Professor Maria Brown, MD, Department of Medicine, Rocky Mountain College, 3434 Cedar St, Suite 5000, Salt Lake City, UT 84101
+Dr David Hernandez, PhD, Department of Biology, Northeastern University, 3535 Elmwood Dr, Suite 5200, Providence, RI 02860
+Professor Sarah Johnson, EdD, Department of Education, Westside University, 3636 Oak St, Suite 5400, Worcester, MA 02090
+Dr Michael Kim, MD, Department of Medicine, Southern California College, 3737 Maple Ave, Suite 5600, Irvine, CA 92602
+Professor Jessica Hernandez, PhD, Department of Sociology, Central State University, 3838 Cedar Ave, Suite 5800, Columbus, OH 43078
+Dr John Brown, EdD, Department of Education, West Coast College, 3939 Pine St, Suite 6000, San Francisco, CA 94102
+Professor of Sociology, Rachel Smith, PhD, Department of Sociology, University of California, 123 Main Street, North, Los Angeles, CA, 90089
+Associate Professor of Biology, John Doe, PhD, Department of Biology, Cornell University, 456 Pine Street, East, Ithaca, NY, 14850
+Professor of Chemistry, Mary Johnson, PhD, Department of Chemistry, University of Texas at Austin, 789 Oak Avenue, South, Austin, TX, 78712
+Assistant Professor of English, David Lee, PhD, Department of English, University of Oxford, 101 High Street, West, Oxford, England, OX1 4DP
+Professor of History, Sarah Kim, PhD, Department of History, University of Michigan, 789 Maple Road, North, Ann Arbor, MI, 48109
+Associate Professor of Psychology, Robert Brown, PhD, Department of Psychology, University of Sydney, 456 King Street, East, Sydney, Australia, 2006
+Professor of Political Science, Julia Chen, PhD, Department of Political Science, Harvard University, 12 Garden Street, Cambridge, MA, 02138
+Assistant Professor of Physics, Michael Chang, PhD, Department of Physics, Massachusetts Institute of Technology (MIT), 345 Main Street, Cambridge, MA, 02139

@@ -1,0 +1,217 @@
+.batchParserTab-container {
+    body {
+        padding-top: 50px;
+        /* This should be the height of your navbar */
+    }
+
+    /* If your page content is within a main tag or a div with a specific class, add padding or margin to that element */
+    main,
+    .main-content {
+        margin-top: 50px;
+        /* Adjust this value to match your navbar's height */
+    }
+
+    .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        position: fixed;
+        top: 0;
+        z-index: 1030;
+        width: 100%;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .navbar a:hover {
+        background-color: #3867d6;
+        color: white;
+    }
+
+    .navbar a.active {
+        background-color: #3867d6;
+        /* or any color that indicates the active state */
+        color: white;
+    }
+
+    /* Tab links */
+    .tablink {
+        background-color: #f1f1f1;
+        /* Light grey background */
+        float: left;
+        /* Align tabs to the left side */
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        /* Padding inside the tab */
+        transition: 0.1s;
+        /* Smooth transition effect */
+        font-size: 17px;
+        /* Font size */
+    }
+
+    /* Change background color of tabs on hover */
+    .tablink:hover {
+        background-color: #ddd;
+        /* Slightly darker grey on hover */
+    }
+
+    /* Active tab link */
+    .tablink.active {
+        background-color: #ccc;
+        /* Even darker grey for the active tab */
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+        display: none;
+        /* Hide content by default */
+        padding: 20px;
+        /* Some padding */
+        border: 1px solid #ccc;
+        /* A border */
+        border-top: none;
+        /* Remove top border */
+    }
+
+    @media screen and (max-width: 600px) {
+        .tablink {
+            font-size: 15px;
+            /* Smaller font size on smaller screens */
+        }
+    }
+
+    /* Add padding to the top of the body to push the main content down */
+    body {
+        padding-top: 50px;
+        /* This should be the height of your navbar */
+    }
+
+
+    /* Main content area */
+    .container {
+        /* display: block; */
+        /* flex-direction: row; */
+        padding: 20px;
+        width: 100%;
+        /* max-width: 800px; */
+        margin: 30px auto;
+        background-color: #ffffff;
+        /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    }
+    #batchform{
+        width: 100%;
+        padding-top: -10px;
+    }
+    /* Style for the form input groups */
+    .input-group {
+        /* margin-top: 15px; */
+        display: block;
+        
+    }
+
+    .input-group label {
+        display: inline-block;
+        margin-bottom: 5px;
+        color: #333;
+        border: none;
+    }
+    .input-group input{
+        display: inline-block;
+        /* margin: 50px 50px 10px 250px; */
+        width: 400px;
+    }
+    .input-group button{
+        display: inline-block;
+    
+    }
+
+    .input-group input[type="text"],
+    .input-group input[type="file"] {
+        margin-bottom: 10px;
+        border: none;
+        /* border-bottom: 2px solid #3867d6; */
+        font-size: 15px;
+        /* margin-left: 180px; */
+    }
+    #file-upload{
+        margin-right: 0;
+    }
+    /* Style for the submit button */
+    .btn-primary {
+        /* display: block; */
+        /* transform: translate(200%); */
+        width: 40px;
+        padding: 10px;
+        background-color: #2b74b7;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 17px;
+        /* transition: 0.3s ease-in-out; */
+    }
+
+    .input-group button:hover {
+        background-color: #2e4c8c;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .spinner-border{
+        color: #2e4c8c;
+    }
+    .buttons button {
+        display: block;
+        flex: 1;
+        margin-right: 5px;
+        width: 20%;
+        padding: 10px;
+        background-color: #20bf6b;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 17px;
+    }
+    .detailed-report{
+        font-size: 10px;
+        /* font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif; */
+    }
+    #metrics-display{
+        width: 500px;
+        font-size: 16px;
+    }
+    .input-group label{
+        visibility: hidden;
+    }
+
+
+
+
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: url(../static/image.png);
+    background-size: 110%;
+    color: white;
+    text-align: left;
+    height: 100px;
+}

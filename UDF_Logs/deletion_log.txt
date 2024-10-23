@@ -1,0 +1,2 @@
+Component | Component Description | Username | Time Stamp | Information
+USAD_NEW | New Component 1 | admin | 2024-04-29 09:31:59 | Total dictionaries deleted w.r.t [USAD_NEW] component deletion : 0

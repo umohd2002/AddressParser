@@ -1,0 +1,48 @@
+1	|	1000 Avenida Ponce de Leon Ste 5, San Juan, PR 00907
+2	|	234 Calle del Parque Apt 3A, San Juan, PR 00912
+3	|	345 Avenida Fernandez Juncos Ste 2B, San Juan, PR 00901
+4	|	456 Boulevard Munoz Rivera Apt 10, San Juan, PR 00918
+5	|	678 Calle Padial Ste 4, San Juan, PR 00926
+6	|	789 Avenida Juan Ponce de Leon Ste 6A, San Juan, PR 00915
+7	|	890 Calle Arroyo Apt 7B, San Juan, PR 00919
+8	|	901 Carrera De Diego Ste 2, San Juan, PR 00908
+9	|	1234 Calle Cerra Apt 8, San Juan, PR 00920
+10	|	5678 Carrera Ashford Ste 3A, San Juan, PR 00907
+11	|	Casa 10 Calle Las Flores, Aguadilla, PR 00603
+12	|	Casa 3 Avenida Isla Verde, Carolina, PR 00979
+13	|	Casa 21 Boulevard Los Pinos, Bayamon, PR 00959
+14	|	Casa 7 Carrera Palma Real, Humacao, PR 00791
+15	|	Casa 15 Calle Los Cocos, Guaynabo, PR 00969
+16	|	Casa 8 Carrera Magnolia, Ponce, PR 00731
+17	|	Casa 11 Calle Los Flamboyanes, Caguas, PR 00725
+18	|	Casa 4 Avenida San Patricio, San Juan, PR 00968
+19	|	Casa 13 Calle 44, Fajardo, PR 00738
+20	|	Casa 6 Calle Las Brisas, Manati, PR 00674
+21	|	C 23 Apt 4B SE, San Juan, PR 00912
+22	|	A 12 Bldg 3A, Ponce, PR 00730
+23	|	C 45 Apt 2C NE, Carolina, PR 00987
+24	|	C 56 Ste 1B, Bayamón, PR 00961
+25	|	B 78 BLK 5D, Guaynabo, PR 00966
+26	|	C 67 Apt 6C, Fajardo, PR 00738
+27	|	B 89 Bldg 7A SE, Aguadilla, PR 00603
+28	|	C 34 Apt 8B, Mayagüez, PR 00682
+29	|	A 90 Apt 9C, Humacao, PR 00791
+30	|	C 12 Apt 10D, Arecibo, PR 00612
+31	|	20 C Del Parque BLK 5, San Juan, PR 00927
+32	|	25 C De la Luna BLK 2, Bayamón, PR 00959
+33	|	8 C Las Brisas BLK 1, Carolina, PR 00987
+34	|	30 C De la Fuente BLK 4, Humacao, PR 00791
+35	|	18 C De la Rosa BLK 3, Guaynabo, PR 00966
+36	|	22 C De la Montaña BLK 6, Mayagüez, PR 00682
+37	|	11 C De la Playa BLK 7, Dorado, PR 00646
+38	|	6 C De la Costa BLK 10, Arecibo, PR 00612
+39	|	20 C 10 NE B 6, San Juan, PR 00925
+40	|	15 C 22 SW B 8, Ponce, PR 00730
+41	|	25 C 8 NW B 2, Bayamón, PR 00959
+42	|	8 C 16 SE B 1, Carolina, PR 00987
+43	|	30 C 26 NE B 4, Humacao, PR 00791
+44	|	18 C 12 NW B 3, Guaynabo, PR 00966
+45	|	12 C 2 SE B 9, Fajardo, PR 00738
+46	|	22 C 18 SW B 6, Mayagüez, PR 00682
+47	|	11 C 6 NE B 7, Dorado, PR 00646
+48	|	6 C 28 SE B 10, Arecibo, PR 00612

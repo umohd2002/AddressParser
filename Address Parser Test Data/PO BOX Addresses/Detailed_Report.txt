@@ -1,0 +1,210 @@
+Exception and Mask Report
+Output From Active Learning
+
+{
+    "1": {
+        "USAD_CTY": "WOONSOCKET",
+        "USAD_STA": "RI",
+        "USAD_ZIP": "02895",
+        "USAD_BNM": "PO BOX",
+        "USAD_BNO": "1599"
+    },
+    "2": {
+        "USAD_CTY": "MILLVILLE",
+        "USAD_STA": "NJ",
+        "USAD_ZIP": "08332",
+        "USAD_BNM": "PO BOX",
+        "USAD_BNO": "1232"
+    },
+    "3": {
+        "USAD_CTY": "ENTERPRISE",
+        "USAD_STA": "CT",
+        "USAD_ZIP": "36330",
+        "USAD_BNM": "PO BOX",
+        "USAD_BNO": "4211"
+    },
+    "4": {
+        "USAD_CTY": "HOLLYWOOD",
+        "USAD_STA": "FL",
+        "USAD_ZIP": "33020",
+        "USAD_BNM": "PO BOX",
+        "USAD_BNO": "1212"
+    },
+    "5": {
+        "USAD_CTY": "LULLABY",
+        "USAD_STA": "CA",
+        "USAD_ZIP": "92880",
+        "USAD_BNM": "PO BOX",
+        "USAD_BNO": "1065"
+    },
+    "6": {
+        "USAD_CTY": "DALZELL",
+        "USAD_STA": "SC",
+        "USAD_ZIP": "29040",
+        "USAD_BNM": "PO BOX",
+        "USAD_BNO": "2595"
+    },
+    "7": {
+        "USAD_CTY": "FRANKFORT",
+        "USAD_STA": "KY",
+        "USAD_ZIP": "40601",
+        "USAD_BNM": "PO BOX",
+        "USAD_BNO": "425"
+    },
+    "8": {
+        "USAD_CTY": "WAUKEGAN",
+        "USAD_STA": "IL",
+        "USAD_ZIP": "60087",
+        "USAD_BNM": "PO BOX",
+        "USAD_BNO": "2304"
+    },
+    "9": {
+        "USAD_CTY": "MITCHELL",
+        "USAD_STA": "SD",
+        "USAD_ZIP": "57301",
+        "USAD_BNM": "PO BOX",
+        "USAD_BNO": "1912"
+    },
+    "10": {
+        "USAD_CTY": "MOUNT PLEASANT",
+        "USAD_STA": "SC",
+        "USAD_ZIP": "29464",
+        "USAD_BNM": "PO BOX",
+        "USAD_BNO": "4599"
+    },
+    "11": {
+        "USAD_CTY": "ARLINGTON",
+        "USAD_STA": "MA",
+        "USAD_ZIP": "02476",
+        "USAD_BNM": "PO BOX",
+        "USAD_BNO": "129"
+    },
+    "12": {
+        "USAD_CTY": "LAKE CITY",
+        "USAD_STA": "FL",
+        "USAD_ZIP": "32055",
+        "USAD_BNM": "PO BOX",
+        "USAD_BNO": "269"
+    },
+    "13": {
+        "USAD_CTY": "HONESDALE",
+        "USAD_STA": "PA",
+        "USAD_ZIP": "18431",
+        "USAD_BNM": "PO BOX",
+        "USAD_BNO": "70"
+    },
+    "14": {
+        "USAD_CTY": "TUALATIN",
+        "USAD_STA": "OR",
+        "USAD_ZIP": "97062",
+        "USAD_BNM": "PO BOX",
+        "USAD_BNO": "9561"
+    },
+    "15": {
+        "USAD_CTY": "ENTERPRISE",
+        "USAD_STA": "AL",
+        "USAD_ZIP": "36330",
+        "USAD_BNM": "PO BOX",
+        "USAD_BNO": "4521"
+    },
+    "16": {
+        "USAD_CTY": "ROSEVILLE",
+        "USAD_STA": "MI",
+        "USAD_ZIP": "48066",
+        "USAD_BNM": "PO BOX",
+        "USAD_BNO": "30292"
+    },
+    "17": {
+        "USAD_CTY": "OXFORD",
+        "USAD_STA": "MS",
+        "USAD_ZIP": "38655",
+        "USAD_BNM": "PO BOX",
+        "USAD_BNO": "1211"
+    },
+    "18": {
+        "USAD_CTY": "ROSEVILLE",
+        "USAD_STA": "VA",
+        "USAD_ZIP": "23185",
+        "USAD_BNM": "PO BOX",
+        "USAD_BNO": "30292"
+    },
+    "19": {
+        "USAD_CTY": "TROY",
+        "USAD_STA": "NY",
+        "USAD_ZIP": "12180",
+        "USAD_BNM": "PO BOX",
+        "USAD_BNO": "102"
+    },
+    "20": {
+        "USAD_CTY": "NASHVILLE",
+        "USAD_STA": "TN",
+        "USAD_ZIP": "37205",
+        "USAD_BNM": "PO BOX",
+        "USAD_BNO": "8547"
+    },
+    "21": {
+        "USAD_CTY": "ELYRIA",
+        "USAD_STA": "OH",
+        "USAD_ZIP": "44035",
+        "USAD_BNM": "PO BOX",
+        "USAD_BNO": "968"
+    },
+    "22": {
+        "USAD_CTY": "LOVINGTON",
+        "USAD_STA": "NM",
+        "USAD_ZIP": "88260",
+        "USAD_BNM": "PO BOX",
+        "USAD_BNO": "98"
+    },
+    "23": {
+        "USAD_CTY": "MCHENRY",
+        "USAD_STA": "IL",
+        "USAD_ZIP": "60050",
+        "USAD_BNM": "PO BOX",
+        "USAD_BNO": "1204"
+    },
+    "24": {
+        "USAD_CTY": "OWATONNA",
+        "USAD_STA": "MN",
+        "USAD_ZIP": "55060",
+        "USAD_BNM": "PO BOX",
+        "USAD_BNO": "809"
+    },
+    "25": {
+        "USAD_CTY": "HENRICO",
+        "USAD_STA": "VA",
+        "USAD_ZIP": "23228",
+        "USAD_BNM": "PO BOX",
+        "USAD_BNO": "2017"
+    },
+    "26": {
+        "USAD_CTY": "GRAFTON",
+        "USAD_STA": "WV",
+        "USAD_ZIP": "26354",
+        "USAD_BNM": "PO BOX",
+        "USAD_BNO": "634"
+    }
+}
+
+Output Fron Rule Based Approach
+
+{}
+
+Number of Exceptions Thrown: -	0
+Number of Parsed Address: -	26
+Percentage of Parsed Result: -	100.0
+List of Exception Mask(s): -	
+
+--
+
+ Evaluation Metrics
+
+          index  precision  recall  f1-score  support
+0      USAD_CTY        1.0     1.0       1.0     26.0
+1      USAD_STA        1.0     1.0       1.0     26.0
+2      USAD_ZIP        1.0     1.0       1.0     26.0
+3      USAD_BNM        1.0     1.0       1.0     26.0
+4      USAD_BNO        1.0     1.0       1.0     26.0
+5      accuracy        1.0     1.0       1.0      1.0
+6     macro avg        1.0     1.0       1.0    130.0
+7  weighted avg        1.0     1.0       1.0    130.0

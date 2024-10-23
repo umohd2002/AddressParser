@@ -1,0 +1,554 @@
+1. Apartment building with street address.
+Format:
+Number, street and Apt No., 
+City, State and Zip
+-------------------------------------
+
+2. Condominimum with street address.
+Format:
+1. Condominimum name
+Number, street and Apt No., 
+City, State and Zip
+
+
+2. Condominio El Parque
+Calle Alba #10, Apt 501
+San Juan, PR 00926
+
+3. Condominio Los Altos
+Calle Las Palmas #20, Apt 402
+Ponce, PR 00716
+
+4. Condominio Costa del Sol
+Carr. 681, Km 4.5, Apt 301
+Dorado, PR 00646
+
+5. Condominio Brisas del Mar
+Calle Oceanía #5, Apt 201
+Rincón, PR 00677
+
+6. Condominio Marbella
+Calle Del Carmen #30, Apt 102
+Aguadilla, PR 00603
+
+Cond. Vista Bella
+Calle 8 Apt 204
+San Juan, PR 00926
+
+Condominio Paseo del Parque
+Calle Escorial Apt 1501
+Carolina, PR 00987
+
+Condado Plaza Towers
+Ave. Ashford Apt 1701
+San Juan, PR 00907
+
+Condominio Monte Sol
+Calle Atenas Apt 10
+Ponce, PR 00717
+
+Ocean View Towers
+Calle Miramar Apt 603
+Vega Alta, PR 00692
+
+Condominio San Francisco
+Calle Granada Apt 5A
+Guaynabo, PR 00969
+
+Condominio Costa Brava
+Ave. Isla Verde Apt 602
+Carolina, PR 00979
+
+Condominio Marbella
+Calle Dr. Veve Apt 1202
+Aguadilla, PR 00603
+
+Condominio Jardines de Caparra
+Calle 3 Apt 201
+Bayamón, PR 00959
+
+Parque Ecuestre
+Calle Caimán Apt 7
+Toa Baja, PR 00949
+
+Condominio Villas de Torrimar
+Calle Cefiro Apt 201
+Guaynabo, PR 00966
+
+Los Frailes
+Calle Nido de Aguilas Apt 102
+Dorado, PR 00646
+
+Condominio Altos de Montecasino
+Calle Montecasino Apt 4A
+Caguas, PR 00727
+
+Condominio Vistas de la Bahía
+Calle Francisco Seín Apt 503
+Fajardo, PR 00738
+
+Condominio La Riviera
+Calle Barceloneta Apt 1505
+Vega Baja, PR 00693
+
+Residencial Andalucía
+Calle Andalucía Apt 303
+Trujillo Alto, PR 00976
+
+Condominio Lomas del Real
+Calle Real Apt 401
+Mayagüez, PR 00680
+
+Condominio Bay Point
+Calle Sardinera Apt 1004
+San Juan, PR 00901
+
+Condominio Los Paseos
+Calle Los Paseos Apt 201
+Cayey, PR 00736
+
+Condominio Brisas del Caribe
+Calle Los Rosales Apt 7B
+Arecibo, PR 00612
+-------------------------------------
+3. Exception.
+Format: 
+Name
+Number and Urbanization
+City, State, and Zip
+
+Jose Rodriguez
+225 Urb. El Bosque
+San Juan, PR 00926
+
+Ana Gomez
+460 Urb. Los Maestros
+Ponce, PR 00731
+
+Luis Torres
+1245 Urb. Ciudad Universitaria
+Mayagüez, PR 00680
+
+Carmen Diaz
+510 Calle 10 Urb. Roosevelt
+Hato Rey, PR 00918
+
+Ricardo Ortiz
+120 Urb. Las Cumbres
+Guaynabo, PR 00969
+-------------------------------------
+
+
+4. Four Line address
+Format: 
+Name
+Urbanization
+Street and Number
+City, State, and Zip
+
+El Mirador
+Urb. Mirador del Parque
+Calle 3 #45
+San Juan, PR 00923
+
+Villa Toscana
+Urb. Alturas de Flamboyan
+Avenida Flamboyan #234
+Caguas, PR 00725
+
+Los Frailes
+Urb. Los Frailes
+Calle Tostado #87
+Ponce, PR 00730
+
+Villa Capri
+Urb. Paseo de los Arboles
+Calle 5 #67
+Mayagüez, PR 00682
+
+Costa del Mar
+Urb. Costa del Mar
+Calle Mar del Sur #23
+Fajardo, PR 00738
+*************
+John Doe
+Urbanizacion Las Lomas
+Calle Los Pinos #1234
+San Juan, PR 00926
+
+Jane Smith
+Residencial Los Cocos
+Ave. Isla Verde #567
+Carolina, PR 00979
+
+Juan Rodriguez
+Jardines del Caribe
+Calle Almendro #456
+Ponce, PR 00731
+
+Maria Gonzalez
+Urb. Villa del Carmen
+Calle Palmeras #789
+Bayamon, PR 00959
+
+Pedro Rivera
+Urb. El Conquistador
+Calle Las Brisas #4321
+Mayaguez, PR 00682
+
+Ana Ortiz
+Urb. Vistas de la Bahia
+Calle Miramar #5678
+Fajardo, PR 00738
+
+Luis Torres
+Urb. San Francisco
+Calle Ponce de Leon #901
+San Juan, PR 00925
+
+Carmen Lopez
+Urb. Alturas de Flamboyan
+Calle Flamboyan #234
+Guaynabo, PR 00969
+
+Miguel Hernandez
+Urb. Los Frailes
+Calle Azucena #567
+Bayamon, PR 00961
+
+Rosa Perez
+Urb. Villa Grillasca
+Calle Palmeras #345
+Aguadilla, PR 00603
+
+Jose Ramos
+Urb. Villa del Mar
+Calle 13 #4567
+Humacao, PR 00791
+
+Sofia Fernandez
+Urb. Las Cumbres
+Calle Las Flores #7890
+Caguas, PR 00725
+
+Carlos Jimenez
+Urb. Mansiones de Espana
+Calle Espana #1234
+San Juan, PR 00926
+
+Marta Nunez
+Urb. El Bosque
+Calle Los Pinos #567
+Carolina, PR 00987
+
+Andres Ortiz
+Urb. Las Quintas
+Calle Las Margaritas #890
+Ponce, PR 00717
+
+Silvia Torres
+Urb. Montesol
+Calle Las Acacias #1234
+Guaynabo, PR 00969
+
+Hector Rivera
+Urb. El Prado
+Calle El Prado #5678
+Mayaguez, PR 00680
+
+Gloria Rodriguez
+Urb. Valle Alto
+Calle Los Pinos #901
+San Juan, PR 00927
+
+Carlos Diaz
+Urb. Mirador del Yunque
+Calle Mirador #2345
+Rio Grande, PR 00745
+
+Ana Maria Gonzalez
+Urb. Rio Hondo
+Calle Rio Hondo #678
+Bayamon, PR 00959
+
+-------------------------------------
+
+5. Three Line address
+Format:
+Name
+Street and Number
+City, State, and Zip
+
+Maria Rodriguez
+Condominio Los Pinos
+Calle Los Pinos 102
+San Juan, PR 00926
+
+Jose Perez
+Alturas de Flamboyanes
+Calle 7 G-8
+Ponce, PR 00731
+
+Ana Ortiz
+Urbanizacion La Riviera
+Carr. 841 KM 2.2
+Gurabo, PR 00778
+
+Pedro Rivera
+Monte Bello Condominium
+Calle Loma Linda A-8
+Trujillo Alto, PR 00976
+
+Carmen Garcia
+Ciudad Jardin
+Calle Jardin 12
+Bayamon, PR 00959
+
+Luisa Lopez
+Villa Real
+Carr. 402 KM 0.3
+Quebradillas, PR 00678
+
+Carlos Torres
+Condominio San Rafael
+Calle San Rafael 105
+Carolina, PR 00983
+
+Sofia Diaz
+Alturas de San Juan
+Calle 10 E-4
+San Juan, PR 00924
+
+Miguel Rodriguez
+Jardines de Caparra
+Calle 2 33-1
+Guaynabo, PR 00966
+
+Ana Maria Soto
+Residencial Las Americas
+Calle Estrella 5
+Humacao, PR 00791
+
+Jose Santiago
+Condado del Parque
+Avenida Los Filtros 101
+Guaynabo, PR 00969
+
+Marta Velez
+Hacienda El Rosario
+Calle El Rosario 10
+Caguas, PR 00725
+
+Rafaela Gonzalez
+Residencial La Quinta
+Calle La Quinta 3-5
+Aguadilla, PR 00603
+
+Julio Castro
+Mansiones del Golf
+Calle Golf 1
+Dorado, PR 00646
+
+Ana Torres
+Condominio El Encanto
+Carr. 1 KM 51.5
+Arecibo, PR 00612
+
+Angel Cruz
+Villas del Lago
+Carr. 909 KM 2.2
+Toa Alta, PR 00954
+
+Carmen Morales
+Paseo del Rio
+Avenida San Juan 205
+Cidra, PR 00739
+
+Juan Lopez
+Condominio Los Pinos II
+Calle Los Pinos 120
+San Juan, PR 00926
+
+Ana Torres
+Alturas de San Benito
+Calle San Benito 20
+Mayaguez, PR 00680
+
+Miguel Perez
+Hacienda San Rafael
+Carr. 160 KM 3.5
+Bayamon, PR 00959
+-------------------------------------
+
+6. Apartment buildings-Condominimums
+Format:
+Number, Street, and Apt No. 
+City, State, and Zip
+
+456 Calle Luis Muñoz Rivera Apt. 2B
+San Juan, PR 00918
+
+123 Avenida de Diego Apt. 402
+Bayamón, PR 00959
+
+789 Calle Ismael Rivera Apt. 10
+Caguas, PR 00725
+
+1010 Avenida Hostos Apt. 3C
+Ponce, PR 00716
+
+321 Calle Cristóbal Colón Apt. 6D
+Guaynabo, PR 00969
+
+555 Avenida Manuel Fernández Juncos Apt. 14
+San Juan, PR 00907
+
+777 Calle Juan Ponce de León Apt. 9A
+Mayagüez, PR 00680
+
+222 Avenida Muñoz Rivera Apt. 5B
+Carolina, PR 00979
+
+444 Calle Ramón Emeterio Betances Apt. 8C
+Arecibo, PR 00612
+
+666 Avenida Roberto H. Todd Apt. 12B
+Aguadilla, PR 00603
+
+888 Calle Eugenio María de Hostos Apt. 7D
+Humacao, PR 00791
+
+333 Avenida Luis Vigoreaux Apt. 4A
+Toa Baja, PR 00949
+
+111 Calle San Rafael Apt. 11C
+Vega Baja, PR 00693
+
+999 Avenida Ponce de León Apt. 2B
+Cidra, PR 00739
+
+555 Calle José Celso Barbosa Apt. 6C
+Gurabo, PR 00778
+
+777 Avenida Jesús T. Piñero Apt. 8D
+Dorado, PR 00646
+
+222 Calle La Marina Apt. 10A
+Fajardo, PR 00738
+
+444 Avenida Eduardo Conde Apt. 12C
+Yauco, PR 00698
+
+666 Calle Joaquín Rodríguez Vargas Apt. 3B
+Trujillo Alto, PR 00976
+
+888 Avenida Rafael Cordero Apt. 5D
+Cataño, PR 00963
+-------------------------------------
+
+7. Condominimums woth street addresses
+Format:
+Condominimum name
+Building no. and Apt No
+City, State, and Zip
+
+Condominio Los Flamboyanes
+Building 1234 Apt 5678
+San Juan, PR 00926
+
+Condominio El Vedado
+Building 456 Apt 789
+Ponce, PR 00730
+
+Condominio Alturas de Flamboyan
+Building 678 Apt 910
+Caguas, PR 00725
+
+Condominio Los Pinos
+Building 1112 Apt 1314
+Bayamón, PR 00959
+
+Condominio Las Brisas
+Building 1516 Apt 1718
+Carolina, PR 00987
+
+Costa Azul Tower
+2450 Calle Los Angeles Apt. 7A
+San Juan, PR 00909
+
+Cond. Alturas del Parque
+1285 Calle del Parque Apt. 4B
+Bayamon, PR 00961
+
+Altos del Bosque
+1730 Calle 27 Apt. 2C
+Ponce, PR 00731
+
+Plaza del Sol Condominium
+2465 Calle de las Flores Apt. 15E
+Carolina, PR 00979
+
+Cond. Villa San Antonio
+550 Avenida San Antonio Apt. 10B
+San Juan, PR 00921
+
+Cond. Los Pinos
+1215 Avenida de los Pinos Apt. 3A
+Guaynabo, PR 00969
+
+Jardines de Carolina
+1850 Calle Gardenia Apt. 6B
+Carolina, PR 00987
+
+Cond. Parque San Miguel
+1325 Calle San Miguel Apt. 12C
+Bayamon, PR 00956
+
+Urb. Villa Grillasca
+1805 Calle 5 Apt. 1B
+Mayaguez, PR 00682
+
+Cond. Los Almendros
+905 Avenida de los Almendros Apt. 8B
+San Juan, PR 00923
+
+Cond. Montecristo
+2450 Avenida Montecristo Apt. 6C
+Carolina, PR 00987
+
+Urb. Los Frailes
+1610 Calle los Frailes Apt. 2A
+Caguas, PR 00725
+
+Cond. Hacienda San Jose
+245 Calle San Jose Apt. 14B
+Guaynabo, PR 00969
+
+Urb. Las Palmas
+1205 Calle Las Palmas Apt. 3C
+San Juan, PR 00926
+
+Cond. Jardines de la Montana
+1560 Calle Montana Apt. 5B
+Arecibo, PR 00612
+
+Cond. La Marina
+2150 Avenida La Marina Apt. 11A
+Fajardo, PR 00738
+
+Urb. Mansiones de Espana
+2450 Calle Espana Apt. 8D
+Toa Alta, PR 00953
+
+Cond. Costa del Sol
+2050 Avenida del Sol Apt. 9B
+Dorado, PR 00646
+
+Cond. Brisas del Mar
+1065 Avenida del Mar Apt. 6C
+Vega Baja, PR 00693
+
+Cond. Mirador de la Sierra
+1305 Calle Mirador Apt. 2D
+Utuado, PR 00641
+-------------------------------------

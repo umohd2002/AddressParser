@@ -1,0 +1,13 @@
+Dr William Johnson MD Department of Internal Medicine Duke University Medical Center 2301 Erwin Rd Durham NC 27710
+Dr Amanda Johnson PhD Department of Sociology University of California San Diego 9500 Gilman Dr La Jolla CA 92093
+Dr Michael Kim MD Department of Radiology Cedars-Sinai Medical Center 8700 Beverly Blvd Los Angeles CA 90048
+Dr Sarah Adams PhD Department of Political Science University of Texas at Austin 305 E 23rd St Austin TX 78712
+Dr Joshua Brown MD Department of Anesthesiology University of Michigan Medical School 1301 Catherine St Ann Arbor MI 48109
+Dr Thomas Wilson MD Department of Ophthalmology Massachusetts Eye and Ear Infirmary 243 Charles St Boston MA 02114
+Dr Allison Kim PhD Department of Linguistics University of Pennsylvania 3401-C Walnut St Philadelphia PA 19104
+Dr Jessica Chen PhD Department of Computer Science Carnegie Mellon University 5000 Forbes Ave Pittsburgh PA 15213
+Dr Samuel Lee MD Department of Psychiatry Yale New Haven Hospital 20 York St New Haven CT 06510
+Dr Steven Adams MD Department of Emergency Medicine Northwestern Memorial Hospital 251 E Huron St Chicago IL 60611
+Dr Brian Wilson PhD Department of Musicology Indiana University 20 York St Bloomington IN 47405
+Dr Joseph Rodriguez MD Department of Allergy and Immunology Cleveland Clinic 9500 Euclid Ave Cleveland OH 44195
+Dr Elizabeth Smith PhD Department of Art History University of California Los Angeles 100 Dodd Hall Los Angeles CA 78654

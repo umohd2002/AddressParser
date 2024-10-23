@@ -1,0 +1,76 @@
+List of Puerto Rico Street Suffix:
+
+Aeropuerto (Aerop.): Airport
+Aldea (Aldea): Village
+Almácigo (Almác.): Plant nursery
+Almirante (Almte.): Admiral
+Alturas (Alt.): Heights
+Ancha (Ancha): Wide
+Angosto (Ang.): Narrow
+Arenal (Aren.): Sandy area
+Arrecife (Arrec.): Reef
+Atajo (At.): Shortcut
+Avenida (Ave.): Avenue
+Balneario (Bln.): Beach resort
+Barranco (Bco.): Ravine
+Boulevard (Blvd.): Boulevard
+Borinquen (Borin.): Name of a region in Puerto Rico
+Calle (Cll.): Street
+Camino (Cam.): Road
+Campo (Cpo.): Field
+Canción (Canc.): Song
+Carretera (Carr.): Highway
+Carril (Carril): Lane
+Casa (Casa): House
+Cerro (Cerro): Hill
+Cielo (Cielo): Sky
+Circunvalación (Circunv.): Ring road
+Ciudad (Ciudad): City
+Colina (Col.): Hill
+Comunidad (Comun.): Community
+Condominio (Cond.): Condominium
+Corredor (Corred.): Corridor
+Cortada (Cort.): Cut-off
+Costa (Costa): Coast
+Cuartel (Cuart.): Barracks
+Edificio (Edif.): Building
+Entrada (Entr.): Entrance
+Escalinata (Escal.): Staircase
+Esquina (Esq.): Corner
+Estación (Est.): Station
+Estadio (Estad.): Stadium
+Este (Este): East
+Extension (Ext.): Extension
+Fila (Fila): Row
+Frente (Frente): Front
+Galería (Galer.): Gallery
+Hacienda (Hda.): Estate
+Hotel (Htl.): Hotel
+Intersección (Inter.): Intersection
+Isla (Isla): Island
+Jardines (Jard.): Gardens
+Lado (Lado): Side
+Laguna (Lag.): Lagoon
+Llano (Llano): Plain
+Localidad (Local.): Locality
+Malecón (Mlcn.): Promenade
+Manzana (Mz.): Block
+Margen (Marg.): Margin
+Mercado (Merc.): Market
+Montaña (Mont.): Mountain
+Norte (Norte): North
+Oeste (Oeste): West
+Palacio (Pal.): Palace
+Palma (Palma): Palm
+Panorama (Panor.): Panorama
+Paraje (Paraje): Spot
+Parcelas (Parcel.): Parcels
+Parque (Parq.): Park
+Pasaje (Pas.): Passage
+Paseo (Paseo): Walkway
+Poblado (Pobl.): Settlement
+Pueblo (Pueblo): Town
+Puente (Pte.): Bridge
+Puerto (Puerto): Port
+Quebrada (Qda.): Canyon
+Quintas (Quint.): Fifth

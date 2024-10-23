@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Parser and Map Creation Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/singleLineTab.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/batchParserTab.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mapCreationFormTab.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/userDefinedComponentsTab.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/authenticationTab.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cluetable.css') }}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        .spinner-border {
+            display: inline-block;
+            width: 3rem;
+            height: 3rem;
+            vertical-align: text-bottom;
+            border: 0.25em solid currentColor;
+            border-right-color: transparent;
+            border-radius: 50%;
+            animation: spinner-border .75s linear infinite;
+        }
+
+        @keyframes spinner-border {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .spinners-border {
+            display: inline-block;
+            width: 3rem;
+            height: 3rem;
+            vertical-align: text-bottom;
+            border: 0.25em solid currentColor;
+            border-right-color: transparent;
+            border-radius: 50%;
+            animation: spinner-border .75s linear infinite;
+        }
+
+        @keyframes spinners-border {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            padding-bottom: 50px;
+        }
+
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-image: url(../static/image.png);
+            background-size: 110%;
+            color: white;
+            text-align: center;
+            height: 75px;
+        }
+
+        footer h3 {
+            margin-bottom: 10px;
+            /* Reduced bottom margin */
+            line-height: 1.2;
+            /* Adjust this value as needed */
+        }
+
+        footer b {
+            margin-top: 10px;
+            /* Reduced top margin */
+            display: block;
+            /* Makes <b> behave like a block element */
+        }
+
+        .tablink:hover,
+        .tablink.active {
+            /* background-color:#bec9e2; */
+            color: #2e4c8c;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <img style="width: 10%; filter: invert(100%);" src="../static/logo.svg" alt="" class="logo">
+        <div style="text-align: left;" class="tabdiv">
+            <a href="#" class="tablink" onclick="openTab('SingleLine',event)" id="defaultOpen">Single Line</a>
+        </div>
+        <div style="text-align: left;" class="tabdiv">
+            <a href="#" class="tablink" onclick="openTab('Batch',event)" id="BF">Batch Parser</a>
+        </div>
+        <div style="text-align: left;" class="tabdiv">
+            <a href="#" class="tablink" onclick="openTab('MapCreationForm',event)" id="MCF">Map Creation Form</a>
+        </div>
+        <div style="text-align: left;" class="tabdiv">
+            <a href="#" class="tablink" onclick="openTab('UDComponents',event)" id="userdfc">User Defined Component</a>
+        </div>
+        <div style="text-align: left;" class="tabdiv"></div>
+            <a href="#" class="tablink" onclick="openTab('ClueTab',event)" id="clue">Clue Table</a>
+        </div>
+    </div>
+
+
+    <!-- Content for SingleLine Address Parser -->
+    <div id="SingleLine" class="tabcontent singleLineTab-container">
+        <div class="container">
+            <form id="myForm" action="/" method="POST">
+                <!--<div class="input-group"><label for="file-upload">Please Choose a Pipe Delimited File</label><input type="file" id="file-upload" name="file-upload"></div>-->
+                <div class="input-group">
+                    <label for="address-input">Enter Address</label>
+                    <!-- <input type="text" id="address-input" name="address" placeholder="1234 Main St"
+                            autocomplete="address" height="300px"> -->
+                    <textarea type="text" id="address-input" name="address" placeholder="1234 Main St"
+                        autocomplete="address" height="300px" style="resize: none;" required></textarea>
+                    <button type="submit" id="submit-btn">Submit</button>
+                </div>
+                <div id="exception-controls" style="display:none;">
+                    <label for="exception-checkbox">
+                        <input type="checkbox" id="exception-checkbox" name="ForceException"
+                            style="margin-left: 300px;"> Not Satisfied?
+                    </label>
+                    <button type="button" id="exception-btn" disabled>Force Exception</button>
+                </div>
+                <div id="parsed-by-info" style="margin-top: 10px; margin-bottom: 10px;">
+                    <!-- "Address Parsed By -> " info will be inserted here -->
+                </div>
+            </form>
+        </div>
+        <center>
+            <div class="result-box" id="result-box">
+                <div id="parsedbyar"></div>
+                <table id="resultTable" class="table" style="display: none;">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Token</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Component</th>
+                            <th scope="col">Component Description</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultBody">
+                        <!-- Table rows will be populated dynamically here -->
+                    </tbody>
+                </table>
+            </div>
+        </center>
+
+        </form>
+    </div>
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- <script>
+        $(document).ready(function () {
+            var socket = io.connect('http://' + document.domain + ':' + location.port + '/Batch_Parser');
+            socket.on('Batch_Parser', function (data) {
+                $('#progressBar').val(data.progress);
+            });
+        });
+    </script> -->
+    <!----------------------------------------------------------------------------------------------->
+    <!--                                          Batch Parser                                     -->
+    <!----------------------------------------------------------------------------------------------->
+    <div id="Batch" class="tabcontent batchParserTab-container" style="display: block;">
+        <!-- Upload Section -->
+        <div class="container">
+            <center>
+                <h3 style="font-size: 18px; color: #2e4c8c;">Note: Please Upload Pipe Delimited File
+                </h3>
+            </center>
+            <center>
+                <form id="BatchForm" method="post" action="{{ url_for('BatchParser') }}" enctype="multipart/form-data">
+                    {{ form.hidden_tag() }}
+                    <div class="input-group" style="padding-top: 0%;">
+                        {{ form.file.label }} {{ form.file(class="custom-file-input", id="file-upload") }}
+                        {{ form.submit(class="btn btn-primary", id="upload-btn") }}
+                        <div id="spinner" class="spinner-border" role="status" style="display: none;">
+                            <span class="sr-only"></span>
+                        </div>
+
+
+                    </div>
+                </form>
+            </center>
+            <!-- <progress id="progressBar" value="0" max="100" style="width: 100%;"></progress> -->
+
+        </div>
+        <!-- Metrics Display -->
+        <div id="metrics-display" style="display:none; padding: 10px; margin-left: 400px;">
+            <h2>Batch Parsing Metrics</h2>
+            <p id="detailed-report"></p>
+            <!-- Metrics will be inserted here -->
+        </div>
+    </div>
+    <!--------------------------------------------------------------------------------------------------- -->
+    <!-- Map Creattion Form -->
+    <!--------------------------------------------------------------------------------------------------- -->
+    <div id="MapCreationForm" class="tabcontent mapCreationFormTab-container">
+        <center>
+            <h3 style="font-size: 18px; color: #2e4c8c;">Note : Upload Exception File(JSON)</h3>
+        </center>
+        <div class="map-container container" id="upload">
+
+            <!-- <input type="file" id="jsonFileInput" accept=".json"> -->
+            <!-- Run Dropdown -->
+            <select id="run-dropdown" onchange="updateUserDropdown()">
+                <option>Select Run</option>
+                <!-- Options will be dynamically loaded -->
+            </select>
+
+            <!-- User Dropdown -->
+            <select id="user-dropdown" onchange="updateTimestampDropdown()">
+                <option>Select User</option>
+                <!-- Options will be dynamically loaded -->
+            </select>
+
+            <!-- Timestamp Dropdown -->
+            <select id="timestamp-dropdown">
+                <option>Select Timestamp</option>
+                <!-- Options will be dynamically loaded -->
+            </select>
+            <button id="loadFileBtn">Fetch</button>
+            <div id="spinners" class="spinners-border" role="status" style="display: none;">
+                <span class="sr-only"></span>
+            </div>
+        </div>
+        <div class="map-container" id="mapdata" style="grid-template-columns: 1fr 1fr;" hidden>
+            <div class="leftContainer" style="width: 90%; padding: 20px;">
+                <div class="map-result-box" id="map-result-box">
+                    <table id="data-table">
+                        <thead>
+                            <tr>
+                                <th>Mask Token</th>
+                                <th>Address Token</th>
+                                <th>Address Component</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+                            <!-- Table body will be populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <head>
+                <style>
+                    .containerin {
+                        display: flex;
+                    }
+
+                    .containerin label {
+                        width: 200px;
+                    }
+
+                    .containerin select,
+                    .containerin textarea {
+                        margin-top: 5px;
+                        width: 200%;
+                    }
+
+                    .containerin select input textarea {
+                        width: 100%;
+                    }
+
+                    .highlight {
+                        border: 10px solid red;
+                        /* Red border for highlighting */
+                    }
+                </style>
+
+            </head>
+            <div class="rightContainer" id="inputData" style="width: 90%    ; padding: 20px;">
+                <div id="dictionaryInfo">
+                    Current Dictionary: <span id="currentDictionaryDisplay">0/0</span>
+                </div>
+                <div id="totaldictionaryInfo">
+                    Total Dictionaries: <span id="totaldictionaryDisplay">0</span>
+                </div>
+
+                <div class="containerin">
+                    <label for="fileName">Timestamp :
+                    </label>
+                    <input type="text" id="filename" class="field" readonly>
+                </div>
+
+                <div class="containerin">
+                    <label for="recordId">Record ID:</label>
+                    <input type="text" id="recordId" readonly>
+                </div>
+                <div class="containerin">
+                    <label for="inputValue">INPUT:</label>
+                    <!-- <input type="text" id="inputValue" readonly> -->
+                    <textarea name="" id="inputValue" readonly style="resize: none;" rows="2"></textarea>
+                </div>
+                <div class="containerin">
+                    <label for="mask-inputValue">Mask Pattern:</label>
+                    <!--<input type="text" id="mask-inputValue" readonly >-->
+                    <textarea id="mask-inputValue" readonly style="resize: none;"></textarea>
+                </div>
+                <div class="containerin">
+                    <label for="region" class="col-sm-2 col-form-label">Region:</label>
+                    <select id="region" name="region" class="" required>
+                        <option value="" selected disabled hidden></option>
+                        <option value="US">US</option>
+                        <option value="Puerto Rico">Puerto Rico</option>
+                    </select>
+                </div>
+                <div class="containerin">
+                    <label for="type">Address Type : </label>
+                    <select id="AddressType" name="AddressType" class="" required>
+                        <option value="" selected disabled hidden></option>
+                        <option value="street address">Street Address</option>
+                        <option value="po box address">PO Box Address</option>
+                        <option value="highay contract address">Highway Contract Address</option>
+                        <option value="militay address">Military Address</option>
+                        <option value="attention line address">Attention Line Address</option>
+                        <option value="roural route address">Roural Route Address</option>
+                        <option value="puerto rico address">Puerto Rico Address</option>
+                        <option value="university address">University Address</option>
+                    </select>
+                </div>
+                <div class="containerin">
+                    <!-- <label id="keyLabel" style="display:none; padding-bottom: 5px;"></label> -->
+                    <label for="">Add to V-DB and KB : </label>
+                    <select name="kb" id="Approved?" required>
+                        <option value="" selected disabled hidden></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div class="containerin">
+                    <label for="comment">Comment : </label>
+                    <textarea name="" id="comment" cols="30" rows="2" style="resize: none;"></textarea>
+                </div>
+                <!-- <div class="containerin">
+                    <label for="approvedby">Approved By : </label>
+                    <select name="approvedby" id="approvedby" required>
+                        <option value="" selected disabled hidden>Choose a user</option>
+                        <option value="Committee_Member">Committee Member</option>
+                         {% for user in users %}
+                            <option value="{{ user.UserName }}" selected disabled>{{ user.FullName }}</option>
+                        {% endfor %} 
+                    </select>
+                </div> -->
+                <div class="Button-container">
+                    <button class="btn btn-success" id="submit&NextBtn">Submit & Next</button>
+                    <button class="btn btn-success" id="submitBtn" style="display: none;">Submit</button>
+                    <button class="btn btn-light" id="clear&exitBtn">Clear & Exit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------------------------------------------------------------------------- -->
+    <!--                            User Defined COmponents                                               -->
+    <!--------------------------------------------------------------------------------------------------- -->
+
+    <div id="UDComponents" class="tabcontent userDefinedComponentsTab-container">
+        <div class="container" style="margin-top: 70px;">
+            <!-- <div id="downloadContainer" class="download-container">
+                <div class="downloadcontainer">
+                    <div class="download-section">
+                        <span class="download-label">Logs :</span><br>
+                        <button onclick="downloadLogs()" id="downloadButton">Download</button>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <form id="udForm" action="/UserDefinedComponents" method="GET"> -->
+            <div class="udresult-box" id="udresult-box">
+                <table id="udresultTable" class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Component</th>
+                            <th scope="col">Component Description</th>
+                            <th scope="col" class="actions">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="udresultBody">
+                        <!-- Table rows will be populated dynamically here -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="buttons">
+
+                <button onclick="fetchComponentData()" id="fetchall">Fetch All the Components</button>
+                <button onclick="addComponent()" id="addComponent">Add</button>
+            </div>
+            <!-- </form> -->
+        </div>
+    </div>
+
+
+
+
+
+    <!-- User Creation Edit Delete -->
+    <!-- <div id="Authentication" class="tabcontent AuthenticationTab-container">
+        <div class="container">
+            {% if session.role == 'Admin' %}
+            <!-- User Creation Form -->
+    <!-- <div class="user-creation">
+                    <h3>Create New User</h3>
+                    <form action="/create_user" method="post">
+                        <input type="text" name="username" placeholder="Username" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="password" name="password" placeholder="Password" required>
+                        <select name="role" required>
+                            <option value="general_user">General User</option>
+                            <option value="Committee_Member">Committee Member</option>
+                            <option value="admin">Admin</option>
+                        </select>
+                        <div>
+                            <input type="radio" id="active" name="status" value="active" checked>
+                            <label for="active">Active</label>
+                            <input type="radio" id="inactive" name="status" value="inactive">
+                            <label for="inactive">Inactive</label>
+                        </div>
+                        <input type="submit" value="Create User">
+                    </form>
+                </div> -->
+
+    <!-- User List and Edit/Delete Forms -->
+    <!-- <div class="udresult-box" id="utresult-box">
+                <table id="utresultTable" class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Full Name</th>
+                            <th scope="col">Username</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Password</th>
+                            <th scope="col">Role</th>
+                            <th scope="col">User Active</th> -->
+    <!-- <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="utresultBody"> -->
+    <!-- Table rows will be populated dynamically here -->
+    <!-- </tbody>
+                </table>
+            </div> -->
+    <!-- {% for user in users %}
+                    <tr>
+                        <form action="/edit_user/{{ user.id }}" method="post">
+                            <td>{{ user.FullName }}</td>
+                            <td>{{ user.UserName }}</td>
+                            <td>{{ user.Email }}</td>
+                            <td>
+                                <select name="role" required>
+                                    <option value="admin" {% if user.role == 'admin' %}selected{% endif %}>Admin</option>
+                                    <option value="Committee_Member" {% if user.role == 'Committee_Member' %}selected{% endif %}>Committee Member</option>
+                                    <option value="general_user" {% if user.role == 'general_user' %}selected{% endif %}>General User</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="radio" name="status" value="active" {% if user.status == 'active' %}checked{% endif %}> Active
+                                <input type="radio" name="status" value="inactive" {% if user.status == 'inactive' %}checked{% endif %}> Inactive
+                            </td>
+                            <td>
+                                <input type="submit" value="Edit">
+                                <button type="button" onclick="confirmDelete('{{ user.id }}')">Delete</button>
+                            </td>
+                        </form>
+                    </tr>
+                    {% endfor %} -->
+    <!-- {% endif %}
+            <div class="buttons">
+
+                <button id="loadUserData">Load Users</button>
+                <button id="create_user">Create User</button>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!--------------------------------------------------------------------------------------------------- -->
+    <!--                            Clue Table                                                            -->
+    <!--------------------------------------------------------------------------------------------------- -->
+
+    <div id="ClueTab" class="tabcontent userDefinedComponentsTab-container">
+        <div class="container" style="margin-top: 4%;">
+            <div class="udresult-box" id="udresult-box">
+                <div id="search-container">
+                    <label for="search-input">Search Token With Name : </label>
+                    <input type="text" id="search-input" placeholder="Search by token name">
+                    <button onclick="searchClue()" id="search-btn" hidden>Search</button>
+                </div>
+                <div id="filter-container">
+                    <label for="filter-mask-token">Filter by Mask Token:</label>
+                    <select id="filter-mask-token" onchange="applyFilters()">
+                        <option value="">All</option>
+                        <!-- Options will be dynamically populated -->
+                    </select>
+                </div>
+                <table id="clueresultTable" class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Token Name</th>
+                            <th scope="col" id="tokenCol">Mask Token</th>
+                            <th scope="col" class="actions">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="clueresultBody">
+                        <!-- Table rows will be populated dynamically here -->
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div class="buttons">
+
+                <button onclick="fetchClueData()" id="fetchclue">Fetch All the Components</button>
+                <button onclick="addClueComponent()" id="addClueComponent">Add</button>
+            </div>
+            <div id="pagination" class="pagination"></div>
+            <!-- </form> -->
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- <script>
+                function openTab(tabName, event) {
+                    var i;
+                    var tabContents = document.getElementsByClassName("tabcontent");
+                    var tabLinks = document.getElementsByClassName("tablink");
+
+                    for (i = 0; i < tabContents.length; i++) {
+                        tabContents[i].style.display = "none"; // Hide all tab content
+                    }
+
+                    for (i = 0; i < tabLinks.length; i++) {
+                        tabLinks[i].className = tabLinks[i].className.replace(" active", ""); // Remove "active" class from all tabs
+                    }
+
+                    document.getElementById(tabName).style.display = "block"; // Show the content of the clicked tab
+                     console.log(even.currentTarget.className);
+                    if even.currentTarget.className ==="CreateUser"
+                   
+                    {
+                    window.location.href = "/CRUDUser";
+                    event.currentTarget.className += " active"; // Add "active" class to the clicked tab
+                    }
+                    
+                    
+                    event.currentTarget.className += " active"; // Add "active" class to the clicked tab
+                }
+                document.getElementById("defaultOpen").click();
+            </script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+<footer>
+    <h3>Address Parser- Measuring address data accuracy by analyzing and structuring its components.</h3>
+    <b>We Believe in the Power of Quality Data to Impact Public Life</b>
+</footer>
+<script type="text/javascript">
+    textarea = document.querySelector("#address-input");
+    textarea.addEventListener('input', autoResize, false);
+
+    function autoResize() {
+        this.style.height = 'auto';
+        this.style.height = this.scrollHeight + 'px';
+    }
+</script>
+
+</html>

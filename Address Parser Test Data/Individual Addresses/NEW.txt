@@ -1,0 +1,100 @@
+1 | 3014 terraceview lane north, east providence, RI 2885
+2 | 1229 country bluff dr, portsmouth, RI 2908
+3 | 6615 spruce, pawtucket, RI 2812
+4 | 6615 spruce, pawtucket, RI 2812
+5 | 6615 spruce, pawtucket, RI 2812
+6 | 17000 county road 52, newport, RI 2861
+7 | 17000 county road 52, newport, RI 2861
+8 | 17000 county road 52, newport, RI 2861
+9 | 17000 county road 52, newport, RI 2861
+10 | 456 ne 3rd pl, cumberland, RI 2879
+11 | 1639 griffin rd, johnston, RI 2906
+12 | 403 schneider st, johnston, RI 2840
+13 | 25445 wintergreen ct, pawtucket, RI 2818
+14 | 25815 wintergreen ct, pawtucket, RI 2818
+15 | 1108 leland aven, warwick, RI 2920
+16 | 1108 leiand aveg, warwick, RI 2920
+17 | 1108 leland aven, warwick, RI 2920
+18 | 1108 leland aven, warwick, RI 2920
+19 | 1411 second street, west warwick, RI 2895
+20 | 1411 second street, west warwick, RI 2895
+21 | 6111 n 112th ave, cranston, RI 2816
+22 | 6111 n 112th ave, cranston, RI 2816
+23 | 6111 n 112th ave, cranston, RI 2816
+24 | 1514 eastwyck circle, cranston, RI 2852
+25 | 1514 eastwyck circle, cranston, RI 2852
+26 | 1514 eastwyck circle, cranston, RI 2852
+27 | 1514 eastwyck circle, cranston, RI 2852
+28 | 1514 eastwyck circle, cranston, RI 2852
+29 | 3913 moorpark st, barrington, RI 2818
+30 | 6501 nrthe 148th avenue, smithfield, RI 2814
+31 | 6501 nrthe 148th avenue, smithfield, RI 2814
+32 | 10173 west adams street, east providence, RI 2904
+33 | 2150 lennane, pawtucket, RI 2857
+34 | 21 oldbrook ct, narragansett, RI 2904
+35 | 71 30th st w, providence, RI 2905
+36 | 71 30th st w, providence, RI 2905
+37 | 4760 ravine drive, no kingstown, RI 2828
+38 | 4760 ravine drive, no kingstown, RI 2828
+39 | 4760 ravine drive, no kingstown, RI 2828
+40 | 14179 e webster st, johnston, RI 2886
+41 | 14179 e webster st, johnston, RI 2886
+42 | 66 wili teka rd, portsmouth, RI 2911
+43 | 22 b mount olive road, tiverton, RI 2863
+44 | 22 b mount olive road, tiverton, RI 2863
+45 | 247 e main st, richmond, RI 2909
+46 | 40 finley st, little compton, RI 2906
+47 | 40 finley st, little compton, RI 2906
+48 | 15972 funston st, nrt providence, RI 2895
+49 | 15972 funston st, nrt providence, RI 2895
+50 | 91 ferndale ave, prudence island, RI 2818
+51 | 91 ferndale ave, prydence iqkand, RI 2818
+52 | 2124 south westcott road, providence, RI 2919
+53 | 9900 carey st, providence, RI 2842
+54 | 6770 mulford avenue, scituate, RI 2838
+55 | 6770 mulford avenue, , RI 2838
+56 | 205 north egg harbor r, bristol, RI 2896
+57 | 205 north egg harbor r, bristol, RI 2896
+58 | 205 north egg harbor r, bristol, RI 2896
+59 | 413 san pablo drive, north smithfield, RI 2806
+60 | 43865 angel dr, charlestown, RI 2879
+61 | 43865 angel dr, charlestown, RI 2879
+62 | 113 jill ct, jamestown, RI 2806
+63 | 113 jill ct, jamestown, RI 2806
+64 | 113 jill ct, jamestown, RI 2806
+65 | 113 jill ct, , RI 2806
+66 | 113 jill ct, jamestown, RI 2806
+67 | 223 , westerly, RI 2882
+68 | 1124 double spgs rd, warwick, RI 2886
+69 | 1124 double spgs rd, warwick, RI 2886
+70 | 2125 burnt store rd, woonsocket, RI 2863
+71 | 2125 burnt store rd, woonsocket, RI 2863
+72 | 2125 burnt store rd, woonsocket, RI 2863
+73 | 2125 burnt store rd, woonsocket, RI 2863
+74 | 2125 burnt store rd, woonsocket, RI 2863
+75 | 307 burnt store rd n, charlestown, RI 2909
+76 | 307 burnt store rd n, charlestown, RI 2909
+77 | 307 burnt store rd n, charlestown, RI 2909
+78 | 307 burnt store rd n, charlestown, RI 2909
+79 | 307 burnt store rd n, charlestown, RI 2909
+80 | 307 burnt store rd n, charlestown, RI 2909
+81 | 5130 bloomfield ln, little compton, RI 2904
+82 | 2054 furman boulevard, tiverton, RI 2852
+83 | 305 beatrice, burrillville, RI 2825
+84 | 305 beatrice, burrillville, RI 2825
+85 | 4713 branchwood dr, east providence, RI 2889
+86 | 4713 branchwood dr, east providence, RI 2889
+87 | 4713 branchwood dr, east providence, RI 2889
+88 | 4612 pheasant hill drive, north kingstown, RI 2816
+89 | 4612 pheasant hill drive, north kingstown, RI 2816
+90 | 1205 60th dr e, portsmouth, RI 2904
+91 | 1028 springmont drive, woonsocket, RI 2920
+92 | 26-19 grand way, coventry, RI 2904
+93 | 26-19 grand way, coventry, RI 2904
+94 | 26-19 grand way, coventry, RI 2804
+95 | 9 kingsford dr, cranston, RI 2840
+96 | 9 kingsford dr, cranston, RI 2840
+97 | 9 kingsford dr, cranston, RI 2840
+98 | 9 kingsford dr, cranston, RI 2840
+99 | 9 kingsford dr, cranston, RI 2841
+100 | 9 kingsford dr, cranston, RI 2040

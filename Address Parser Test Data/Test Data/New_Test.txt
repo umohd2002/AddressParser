@@ -1,0 +1,91 @@
+1	|	402 S Oak Road Manchester New Hampshire 72732
+2	|	88 N Pine Drive Olympia Washington 72733
+3	|	878 NE Birch Lane Portland Oregon 72734
+4	|	78 SE Cedar Court Miami Florida 72735
+5	|	7687 N Main St Anchorage Alaska 99501
+6	|	5678 W Elm Ave Juneau Alaska 99801
+7	|	55 Maple Avenue California 94993
+8	|	5678 Pine Street Stockton California 95202
+9	|	9876 Elm Drive Bentonville Arkansas 72712
+10	|	66 Oak Street Fremont California 94993
+11	|	6543 Cedar Lane Stockton California 95202
+12	|	9876 E Pine Rd Fairbanks Alaska 99701
+13	|	6 DOYERS ST , Los Angeles , CA 90011
+14	|	99 BAY BLVD ,Pacoima , CA 91331
+15	|	72 ANDERSON PL , Ketchikan , AK 99950
+16	|	459 Jefferson Street , Chesapeake , Virginia 23321
+17	|	05 Conifer Drive , Tukwila, Washington 98168
+18	|	64 Camel Back Road , Tulsa , Oklahoma 74145
+19	|	69 Green Hill Road , Bentonville, Arkansas 72712
+20	|	245 Linden Avenue , Winter Park, Florida 32789
+21	|	806 Tenmile, Los Angeles, California 90017
+22	|	34 Willow Greene Drive,Montgomery,Alabama 36116
+23	|	863 Berkshire Circle, Knoxville, Tennessee 37917
+24	|	960 Hilltop Street,Colrain,Massachusetts 01340
+25	|	535 Oliverio Drive,Moundridge, Kansas 67107
+26	|	06 Havanna Street,Greensboro, North Carolina 27401
+27	|	3168 Oak Avenue,Cedar Knolls,New Jersey 07927
+28	|	51 Terra Street,Georgetown, Florida 32139
+29	|	1990 Richards Avenue,San Gabriel,California 91775
+30	|	4858 Stoneybrook Road, Orlando,Florida 32801
+31	|	963 Freedom Lane,Lodi,California 95240
+32	|	3662 Bicetown Road,Corona, New York 11368
+33	|	4325 Hidden Meadow Drive,CAMP HILL,Pennsylvania 17012
+34	|	2588 Armbrester Drive,Gardena,California 90248
+35	|	1980 Alexander Drive,Truscott, Texas 79260
+36	|	38 Patterson Street,Houston, Texas 77092
+37	|	78 Snyder Avenue,Charlotte, North Carolina 28202
+38	|	96 Hillcrest Drive,Tukwila, Washington 98168
+39	|	53 Walnut Drive,Dahlen, North Dakota 58224
+40	|	026 Lowland Drive,Beloit, Illinois 53511
+41	|	93 Jerry Dove Drive,Beaufort, South Carolina 29902
+42	|	396 Nickel Road,Alhambra,California 91801
+43	|	2388 Kuhl Avenue,Atlanta,Georgia 30303
+44	|	254 Midway Road,Boles,Arkansas 72926
+45	|	1310 Breezewood Court,Arma,Kansas 66712
+46	|	3551 Rubaiyat Road,Grand Rapids,Michigan 49503
+47	|	1405 Spring Avenue,Fort Washington,Pennsylvania 19034
+48	|	5 Preston Street,Plainfield,Illinois 60586
+49	|	1977 Laurel Lee,Minneapolis,Minnesota 55415
+50	|	254 Rodney Street,Chesterfield,Missouri 63005
+51	|	59 Collins Street,Tampa,Florida 33619
+52	|	00 Maple Road, San Antonio, TX 78205
+53	|	432 Cedar Boulevard, Dallas, TX 75201
+54	|	789 Elm Avenue, Philadelphia, PA 19104
+55	|	123 Pine Street, Baltimore, MD 21201
+56	|	79 CITY Avenue, Philadelphia, PA 19104
+57	|	56 Maple Lane, Washington ,DC 20001
+58	|	005 Conifer Drive , Tukwila, Washington 98168
+59	|	863 Berkshire Circle, Knoxville, Tennessee 37917
+60	|	3960 Hilltop Street,Colrain,Massachusetts 01340
+61	|	432 Cedar Boulevard, Dallas, TX 75201
+62	|	23 Pine Street, Baltimore, MD 29701
+63	|	9 Palm Avenue, Philadelphia, PA 19104
+64	|	6 Maple Lane, Washington, DC 20001
+65	|	90 Richards Avenue,San Gabriel,California 91775
+66	|	858 Stoneybrook Road, Orlando,Florida 32801
+67	|	662 Bicetown Road,Corona, New York 11368
+68	|	6 Pine Road, Nashville, TN 37219
+69	|	33 Main Street, Buffalo, NY 14203
+70	|	87 Cedar Street, Kansas City, MO 64105
+71	|	96 Hillcrest Drive,Tukwila, Washington 98168
+72	|	53 Walnut Drive,Dahlen, North Dakota 58224
+73	|	26 Lowland Drive,Beloit, Illinois 53511
+74	|	310 Breezewood Court,Arma,Kansas 66712
+75	|	6 Bluf Street, Baltimore, MD 21201
+76	|	8 Oak Avenue, Philadelphia, PA 19104
+77	|	356 Maple Lane, Washington, DC 20001
+78	|	45 Elm Street, Phoenix, AZ 85014
+79	|	432 Pine Boulevard, Detroit, MI 48202
+80	|	123 Elm Street, Houston, TX 77002
+81	|	1977 Laurel Lee,Minneapolis,Minnesota 55415
+82	|	1254 Rodney Street,Chesterfield,Missouri 63005
+83	|	48 Elm Street, Springfield, IL 62704
+84	|	87 Main Road, Trenton, NJ 08638
+85	|	32 Oak Avenue, Dallas, TX 75201
+86	|	998 Park Boulevard, San Diego, CA 92108
+87	|	120 Maple Lane, Seattle, WA 98104
+88	|	123 Elm Boulevard, Cincinnati, OH 45202
+89	|	789 Cedar Street, Cleveland, OH 44115
+90	|	356 Oak Avenue, Milwaukee, WI 53202
+91	|	456 Pine Road, Nashville, TN 37219
