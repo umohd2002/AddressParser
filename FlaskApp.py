@@ -658,7 +658,7 @@ def Edit_Components():
     session = Session()
     try:
         received_data = request.json['components']  # Get the combined old and modified data
-        print("Received data:", received_data)
+        print("SaveChanges UDF Received data:", received_data)
 
         # Process and update Component Table using SQLAlchemy ORM
         for component_data in received_data:
@@ -1029,10 +1029,10 @@ def add_new_ClueComponent():
         data = request.get_json()
         new_mask = data.get('newMask')  # Assuming this is the component description
         new_token = data.get('newToken')
-
+        print(new_mask)
         # Check if the token already exists in the clue table
-        existing_clue = session.query(ClueTable).filter_by(token=new_token).first()
-
+        existing_clue = session.query(ClueTable).filter_by(component_desc=new_token).first()
+        print(existing_clue)
         if existing_clue:
             result['error'] = 'Token already exists in the clue table.'
         else:

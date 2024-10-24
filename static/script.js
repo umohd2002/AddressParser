@@ -1099,7 +1099,8 @@ function addComponent() {
     });
 }
 
-function saveNewRow(button) {
+function saveNewRow(button,event) {
+    event.stopPropagation();
     var newRow = $(button).closest('tr.new-row');
     var cells = newRow.find('td:not(.actions)');
     var newComponent = cells.eq(0).find('input').val();
@@ -1132,6 +1133,7 @@ function saveNewRow(button) {
         alert('Please provide both component and description values.');
         // Handle the case where either component or description is not provided
     }
+    
 }
 
 
@@ -1884,6 +1886,7 @@ function deleteClueRow(button, event) {
     const confirmation = confirm(`Are you sure you want to delete the Token : "${componentDesc}"?`);
 
     if (!confirmation) {
+        
         return;  // Exit the function if the user cancels the deletion
     }
 
@@ -2180,7 +2183,7 @@ async function addClueComponent() {
         '<td><input type="text" class="editable" placeholder="New Component" maxlength="20" required></td>' +
         '<td>' + generateDropdownHTML("", dropdownOptions) + '</td>' +
         '<td class="actions">' +
-        '<button class="save-btn" id="save-btn" onclick="saveNewClueRow(this,event)">Save</button>' +
+        '<button class="save-btn" id="clueSave-btn" onclick="saveNewClueRow(this,event)">Save</button>' +
         '<button class="cancel-btn" id="cancel-btn" onclick="cancelAddRow(this,event)">Cancel</button>' +
         '</td>' +
         '</tr>';
@@ -2199,7 +2202,8 @@ async function addClueComponent() {
 }
 
 
-function saveNewClueRow(button) {
+function saveNewClueRow(button,event) {
+    event.stopPropagation();
     var newRow = $(button).closest('tr.new-row');
     var cells = newRow.find('td:not(.actions)');
     var newMask = cells.eq(0).find('input').val().toUpperCase();
@@ -2219,10 +2223,12 @@ function saveNewClueRow(button) {
             success: function (response) {
                 if (response.error) {
                     alert(response.error);
+                    location.reload();
                 } else {
                     alert(response.message);
                     newRow.remove();
                     fetchClueData();
+                    // location.reload();
                 }
             },
             error: function (error) {
@@ -2232,6 +2238,7 @@ function saveNewClueRow(button) {
     } else {
         alert('Please provide both Token Name and Mask Token values.');
     }
+    document.getElementById("addClueComponent").disabled = false;
 }
 
 
