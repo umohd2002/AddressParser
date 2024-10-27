@@ -396,5 +396,133 @@
             }
         ],
         "Rejected By": "admin at 2024-10-20 16:25:22.900257"
+    },
+    {
+        "Record Id": "4",
+        "Timetamp": "2024-10-27 03:13:14.523067",
+        "Input": "30 ellwine dr, number l floor 3, eagle mountain, UT 84041",
+        "Mask Pattern": "NWF,WWSN,WF,TN",
+        "Region": "US",
+        "Type": "street address",
+        "Address Approved?": "No",
+        "Comment": "ihudsuadokp",
+        "User": "admin",
+        "Mapping Data": [
+            {
+                "Mask Token": "N",
+                "Address Token": "30",
+                "Address Component": "Street Number"
+            },
+            {
+                "Mask Token": "W",
+                "Address Token": "ELLWINE",
+                "Address Component": "Street Name"
+            },
+            {
+                "Mask Token": "F",
+                "Address Token": "DR",
+                "Address Component": "Street Suffix"
+            },
+            {
+                "Mask Token": "W",
+                "Address Token": "NUMBER",
+                "Address Component": "City Name"
+            },
+            {
+                "Mask Token": "W",
+                "Address Token": "L",
+                "Address Component": "City Name"
+            },
+            {
+                "Mask Token": "S",
+                "Address Token": "FLOOR",
+                "Address Component": "Zip Code"
+            },
+            {
+                "Mask Token": "N",
+                "Address Token": "3",
+                "Address Component": "Zip Code"
+            },
+            {
+                "Mask Token": "W",
+                "Address Token": "EAGLE",
+                "Address Component": "Military Rd Name"
+            },
+            {
+                "Mask Token": "F",
+                "Address Token": "MOUNTAIN",
+                "Address Component": "Highway Number"
+            },
+            {
+                "Mask Token": "T",
+                "Address Token": "UT",
+                "Address Component": "Organization Name"
+            },
+            {
+                "Mask Token": "N",
+                "Address Token": "84041",
+                "Address Component": "Zip 4 Code"
+            }
+        ],
+        "Rejected By": "admin at 2024-10-27 03:20:01.671714"
+    },
+    {
+        "Record Id": "8",
+        "Timetamp": "2024-10-27 03:46:28.661856",
+        "Input": "3716 hunters mill rd, 10th fl, madison, SD 57004",
+        "Mask Pattern": "NWFW,NT,W,TN",
+        "Region": "US",
+        "Type": "street address",
+        "Address Approved?": "No",
+        "Comment": ";lmjihuvg hj",
+        "User": "admin",
+        "Mapping Data": [
+            {
+                "Mask Token": "N",
+                "Address Token": "3716",
+                "Address Component": "Street Number"
+            },
+            {
+                "Mask Token": "W",
+                "Address Token": "HUNTERS",
+                "Address Component": "Street Name"
+            },
+            {
+                "Mask Token": "F",
+                "Address Token": "MILL",
+                "Address Component": "Street Suffix"
+            },
+            {
+                "Mask Token": "W",
+                "Address Token": "RD",
+                "Address Component": "City Name"
+            },
+            {
+                "Mask Token": "N",
+                "Address Token": "10TH",
+                "Address Component": "Zip 4 Code"
+            },
+            {
+                "Mask Token": "T",
+                "Address Token": "FL",
+                "Address Component": "State Name"
+            },
+            {
+                "Mask Token": "W",
+                "Address Token": "MADISON",
+                "Address Component": "Organization Name"
+            },
+            {
+                "Mask Token": "T",
+                "Address Token": "SD",
+                "Address Component": "Military Rd Number"
+            },
+            {
+                "Mask Token": "N",
+                "Address Token": "57004",
+                "Address Component": "Military Rd Number"
+            }
+        ],
+        "Rejected By": "admin at 2024-10-27 06:09:29.123870"
     }
 ]

@@ -1,9 +1,16 @@
 {
-    "Pseudo_1_lakh_3.txt": {
-        "result": "Detailed_Report of Pseudo_1_lakh_3.txt is Generated! \n\nThe Pseudo_1_lakh_3_Output.zip is downloaded, please check your download's directory. \n\n\nTotal Number of Addresses: -\t99,997\nUnique Pattern Count: -\t8,061\n\n\nNumber of Pattern Parsed Addresses: -\t43,871\nPercentage of Patterns Parsed Result:  -\t43.87%\n\nNumber of Exceptions Thrown: -\t\t56,126\nPercentage of RuleBased Parsed Result: -\t56.13%\n",
+    "Pseudo_1_lakh_2_1_1.txt": {
+        "result": "Detailed_Report of Pseudo_1_lakh_2_1_1.txt is Generated! \n\nThe Pseudo_1_lakh_2_1_1_Output.zip is downloaded, please check your download's directory. \n\n\nTotal Number of Addresses: -\t99,997\nUnique Pattern Count: -\t8,061\n\n\nNumber of Pattern Parsed Addresses: -\t44,255\nPercentage of Patterns Parsed Result:  -\t44.26%\n\nNumber of Exceptions Thrown: -\t\t55,742\nPercentage of RuleBased Parsed Result: -\t55.74%\n",
         "metrics": {
-            "metrics": "Detailed_Report of Pseudo_1_lakh_3.txt is Generated! \n\nThe Pseudo_1_lakh_3_Output.zip is downloaded, please check your download's directory. \n\n\nTotal Number of Addresses: -\t99,997\nUnique Pattern Count: -\t8,061\n\n\nNumber of Pattern Parsed Addresses: -\t43,871\nPercentage of Patterns Parsed Result:  -\t43.87%\n\nNumber of Exceptions Thrown: -\t\t56,126\nPercentage of RuleBased Parsed Result: -\t56.13%\n"
+            "metrics": "Detailed_Report of Pseudo_1_lakh_2_1_1.txt is Generated! \n\nThe Pseudo_1_lakh_2_1_1_Output.zip is downloaded, please check your download's directory. \n\n\nTotal Number of Addresses: -\t99,997\nUnique Pattern Count: -\t8,061\n\n\nNumber of Pattern Parsed Addresses: -\t44,255\nPercentage of Patterns Parsed Result:  -\t44.26%\n\nNumber of Exceptions Thrown: -\t\t55,742\nPercentage of RuleBased Parsed Result: -\t55.74%\n"
         },
-        "output_file_path": "Output/Batch File Output/Pseudo_1_lakh_3_output.zip"
+        "output_file_path": "Output/Batch File Output/Pseudo_1_lakh_2_1_1_output.zip"
+    },
+    "New_Test.txt": {
+        "result": "Detailed_Report of New_Test.txt is Generated! \n\nThe New_Test_Output.zip is downloaded, please check your download's directory. \n\n\nTotal Number of Addresses: -\t91\nUnique Pattern Count: -\t25\n\n\nNumber of Pattern Parsed Addresses: -\t84\nPercentage of Patterns Parsed Result:  -\t92.31%\n\nNumber of Exceptions Thrown: -\t\t7\nPercentage of RuleBased Parsed Result: -\t7.69%\n",
+        "metrics": {
+            "metrics": "Detailed_Report of New_Test.txt is Generated! \n\nThe New_Test_Output.zip is downloaded, please check your download's directory. \n\n\nTotal Number of Addresses: -\t91\nUnique Pattern Count: -\t25\n\n\nNumber of Pattern Parsed Addresses: -\t84\nPercentage of Patterns Parsed Result:  -\t92.31%\n\nNumber of Exceptions Thrown: -\t\t7\nPercentage of RuleBased Parsed Result: -\t7.69%\n"
+        },
+        "output_file_path": "Output/Batch File Output/New_Test_output.zip"
     }
 }
