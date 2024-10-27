@@ -250,38 +250,46 @@ def Address_Parser(Address_4CAF50,Progress,TruthSet=""):
     sessions = Session()
     mapdata_list = []
     exc_data_list = []
-    for i in ExceptionList:
-        rules = i
-        excdata = {
-            "Timestamp": timestamp,
-            # "Username": session["user_id"],
-            "Username": "admin",
-            "Run": "Multiple",
-            "Record ID": rules["Record ID"],
-            "data": rules[next((key for key, value in rules.items() if isinstance(value, list)), None)]
-        }
-        mapdata = MapCreationTable(Address_Input=rules["INPUT"], Mask=next((key for key, value in rules.items() if isinstance(value, list)), None))
-        mapdata_list.append(mapdata)
-        # Wait until the mapdata object is added to get the ID
-        sessions.add(mapdata)
-        sessions.flush()  # Required to generate the ID for mapdata before using it
-        j = 1
-        for data in excdata["data"]:
-            exc_data = ExceptionTable(
-                UserName=excdata["Username"], 
-                Timestamp=excdata["Timestamp"], 
-                Run=excdata["Run"], 
-                Address_ID=excdata["Record ID"], 
-                Component=data[1], 
-                Token=data[0], 
-                Mask_Token=data[2], 
-                Component_index=j, 
-                MapCreation_Index=mapdata.ID
-            )
-            exc_data_list.append(exc_data)
-            j += 1
-    # Add all the records in a batch
-    sessions.add_all(mapdata_list + exc_data_list)
-    # Commit the transaction
-    sessions.commit()
+    try:
+
+        for i in ExceptionList:
+            rules = i
+            excdata = {
+                "Timestamp": timestamp,
+                # "Username": session["user_id"],
+                "Username": "admin",
+                "Run": "Multiple",
+                "Record ID": rules["Record ID"],
+                "data": rules[next((key for key, value in rules.items() if isinstance(value, list)), None)]
+            }
+            mapdata = MapCreationTable(Address_Input=rules["INPUT"], Mask=next((key for key, value in rules.items() if isinstance(value, list)), None))
+            mapdata_list.append(mapdata)
+            # Wait until the mapdata object is added to get the ID
+            sessions.add(mapdata)
+            sessions.flush()  # Required to generate the ID for mapdata before using it
+            j = 1
+            for data in excdata["data"]:
+                exc_data = ExceptionTable(
+                    UserName=excdata["Username"], 
+                    Timestamp=excdata["Timestamp"], 
+                    Run=excdata["Run"], 
+                    Address_ID=excdata["Record ID"], 
+                    Component=data[1], 
+                    Token=data[0], 
+                    Mask_Token=data[2], 
+                    Component_index=j, 
+                    MapCreation_Index=mapdata.ID
+                )
+                exc_data_list.append(exc_data)
+                j += 1
+        # Add all the records in a batch
+        sessions.add_all(mapdata_list + exc_data_list)
+        # Commit the transaction
+        sessions.commit()
+
+    except IntegrityError as e:
+        sessions.rollback()
+        print(f"Error while committing: {e}")
+    finally:
+        sessions.close()
     return (True,f"Detailed_Report of {file_name}.txt is Generated! \n\nThe {file_name}_Output.zip is downloaded, please check your download's directory. \n\n{Detailed_Report}", zip_file_name)

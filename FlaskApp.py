@@ -8,7 +8,7 @@ from flask_socketio import SocketIO, emit
 import time  # Used for simulating processing time
 from flask import Flask, request, render_template, jsonify, send_file, session, send_from_directory, Response, stream_with_context
 from functools import wraps
-from sqlalchemy import create_engine, func, distinct
+from sqlalchemy import create_engine, func, distinct, update
 from sqlalchemy.orm import sessionmaker
 from flask import Flask, render_template, redirect, request, url_for, flash
 from werkzeug.utils import secure_filename, safe_join
@@ -38,7 +38,7 @@ import bcrypt
 import base64
 from flask_session import Session as sess
 from datetime import timedelta
-
+logging.getLogger('sqlalchemy.engine').setLevel(logging.ERROR)
 logging.basicConfig(level=logging.DEBUG)
 
 current_time = datetime.now()
@@ -370,18 +370,23 @@ def process_dropdown_data():
         run = data.get('run')
         user = "admin"  # You can switch this to: data.get('user') if it should be dynamic
         timestamp = data.get('timestamp')
-
-        # Query 1: Get distinct Address_ID values
-        Ids = session.query(ExceptionTable.Address_ID
-            ).filter(
-                ExceptionTable.Run == run, 
-                ExceptionTable.UserName == user, 
+        print(f"\n\n\n\nTimeStamp Before first Query {datetime.now()}\n\n\n\n")
+        Ids = (
+            session.query(ExceptionTable.Address_ID)
+            .filter(
+                ExceptionTable.Run == run,
+                ExceptionTable.UserName == user,
                 ExceptionTable.Timestamp == timestamp
-            ).distinct(ExceptionTable.Address_ID).limit(50).all()
+            )
+            .distinct(ExceptionTable.Address_ID)
+            .limit(50)
+            .all()
+        )
 
         address_id_list = [id_tuple[0] for id_tuple in Ids]
-
-        # Query 2: Fetch data based on the Address_IDs
+        print(f"\n\n\n\nTimeStamp Before second Query {datetime.now()}\n\n\n\n")
+        # page = data.get("page", 1)
+        # per_page = 20
         exception_dict = session.query(
                 ExceptionTable.Address_ID,
                 MapCreationTable.Address_Input,
@@ -396,15 +401,17 @@ def process_dropdown_data():
             ).join(
                 ComponentTable, ExceptionTable.Component == ComponentTable.component
             ).filter(
-                ExceptionTable.Run == run, 
-                ExceptionTable.UserName == user, 
+                # ExceptionTable.Run == run,
+                # ExceptionTable.UserName == user,
                 ExceptionTable.Timestamp == timestamp,
                 ExceptionTable.Address_ID.in_(address_id_list)
             ).order_by(
                 ExceptionTable.Address_ID,
                 ExceptionTable.Component_index
             ).all()
+        # .offset((page - 1) * per_page).limit(per_page).all()
 
+        print(f"\n\n\n\nTimeStamp Before third Query {datetime.now()}\n\n\n\n")
         # Query 3: Get the total count of distinct Address_IDs
         total_dict = session.query(
             func.count(distinct(ExceptionTable.Address_ID))
@@ -413,7 +420,7 @@ def process_dropdown_data():
                 ExceptionTable.UserName == user, 
                 ExceptionTable.Timestamp == timestamp
             ).scalar()
-
+        print(f"\n\n\n\nTimeStamp After third Query {datetime.now()}\n\n\n\n")
         # Process the query data
         data = process_query_data(exception_dict)
 
@@ -465,7 +472,7 @@ def process_query_data(query_data):
     if current_dict:
         current_dict[dynamic_key] = dynamic_key_list  # Add the last dynamic key list
         processed.append(current_dict)  # Append the last record to the processed list
-
+    print(f"\n\n\n\nDictionary to send: {processed}\n\n\n\n")
     return processed
 
 
@@ -475,8 +482,14 @@ def get_address_components():
     session = Session()
     try:
         # Query to get all component descriptions
-        components = session.query(ComponentTable.description).all()
-        options = [component[0] for component in components]  # Extract the description values
+        components = (
+            session.query(ComponentTable.description)
+            .filter(ComponentTable.description != 'Not Selected')
+            .order_by(ComponentTable.description.asc())
+            .all()
+        )
+        options = [component[0] for component in components]
+        options.append('Not Selected')
         return jsonify(options)
     except Exception as e:
         app.logger.error(f"Error occurred while fetching address components: {e}")
@@ -655,48 +668,73 @@ def add_new_component():
 
 @app.route('/save_changes', methods=['POST'])
 def Edit_Components():
+    result = {}
     session = Session()
     try:
+        start_time = time.time()
         received_data = request.json['components']  # Get the combined old and modified data
         print("SaveChanges UDF Received data:", received_data)
-
         # Process and update Component Table using SQLAlchemy ORM
+
+
         for component_data in received_data:
+            step_start = time.time()
+            existing_component = session.query(ComponentTable).filter(func.lower(ComponentTable.component) == func.lower(component_data['newComponent'])).all()
+            existing_desc = session.query(ComponentTable).filter(func.lower(ComponentTable.description) == func.lower(component_data['newDescription'])).all()
+
+            print(f"\n\n\nExc Comp: {existing_component}\n\n\n")
+            print(f"\n\n\nLength of Exc Desc: {len(existing_desc)}\n\n\n")
+            if len(existing_component) >1 or len(existing_desc) >1:
+                # Handle duplicate component or description
+                if len(existing_component) >1:
+                    result['error'] = 'Component already exists'
+                if len(existing_desc) >1:
+                    result['error'] = 'Component description already exists'
+                return jsonify(result=result)
             # Identify the old component
             old_component = session.query(ComponentTable).filter_by(
                 component=component_data['oldComponent'],
                 description=component_data['oldDescription']
-            ).first()
+            ).first() 
+            print(f"Query ComponentTable: {time.time() - step_start:.2f}s")
+            step_start = time.time()
 
             if old_component:
+                
                 # Update the old component with new values
                 old_component.component = component_data['newComponent']
                 old_component.description = component_data['newDescription']
 
-                # Update related records in MappingJSON
-                old_mappings = session.query(MappingJSON).filter_by(
+                # Perform bulk update for MappingJSON
+                session.query(MappingJSON).filter_by(
                     component_index=component_data['oldComponent']
-                ).all()
+                ).update(
+                    {"component_index": component_data['newComponent']},
+                    synchronize_session=False  # Can be used for performance gain
+                )
+                print(f"Update MappingJSON: {time.time() - step_start:.2f}s")
+                step_start = time.time()
 
-                for old_mapping in old_mappings:
-                    old_mapping.component_index = component_data['newComponent']
-
-                # Update related records in ExceptionTable
-                old_exceptions = session.query(ExceptionTable).filter_by(
+                session.query(ExceptionTable).filter_by(
                     Component=component_data['oldComponent']
-                ).all()
+                ).update(
+                    {"Component": component_data['newComponent']},
+                    synchronize_session=False
+                )
 
-                for old_exception in old_exceptions:
-                    old_exception.Component = component_data['newComponent']
+                print(f"Update ExceptionTable: {time.time() - step_start:.2f}s")
 
         # Commit all changes after processing
         session.commit()
-        return jsonify({'message': 'Changes saved successfully'})
+        print(f"Total time taken: {time.time() - start_time:.2f}s")
+        result['message'] = 'Component successfully Edited!'
+        return jsonify(result=result)
 
     except Exception as e:
         session.rollback()  # Rollback the session in case of an error
-        app.logger.error(f"Error occurred while saving component changes: {e}")
-        return jsonify({'message': f'Error: {str(e)}'}), 500
+        app.logger.error(f"Error occurred while adding new component: {e}")
+        result['error'] = f'Error: {str(e)}'
+        return jsonify(result=result), 500
 
     finally:
         session.close()  # Ensure the session is always closed
@@ -952,6 +990,7 @@ def CLUE_Components():
         return jsonify(result={})
 
     except Exception as e:
+        print("\n\n\nRollBack for Clue Table triggered!!!\n\n\n")
         session.rollback()  # Rollback in case of error
         app.logger.error(f"Error occurred in CLUE_Components: {e}")
         return jsonify({'error': f'Error: {str(e)}'}), 500

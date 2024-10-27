@@ -1044,15 +1044,20 @@ $('#userdfc').click(function () {
     $('#fetchall').click();
     $('#fetchall').hide();
     document.getElementById("BF").value = ' active';
-
+    
     // location.reload(true);
 });
 
+function toTitleCase(str) {
+    return str.replace(/\w\S*/g, function (txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    });
+}
 function populateComponentsTable(components) {
     var tableBody = $('#udresultBody');
     tableBody.empty(); // Clear existing table rows
     var tableHTML = '';
-
+    
     // Loop through the received JSON data
     for (var key in components) {
         tableHTML += '<tr>';
@@ -1077,8 +1082,8 @@ $('#udresultBody').on('click', 'td', function (event) {
 function addComponent() {
     // Create a new row for adding a component
     var newRow = '<tr class="new-row">' +
-        '<td><input type="text" class="editable" placeholder="New Component" maxlength="20"></td>' +
-        '<td><input type="text" class="editable" placeholder="New Description" maxlength="20"></td>' +
+        '<td><input type="text" class="editable" placeholder="New Component" maxlength="8"></td>' +
+        '<td><input type="text" class="editable" placeholder="New Description" maxlength="24"></td>' +
         '<td class="actions">' +
         '<button class="save-btn" id="save-btn" onclick="saveNewRow(this,event)">Save</button>' +
         '<button class="cancel-btn" id="cancel-btn" onclick="cancelAddRow(this,event)">Cancel</button>' +
@@ -1103,9 +1108,17 @@ function saveNewRow(button,event) {
     event.stopPropagation();
     var newRow = $(button).closest('tr.new-row');
     var cells = newRow.find('td:not(.actions)');
-    var newComponent = cells.eq(0).find('input').val();
-    var newDescription = cells.eq(1).find('input').val();
+    var Component = cells.eq(0).find('input').val();
+    
+    var Description = cells.eq(1).find('input').val();
+    var newComponent = Component.toUpperCase();
+    var newDescription = toTitleCase(Description);
 
+    if (!newComponent.startsWith("USAD_")) {
+        alert('The component Value must start with "USAD_". Please update the value accordingly.');
+        location.reload();
+        return;
+    }
     // Perform validation if needed
     if (newComponent && newDescription) {
         // Send the new data to the server
@@ -1119,9 +1132,10 @@ function saveNewRow(button,event) {
                     alert(response.result.error);
                 } else {
                     // Proceed with successful addition
+                    alert("New Component: "+ newComponent +" & new Description: "+newDescription+" is Added Successfully!");
                     location.reload();
-                    newRow.remove();
-                    fetchComponentData();
+                    // newRow.remove();
+                    // fetchComponentData();
                 }
             },
             error: function (error) {
@@ -1218,7 +1232,8 @@ function cancelEditRow(button) {
 
 
 // Function to handle the save button click event
-function saveRow(button) {
+function saveRow(button,event) {
+    event.stopPropagation(); 
     var row = $(button).closest('tr');
     var cells = row.find('td:not(.actions)');
     var newData = []; // Array to hold modified data
@@ -1232,12 +1247,21 @@ function saveRow(button) {
         // Store new data in an array
         newData.push(newValue);
     });
+    if (!newData[0].startsWith("USAD_")) {
+        alert('The component must start with "USAD_". Please update the value accordingly.');
+        location.reload();
+        return;  // Stop execution if the validation fails
+    }
+    // cells.each(function (index) {
+    //     var cell = $(this);
+    //     cell.text(newData[index]); // Update cell with new value
+    // });
 
     var payload = {
         oldComponent: oldComponent,
         oldDescription: oldDescription,
-        newComponent: newData[0], // Updated component value after editing
-        newDescription: newData[1]
+        newComponent: newData[0].toUpperCase(), // Updated component value after editing
+        newDescription: toTitleCase(newData[1])
     };
 
     var actionsCell = row.find('.actions');
@@ -1249,34 +1273,87 @@ function saveRow(button) {
     oldDescription = cells.eq(1).text();
 
     // Send the modified data to the server
-    saveChangesToServer([payload]); // Wrap payload in an array
+    saveChangesToServer([payload],event); // Wrap payload in an array
 
     // Reset oldComponent and oldDescription
     //oldComponent = null;
     //oldDescription = null;
 }
 
-function saveChangesToServer(payload) {
-    // console.log('Data sent to server:', payload);
-    $.ajax({
-        type: "POST",
-        url: "/save_changes",
-        contentType: "application/json",
-        data: JSON.stringify({ components: payload }), // Wrap payload in an object
-        success: function (response) {
-            location.reload();// reload when the save button is clicked
-            // console.log('Response:', response);
-            // console.log(response.message);
-            // Handle success
-        },
-        error: function (error) {
-            console.error('Error:', error);
-            // Handle error
-        }
-    })
-        .always(function () {
-            resetButtons();
+function saveChangesToServer(payload, event) {
+    // alert('Data sent to server:', payload);
+    var payload_component = payload[0];
+    var oldComponent = payload_component.oldComponent;
+    var newComponent = payload_component.newComponent;
+    var oldDescription = payload_component.oldDescription;
+    var newDescription = payload_component.newDescription;
+
+    if (oldComponent == newComponent && oldDescription== newDescription) {
+        alert("No Changes Detected!")
+        location.reload()
+        return;
+    } else {
+        
+        $.ajax({
+            type: "GET",
+            url: "/get_mask_count",
+            data: { component: oldComponent },
+            success: function (response) {
+                // Check if response has the 'result' property
+                if ('result' in response && 'maskCount' in response.result) {
+                    var confirmationMessage = "Are you sure you want to Edit this record?\n";
+                    confirmationMessage += "Number of Masks and Dictionaries Edited: " + response.result.maskCount;
+                    
+                    // Use a JavaScript confirm dialog
+                    var confirmation = window.confirm(confirmationMessage);
+                    if (!confirmation) {
+                        location.reload()
+                    }
+                    else {
+                        console.log('Attempting to show spinner...');
+                        document.getElementById('uspinner').style.display = 'block';
+                        console.log('Spinner visibility should now be set to block.');
+                        $.ajax({
+                            type: "POST",
+                            url: "/save_changes",
+                            contentType: "application/json",
+                            data: JSON.stringify({ components: payload }), // Wrap payload in an object
+                            success: function (response) {
+                                if (response.result.error){
+                                    alert(response.result.error)
+                                    document.getElementById('uspinner').style.display = 'none';
+                                } else
+                                {
+                                    alert(response.result.message)
+                                    document.getElementById('uspinner').style.display = 'none';
+                                    location.reload();// reload when the save button is clicked
+                                }
+                                // console.log('Response:', response);
+                                // console.log(response.message);
+                                // Handle success
+                            },
+                            error: function (error) {
+                                console.error('Error Editing record:', error);
+                                // Handle error
+                            }
+                        })
+                            .always(function () {
+                                resetButtons();
+                            });
+                    }
+                }
+                else {
+                    console.error('Invalid response format:', response);
+                }
+            }, error: function (error) {
+                console.error('Error getting mask count:', error);
+            }
         });
+
+    }
+
+    event.preventDefault(); // Prevent the default action of the button
+    event.stopPropagation(); // Stop the event from propagating further
 }
 
 function deleteRow(button, event) {
@@ -1401,377 +1478,377 @@ $(document).on('click', '.cancel-btn', function (event) {
 //                                  Authentication Tab
 // ----------------------------------------------------------------------------------------------------------------
 // This function could be triggered when the Authentication Tab is opened
-$('#user').click(function () {
-    location.reload(true);
-    document.getElementById("user").value = ' active';
-});
-let originalValues = {}
-function loadUserData() {
-    $.ajax({
-        url: '/authentication',  // Adjust the URL as per your route
-        type: 'GET',
-        success: function (response) {
-            // console.log("Response:", response)
-            // Assuming 'response' contains the HTML with the user table
-            populateUserTable(response.users, response.roles);
-            $('#create_user').off('click').on('click', function (event) {
-                addUser(response.users, response.roles);
-            });
-        },
-        error: function (error) {
-            console.log("Error fetching user data:", error);
-            // Handle errors appropriately
-        }
-    });
-}
+// $('#user').click(function () {
+//     location.reload(true);
+//     document.getElementById("user").value = ' active';
+// });
+// let originalValues = {}
+// function loadUserData() {
+//     $.ajax({
+//         url: '/authentication',  // Adjust the URL as per your route
+//         type: 'GET',
+//         success: function (response) {
+//             // console.log("Response:", response)
+//             // Assuming 'response' contains the HTML with the user table
+//             populateUserTable(response.users, response.roles);
+//             $('#create_user').off('click').on('click', function (event) {
+//                 addUser(response.users, response.roles);
+//             });
+//         },
+//         error: function (error) {
+//             console.log("Error fetching user data:", error);
+//             // Handle errors appropriately
+//         }
+//     });
+// }
 
 
 
-$('document').ready(function () {
-    loadUserData();
-    $("#loadUserData").hide();
-});
+// $('document').ready(function () {
+//     loadUserData();
+//     $("#loadUserData").hide();
+// });
 
-function populateUserTable(users, roles) {
-    var tableBody = $('#utresultBody');
-    tableBody.empty(); // Clear existing table rows
-    var tableHTML = '';
+// function populateUserTable(users, roles) {
+//     var tableBody = $('#utresultBody');
+//     tableBody.empty(); // Clear existing table rows
+//     var tableHTML = '';
 
-    // Loop through the users array
-    users.forEach(function (user) {
-        tableHTML += '<tr id="user-row-' + user.id + '">';
-        tableHTML += '<td>' + user.fullName + '</td>'; // Full Name
-        tableHTML += '<td>' + user.userName + '</td>'; // User Name
-        tableHTML += '<td>' + user.email + '</td>'; // Email
-        tableHTML += '<td class="non-editable-password">' + user.password + '</td>'; // Password
-        tableHTML += '<td>' + createRoleDropdown(user.role, roles) + '</td>'; // Role Dropdown
-        // tableHTML += '<td>' + createStatusCheckboxes(user.id, user.Active) + '</td>'; // Status Checkboxes
-        tableHTML += '<td class="actions">';
-        tableHTML += createActionButtons(user.id); // Action Buttons
-        tableHTML += '</td>';
-        tableHTML += '</tr>';
-    });
-    tableBody.html(tableHTML); // Inject the generated HTML into the table body
-    // tableBody.append(tableHTML);
-    $('#utresultTable').show(); // Show the table
-    $('#utresultTable thead').show(); // Show the table header
-}
+//     // Loop through the users array
+//     users.forEach(function (user) {
+//         tableHTML += '<tr id="user-row-' + user.id + '">';
+//         tableHTML += '<td>' + user.fullName + '</td>'; // Full Name
+//         tableHTML += '<td>' + user.userName + '</td>'; // User Name
+//         tableHTML += '<td>' + user.email + '</td>'; // Email
+//         tableHTML += '<td class="non-editable-password">' + user.password + '</td>'; // Password
+//         tableHTML += '<td>' + createRoleDropdown(user.role, roles) + '</td>'; // Role Dropdown
+//         // tableHTML += '<td>' + createStatusCheckboxes(user.id, user.Active) + '</td>'; // Status Checkboxes
+//         tableHTML += '<td class="actions">';
+//         tableHTML += createActionButtons(user.id); // Action Buttons
+//         tableHTML += '</td>';
+//         tableHTML += '</tr>';
+//     });
+//     tableBody.html(tableHTML); // Inject the generated HTML into the table body
+//     // tableBody.append(tableHTML);
+//     $('#utresultTable').show(); // Show the table
+//     $('#utresultTable thead').show(); // Show the table header
+// }
 
-$('#utresultBody').on('click', 'td', function (event) {
-    event.stopPropagation();
-});
-
-
-function editUser(userId) {
-
-    var row = $('#user-row-' + userId);
-    // console.log("editUser called for user ID:", userId, "Caller:", editUser.caller);
-    // Avoid re-initializing edit mode if it's already active
-    if (row.find('.save1-btn').length > 0) {
-        return;
-    }
-
-    var originalValues = {
-        textValues: [],
-        roleValue: '',
-        statusValues: []
-    };
-
-    // console.log("Original Vlaues Initially: ",originalValues)
-
-    row.find('td:not(:last-child)').each(function (index, td) {
-        var cell = $(td);
-
-        // Store text values for text cells
-        if (index < 3) { // Assuming first 4 columns are text
-            originalValues.textValues.push(cell.text());
-            cell.html('<input type="text" class="form-control" value="' + cell.text() + '">');
-        }
-
-        var roleDropdown = row.find('select');
-
-        // console.log(roleDropdown); // Check what is being selected
-        if (roleDropdown.length > 0) {
-            originalValues.roleValue = roleDropdown.val();
-            roleDropdown.prop('disabled', false);
-        } else {
-            console.log('Role dropdown not found for user id:', userId);
-        }
-
-        // Store and enable status checkboxes
-        if (cell.find('input').length > 0) {
-            cell.find('input').each(function () {
-                originalValues.statusValues.push($(this).is(':checked'));
-            });
-            cell.find('input').prop('disabled', false);
-        }
-    });
-    row.data('original-values', originalValues);
-    // console.log("Edit User Original Data:", originalValues);
-
-    // Replace Action Buttons
-    var actionCell = row.find('td:last');
-    actionCell.empty();
-    actionCell.append('<button class="save1-btn" id="save1-btn" onclick="saveEditedUser(' + userId + ')">Save</button>');
-    actionCell.append('<button class="cancel1-btn" id="cancel1-btn" onclick="cancelEditUser(' + userId + ')">Cancel</button>');
-    return;
-
-}
-var email = document.querySelectorAll('#utresultBody tr td')
-
-function cancelEditUser(userId) {
-    var row = $('#user-row-' + userId);
-    var originalValues = row.data('original-values');
-    // console.log("Cancel Edit User Original Data:", originalValues)
-
-    // Revert the text input fields to original values
-    row.find('td:not(:nth-child(5)):not(:nth-child(6))').each(function (index, td) {
-        $(td).text(originalValues.textValues[index]);
-    });
-
-    // Revert the role dropdown
-    var roleSelect = row.find('select');
-    // console.log("Role Value:", originalValues.roleValue)
-    roleSelect.val(originalValues.roleValue);
-
-    // Revert the status checkboxes
-    var statusCheckbox = row.find('input[type="checkbox"]');
-    // Assuming the last element in statusValues refers to the checkbox status
-    var checkboxIndex = originalValues.statusValues.length - 1;
-    statusCheckbox.prop('checked', originalValues.statusValues[checkboxIndex]);
+// $('#utresultBody').on('click', 'td', function (event) {
+//     event.stopPropagation();
+// });
 
 
-    // Re-disable inputs, select, and checkboxes
-    row.find('input, select').prop('disabled', true);
+// function editUser(userId) {
 
-    // Restore original action buttons
-    var actionCell = row.find('td:last');
-    actionCell.empty();
-    actionCell.append(createActionButtons(userId));
+//     var row = $('#user-row-' + userId);
+//     // console.log("editUser called for user ID:", userId, "Caller:", editUser.caller);
+//     // Avoid re-initializing edit mode if it's already active
+//     if (row.find('.save1-btn').length > 0) {
+//         return;
+//     }
 
-    // Optionally, clear the stored original values
-    row.removeData('original-values');
-}
+//     var originalValues = {
+//         textValues: [],
+//         roleValue: '',
+//         statusValues: []
+//     };
 
+//     // console.log("Original Vlaues Initially: ",originalValues)
 
+//     row.find('td:not(:last-child)').each(function (index, td) {
+//         var cell = $(td);
 
-function saveEditedUser(userId) {
-    var row = $('#user-row-' + userId);
-    // var row = $(button).closest("tr");
-    // var userId = row.data('user-id');
-    // var userId = row.attr('data-user-id');
+//         // Store text values for text cells
+//         if (index < 3) { // Assuming first 4 columns are text
+//             originalValues.textValues.push(cell.text());
+//             cell.html('<input type="text" class="form-control" value="' + cell.text() + '">');
+//         }
 
-    // console.log("Row element:", row);
-    // console.log("User ID found:", userId);
-    if (!userId) {
-        console.error('User ID not found.', row.data());
-        return;
-    }
+//         var roleDropdown = row.find('select');
 
-    var SendData = {
-        "FullName": "",
-        "UserName": "",
-        "Email": "",
-        "Password": "",
-        "Role_id": "",
-        "Status": ""
-    };
+//         // console.log(roleDropdown); // Check what is being selected
+//         if (roleDropdown.length > 0) {
+//             originalValues.roleValue = roleDropdown.val();
+//             roleDropdown.prop('disabled', false);
+//         } else {
+//             console.log('Role dropdown not found for user id:', userId);
+//         }
 
-    // Iterate through each cell to collect data and update cell text
-    row.find('td:not(:last-child)').each(function (index) {
-        var cell = $(this);
-        var input = cell.find('input, select');
-        var key = Object.keys(SendData)[index];
+//         // Store and enable status checkboxes
+//         if (cell.find('input').length > 0) {
+//             cell.find('input').each(function () {
+//                 originalValues.statusValues.push($(this).is(':checked'));
+//             });
+//             cell.find('input').prop('disabled', false);
+//         }
+//     });
+//     row.data('original-values', originalValues);
+//     // console.log("Edit User Original Data:", originalValues);
 
-        if (input.length > 0) {
-            if (input.is('input[type="checkbox"]')) {
-                // Check the checkbox status and set "Active" or "Inactive"
-                SendData["Status"] = input.is(':checked') ? "Active" : "Inactive";
-            } else {
-                // For other inputs and selects, just save the value
-                var value = input.val();
-                SendData[key] = value;
-                // Update the cell text if it's an input field
-                if (!input.is('select')) {
-                    cell.text(value);
-                }
-            }
-        }
-    });
-    row.find('input, select').prop('disabled', true);
+//     // Replace Action Buttons
+//     var actionCell = row.find('td:last');
+//     actionCell.empty();
+//     actionCell.append('<button class="save1-btn" id="save1-btn" onclick="saveEditedUser(' + userId + ')">Save</button>');
+//     actionCell.append('<button class="cancel1-btn" id="cancel1-btn" onclick="cancelEditUser(' + userId + ')">Cancel</button>');
+//     return;
 
-    // console.log("Edited Row Data:", SendData);
+// }
+// var email = document.querySelectorAll('#utresultBody tr td')
 
-    // console.log("Sending Data to Server:", SendData);
-    // console.log("URL: '/save_User/' + userId", '/save_User/' + userId);
+// function cancelEditUser(userId) {
+//     var row = $('#user-row-' + userId);
+//     var originalValues = row.data('original-values');
+//     // console.log("Cancel Edit User Original Data:", originalValues)
 
-    // AJAX call to save data
-    $.ajax({
-        // console.log("URL Ajax", url),
-        url: '/save_User/' + userId,
-        type: 'POST',
-        contentType: 'application/json',
-        data: JSON.stringify(SendData),
-        success: function (response) {
-            // console.log("User saved:", response);
-            loadUserData();
-            location.reload();
-        },
-        error: function (error) {
-            console.error("Error saving user data:", error);
-            alert("Please provide unique value for Username and Email!")
-            location.reload()
-        }
-    });
-    // Reset the action buttons to the default state
-    var actionCell = row.find('td:last');
-    actionCell.empty();
-    actionCell.append(createActionButtons(userId));
-}
+//     // Revert the text input fields to original values
+//     row.find('td:not(:nth-child(5)):not(:nth-child(6))').each(function (index, td) {
+//         $(td).text(originalValues.textValues[index]);
+//     });
 
-function addUser(users, roles) {
-    var roleDropdownHtml = '<select>';
-    // console.log("Roles:",roles)
-    roles.forEach(function (role) {
-        roleDropdownHtml += '<option value="' + role + '">' + role + '</option>';
-    });
-    roleDropdownHtml += '</select>';
+//     // Revert the role dropdown
+//     var roleSelect = row.find('select');
+//     // console.log("Role Value:", originalValues.roleValue)
+//     roleSelect.val(originalValues.roleValue);
 
-    // Create a new row for adding a component
-    var newRow = '<tr class="newUser-row">' +
-        '<td><input type="text" class="editable" placeholder="Enter Full Name" maxlength="20"></td>' +
-        '<td><input type="text" class="editable" placeholder="Enter Username" maxlength="20"></td>' +
-        '<td><input type="text" class="editable" placeholder="Enter Email" maxlength="20"></td>' +
-        '<td><input type="text" class="editable" placeholder="Enter Password" maxlength="20"></td>' +
-        '<td>' + roleDropdownHtml + '</td>' +
-        // '<td><input type="checkbox" id="new-user-status"></td>'+
-        '<td class="actions">' +
-        '<button class="save1-btn" id="save1-btn" onclick="saveNewUser(this,event)">Save</button>' +
-        '<button class="cancel1-btn" id="cancel1-btn" onclick="cancelNewUser(this,event)">Cancel</button>' +
-        '</td>' +
-        '</tr>';
-    // Append the new row at the end of the table
-    $('#utresultBody').append(newRow);
-
-}
-
-function saveNewUser(button) {
-    var newRow = $(button).closest("tr.newUser-row");
-    var fullName = newRow.find('td input').eq(0).val(); // Full Name
-    var userName = newRow.find('td input').eq(1).val(); // User Name
-    var email = newRow.find('td input').eq(2).val(); // Email
-    var password = newRow.find('td input').eq(3).val();
-
-    if (!fullName || fullName.length < 3 || fullName.length > 20) {
-        alert("Full name must be between 3 and 20 characters.");
-        return;
-    }
-    if (!userName || userName.length < 3 || userName.length > 20) {
-        alert("Username must be between 3 and 20 characters.");
-        return;
-    }
-    if (!email || email.length < 3 || email.length > 30) {
-        alert("Email must be between 3 and 30 characters.");
-        return;
-    }
-    if (!password || password.length < 3 || password.length > 20) {
-        alert("Password must be between 3 and 20 characters.");
-        return;
-    }
-    var SendData = {
-        "FullName": newRow.find('td input').eq(0).val(), // Full Name
-        "UserName": newRow.find('td input').eq(1).val(), // User Name
-        "Email": newRow.find('td input').eq(2).val(), // Email
-        "Password": newRow.find('td input').eq(3).val(), // Password
-        "Role_id": newRow.find('td select').val(), // Role Dropdown Value
-        // "Status": newRow.find('td input[type="checkbox"]').is(':checked') ? "Active" : "Inactive" // Status Checkbox
-    };
-
-    // console.log("Sending Data to Server:", SendData);
-
-    // AJAX call to send data to the server
-    $.ajax({
-        url: '/create_user',  // Adjust the URL as per your server endpoint
-        type: 'POST',
-        contentType: 'application/json',
-        data: JSON.stringify(SendData),
-        success: function (response) {
-            // console.log("User saved:", response);
-            // Add any success handling logic here
-            newRow.remove(); // Remove the new user row after saving
-            loadUserData();
-            location.reload();
-        },
-        error: function (error) {
-            console.error("Error saving new user data:", error);
-            newRow.remove();
-            alert("Please provide the Unique values in Username and Email!")
-            // Handle the error scenario
-        }
-    });
-}
+//     // Revert the status checkboxes
+//     var statusCheckbox = row.find('input[type="checkbox"]');
+//     // Assuming the last element in statusValues refers to the checkbox status
+//     var checkboxIndex = originalValues.statusValues.length - 1;
+//     statusCheckbox.prop('checked', originalValues.statusValues[checkboxIndex]);
 
 
-function cancelNewUser(button) {
-    // Remove the new row upon cancellation
-    var newRow = $(button).closest('tr.newUser-row');
-    newRow.remove();
-}
+//     // Re-disable inputs, select, and checkboxes
+//     row.find('input, select').prop('disabled', true);
 
-function deleteUser(userId) {
-    // var row = $(button).closest("tr");
-    var row = $('#user-row-' + userId);
-    // var userId = row.find('td:first').text();
-    // console.log("User ID found:", userId);
-    if (!userId) {
-        console.error('User ID not found.', row.data());
-        return;
-    }
-    // console.log("URL: '/delete_User/' + userId", '/delete_User/' + userId);
-    var confirmationMessage = "Are you sure you want to delete this user?";
-    var confirmation = window.confirm(confirmationMessage);
-    if (confirmation) {
-        // AJAX call to save data
-        $.ajax({
-            // console.log("URL Ajax", url),
-            url: '/delete_User/' + userId,
-            type: 'POST',
-            contentType: 'application/json',
-            data: { userId: userId },
-            success: function (response) {
-                // console.log('Record deleted:', response);
-                row.remove();
-                loadUserData();
-                location.reload();
-            },
-            error: function (error) {
-                console.error("Unexpected error occred while deleting the User:", error);
-                alert("Unexpected error occred while deleting the User!");
-                location.reload();
-            }
-        });
-    }
-}
+//     // Restore original action buttons
+//     var actionCell = row.find('td:last');
+//     actionCell.empty();
+//     actionCell.append(createActionButtons(userId));
+
+//     // Optionally, clear the stored original values
+//     row.removeData('original-values');
+// }
 
 
 
+// function saveEditedUser(userId) {
+//     var row = $('#user-row-' + userId);
+//     // var row = $(button).closest("tr");
+//     // var userId = row.data('user-id');
+//     // var userId = row.attr('data-user-id');
 
-// You might also want to adjust your createActionButtons function to add classes for easier selection
-function createActionButtons(userId) {
-    return '<button class="edit1-btn" onclick="editUser(' + userId + ')">Edit</button>' +
-        '<button class="delete1-btn" onclick="deleteUser(' + userId + ')">Delete</button>';
-}
+//     // console.log("Row element:", row);
+//     // console.log("User ID found:", userId);
+//     if (!userId) {
+//         console.error('User ID not found.', row.data());
+//         return;
+//     }
 
-function createRoleDropdown(currentRole, roles) {
-    var dropdownHtml = '<select disabled>';
-    roles.forEach(function (role) {
-        dropdownHtml += '<option value="' + role + '"' +
-            (role === currentRole ? ' selected' : '') + '>' +
-            role + '</option>';
-    });
-    dropdownHtml += '</select>';
-    return dropdownHtml;
-}
+//     var SendData = {
+//         "FullName": "",
+//         "UserName": "",
+//         "Email": "",
+//         "Password": "",
+//         "Role_id": "",
+//         "Status": ""
+//     };
+
+//     // Iterate through each cell to collect data and update cell text
+//     row.find('td:not(:last-child)').each(function (index) {
+//         var cell = $(this);
+//         var input = cell.find('input, select');
+//         var key = Object.keys(SendData)[index];
+
+//         if (input.length > 0) {
+//             if (input.is('input[type="checkbox"]')) {
+//                 // Check the checkbox status and set "Active" or "Inactive"
+//                 SendData["Status"] = input.is(':checked') ? "Active" : "Inactive";
+//             } else {
+//                 // For other inputs and selects, just save the value
+//                 var value = input.val();
+//                 SendData[key] = value;
+//                 // Update the cell text if it's an input field
+//                 if (!input.is('select')) {
+//                     cell.text(value);
+//                 }
+//             }
+//         }
+//     });
+//     row.find('input, select').prop('disabled', true);
+
+//     // console.log("Edited Row Data:", SendData);
+
+//     // console.log("Sending Data to Server:", SendData);
+//     // console.log("URL: '/save_User/' + userId", '/save_User/' + userId);
+
+//     // AJAX call to save data
+//     $.ajax({
+//         // console.log("URL Ajax", url),
+//         url: '/save_User/' + userId,
+//         type: 'POST',
+//         contentType: 'application/json',
+//         data: JSON.stringify(SendData),
+//         success: function (response) {
+//             // console.log("User saved:", response);
+//             loadUserData();
+//             location.reload();
+//         },
+//         error: function (error) {
+//             console.error("Error saving user data:", error);
+//             alert("Please provide unique value for Username and Email!")
+//             location.reload()
+//         }
+//     });
+//     // Reset the action buttons to the default state
+//     var actionCell = row.find('td:last');
+//     actionCell.empty();
+//     actionCell.append(createActionButtons(userId));
+// }
+
+// function addUser(users, roles) {
+//     var roleDropdownHtml = '<select>';
+//     // console.log("Roles:",roles)
+//     roles.forEach(function (role) {
+//         roleDropdownHtml += '<option value="' + role + '">' + role + '</option>';
+//     });
+//     roleDropdownHtml += '</select>';
+
+//     // Create a new row for adding a component
+//     var newRow = '<tr class="newUser-row">' +
+//         '<td><input type="text" class="editable" placeholder="Enter Full Name" maxlength="20"></td>' +
+//         '<td><input type="text" class="editable" placeholder="Enter Username" maxlength="20"></td>' +
+//         '<td><input type="text" class="editable" placeholder="Enter Email" maxlength="20"></td>' +
+//         '<td><input type="text" class="editable" placeholder="Enter Password" maxlength="20"></td>' +
+//         '<td>' + roleDropdownHtml + '</td>' +
+//         // '<td><input type="checkbox" id="new-user-status"></td>'+
+//         '<td class="actions">' +
+//         '<button class="save1-btn" id="save1-btn" onclick="saveNewUser(this,event)">Save</button>' +
+//         '<button class="cancel1-btn" id="cancel1-btn" onclick="cancelNewUser(this,event)">Cancel</button>' +
+//         '</td>' +
+//         '</tr>';
+//     // Append the new row at the end of the table
+//     $('#utresultBody').append(newRow);
+
+// }
+
+// function saveNewUser(button) {
+//     var newRow = $(button).closest("tr.newUser-row");
+//     var fullName = newRow.find('td input').eq(0).val(); // Full Name
+//     var userName = newRow.find('td input').eq(1).val(); // User Name
+//     var email = newRow.find('td input').eq(2).val(); // Email
+//     var password = newRow.find('td input').eq(3).val();
+
+//     if (!fullName || fullName.length < 3 || fullName.length > 20) {
+//         alert("Full name must be between 3 and 20 characters.");
+//         return;
+//     }
+//     if (!userName || userName.length < 3 || userName.length > 20) {
+//         alert("Username must be between 3 and 20 characters.");
+//         return;
+//     }
+//     if (!email || email.length < 3 || email.length > 30) {
+//         alert("Email must be between 3 and 30 characters.");
+//         return;
+//     }
+//     if (!password || password.length < 3 || password.length > 20) {
+//         alert("Password must be between 3 and 20 characters.");
+//         return;
+//     }
+//     var SendData = {
+//         "FullName": newRow.find('td input').eq(0).val(), // Full Name
+//         "UserName": newRow.find('td input').eq(1).val(), // User Name
+//         "Email": newRow.find('td input').eq(2).val(), // Email
+//         "Password": newRow.find('td input').eq(3).val(), // Password
+//         "Role_id": newRow.find('td select').val(), // Role Dropdown Value
+//         // "Status": newRow.find('td input[type="checkbox"]').is(':checked') ? "Active" : "Inactive" // Status Checkbox
+//     };
+
+//     // console.log("Sending Data to Server:", SendData);
+
+//     // AJAX call to send data to the server
+//     $.ajax({
+//         url: '/create_user',  // Adjust the URL as per your server endpoint
+//         type: 'POST',
+//         contentType: 'application/json',
+//         data: JSON.stringify(SendData),
+//         success: function (response) {
+//             // console.log("User saved:", response);
+//             // Add any success handling logic here
+//             newRow.remove(); // Remove the new user row after saving
+//             loadUserData();
+//             location.reload();
+//         },
+//         error: function (error) {
+//             console.error("Error saving new user data:", error);
+//             newRow.remove();
+//             alert("Please provide the Unique values in Username and Email!")
+//             // Handle the error scenario
+//         }
+//     });
+// }
+
+
+// function cancelNewUser(button) {
+//     // Remove the new row upon cancellation
+//     var newRow = $(button).closest('tr.newUser-row');
+//     newRow.remove();
+// }
+
+// function deleteUser(userId) {
+//     // var row = $(button).closest("tr");
+//     var row = $('#user-row-' + userId);
+//     // var userId = row.find('td:first').text();
+//     // console.log("User ID found:", userId);
+//     if (!userId) {
+//         console.error('User ID not found.', row.data());
+//         return;
+//     }
+//     // console.log("URL: '/delete_User/' + userId", '/delete_User/' + userId);
+//     var confirmationMessage = "Are you sure you want to delete this user?";
+//     var confirmation = window.confirm(confirmationMessage);
+//     if (confirmation) {
+//         // AJAX call to save data
+//         $.ajax({
+//             // console.log("URL Ajax", url),
+//             url: '/delete_User/' + userId,
+//             type: 'POST',
+//             contentType: 'application/json',
+//             data: { userId: userId },
+//             success: function (response) {
+//                 // console.log('Record deleted:', response);
+//                 row.remove();
+//                 loadUserData();
+//                 location.reload();
+//             },
+//             error: function (error) {
+//                 console.error("Unexpected error occred while deleting the User:", error);
+//                 alert("Unexpected error occred while deleting the User!");
+//                 location.reload();
+//             }
+//         });
+//     }
+// }
+
+
+
+
+// // You might also want to adjust your createActionButtons function to add classes for easier selection
+// function createActionButtons(userId) {
+//     return '<button class="edit1-btn" onclick="editUser(' + userId + ')">Edit</button>' +
+//         '<button class="delete1-btn" onclick="deleteUser(' + userId + ')">Delete</button>';
+// }
+
+// function createRoleDropdown(currentRole, roles) {
+//     var dropdownHtml = '<select disabled>';
+//     roles.forEach(function (role) {
+//         dropdownHtml += '<option value="' + role + '"' +
+//             (role === currentRole ? ' selected' : '') + '>' +
+//             role + '</option>';
+//     });
+//     dropdownHtml += '</select>';
+//     return dropdownHtml;
+// }
 // function createStatusCheckboxes(userId, status) {
 //     console.log("Status Received: ",status)
 //     var isActive = status === 'Active'; // Uncomment and use your logic to set isActive

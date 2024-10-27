@@ -2728,5 +2728,74 @@
             }
         ],
         "Approved By": "admin at 2024-10-22 22:17:51.238221"
+    },
+    {
+        "Record Id": "4",
+        "Timetamp": "2024-10-27 03:46:28.661856",
+        "Input": "30 ellwine dr, number l floor 3, eagle mountain, UT 84041",
+        "Mask Pattern": "NWF,WWSN,WF,TN",
+        "Region": "US",
+        "Type": "street address",
+        "Address Approved?": "Yes",
+        "Comment": "",
+        "User": "admin",
+        "Mapping Data": [
+            {
+                "Mask Token": "N",
+                "Address Token": "30",
+                "Address Component": "Street Number"
+            },
+            {
+                "Mask Token": "W",
+                "Address Token": "ELLWINE",
+                "Address Component": "Street Name"
+            },
+            {
+                "Mask Token": "F",
+                "Address Token": "DR",
+                "Address Component": "Street Suffix"
+            },
+            {
+                "Mask Token": "W",
+                "Address Token": "NUMBER",
+                "Address Component": "Secondary Address Name"
+            },
+            {
+                "Mask Token": "W",
+                "Address Token": "L",
+                "Address Component": "Secondary Address Name"
+            },
+            {
+                "Mask Token": "S",
+                "Address Token": "FLOOR",
+                "Address Component": "Secondary Address Name"
+            },
+            {
+                "Mask Token": "N",
+                "Address Token": "3",
+                "Address Component": "Secondary Address Number"
+            },
+            {
+                "Mask Token": "W",
+                "Address Token": "EAGLE",
+                "Address Component": "City Name"
+            },
+            {
+                "Mask Token": "F",
+                "Address Token": "MOUNTAIN",
+                "Address Component": "City Name"
+            },
+            {
+                "Mask Token": "T",
+                "Address Token": "UT",
+                "Address Component": "State Name"
+            },
+            {
+                "Mask Token": "N",
+                "Address Token": "84041",
+                "Address Component": "Zip Code"
+            }
+        ],
+        "Approved By": "admin at 2024-10-27 04:38:32.874116"
     }
 ]
