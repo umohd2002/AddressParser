@@ -2797,5 +2797,368 @@
             }
         ],
         "Approved By": "admin at 2024-10-27 04:38:32.874116"
+    },
+    {
+        "Record Id": "1",
+        "Timetamp": "2024-10-27 13:54:21.934691",
+        "Input": "HC 68 BOX 23 Chicago IL 44432-11323",
+        "Mask Pattern": "FNXNWTN",
+        "Region": "US",
+        "Type": "po box address",
+        "Address Approved?": "Yes",
+        "Comment": "",
+        "User": "admin",
+        "Mapping Data": [
+            {
+                "Mask Token": "F",
+                "Address Token": "HC",
+                "Address Component": "Organization Name"
+            },
+            {
+                "Mask Token": "N",
+                "Address Token": "68",
+                "Address Component": "Highway Number"
+            },
+            {
+                "Mask Token": "X",
+                "Address Token": "BOX",
+                "Address Component": "Box Name"
+            },
+            {
+                "Mask Token": "N",
+                "Address Token": "23",
+                "Address Component": "Box Number"
+            },
+            {
+                "Mask Token": "W",
+                "Address Token": "CHICAGO",
+                "Address Component": "City Name"
+            },
+            {
+                "Mask Token": "T",
+                "Address Token": "IL",
+                "Address Component": "State Name"
+            },
+            {
+                "Mask Token": "N",
+                "Address Token": "44432-11323",
+                "Address Component": "Zip Code"
+            }
+        ],
+        "Approved By": "admin at 2024-10-27 14:04:45.950792"
+    },
+    {
+        "Record Id": "2",
+        "Timetamp": "2024-10-27 13:54:21.934691",
+        "Input": "HC 32 BOX 12 Raeford NC 28376",
+        "Mask Pattern": "FNXNWTN",
+        "Region": "US",
+        "Type": "street address",
+        "Address Approved?": "Yes",
+        "Comment": "",
+        "User": "admin",
+        "Mapping Data": [
+            {
+                "Mask Token": "F",
+                "Address Token": "HC",
+                "Address Component": "Organization Name"
+            },
+            {
+                "Mask Token": "N",
+                "Address Token": "32",
+                "Address Component": "Highway Number"
+            },
+            {
+                "Mask Token": "X",
+                "Address Token": "BOX",
+                "Address Component": "Box Name"
+            },
+            {
+                "Mask Token": "N",
+                "Address Token": "12",
+                "Address Component": "Box Number"
+            },
+            {
+                "Mask Token": "W",
+                "Address Token": "RAEFORD",
+                "Address Component": "City Name"
+            },
+            {
+                "Mask Token": "T",
+                "Address Token": "NC",
+                "Address Component": "State Name"
+            },
+            {
+                "Mask Token": "N",
+                "Address Token": "28376",
+                "Address Component": "Zip Code"
+            }
+        ],
+        "Approved By": "admin at 2024-10-27 14:10:06.202936"
+    },
+    {
+        "Record Id": "3",
+        "Timetamp": "2024-10-27 13:54:21.934691",
+        "Input": "HC 02 BOX 45 Sterling Heights MI 48310",
+        "Mask Pattern": "FNXNWFTN",
+        "Region": "US",
+        "Type": "street address",
+        "Address Approved?": "Yes",
+        "Comment": "",
+        "User": "admin",
+        "Mapping Data": [
+            {
+                "Mask Token": "F",
+                "Address Token": "HC",
+                "Address Component": "Organization Name"
+            },
+            {
+                "Mask Token": "N",
+                "Address Token": "02",
+                "Address Component": "Route Number"
+            },
+            {
+                "Mask Token": "X",
+                "Address Token": "BOX",
+                "Address Component": "Box Name"
+            },
+            {
+                "Mask Token": "N",
+                "Address Token": "45",
+                "Address Component": "Box Number"
+            },
+            {
+                "Mask Token": "W",
+                "Address Token": "STERLING",
+                "Address Component": "City Name"
+            },
+            {
+                "Mask Token": "F",
+                "Address Token": "HEIGHTS",
+                "Address Component": "Highway Name"
+            },
+            {
+                "Mask Token": "T",
+                "Address Token": "MI",
+                "Address Component": "State Name"
+            },
+            {
+                "Mask Token": "N",
+                "Address Token": "48310",
+                "Address Component": "Highway Number"
+            }
+        ],
+        "Approved By": "admin at 2024-10-27 18:50:35.445126"
+    },
+    {
+        "Record Id": "4",
+        "Timetamp": "2024-10-27 13:54:21.934691",
+        "Input": "HC 94 BOX 41 Buffalo Grove IL 60089",
+        "Mask Pattern": "FNXNWFTN",
+        "Region": "US",
+        "Type": "attention line address",
+        "Address Approved?": "Yes",
+        "Comment": "",
+        "User": "admin",
+        "Mapping Data": [
+            {
+                "Mask Token": "F",
+                "Address Token": "HC",
+                "Address Component": "Organization Name"
+            },
+            {
+                "Mask Token": "N",
+                "Address Token": "94",
+                "Address Component": "Zip 4 Code"
+            },
+            {
+                "Mask Token": "X",
+                "Address Token": "BOX",
+                "Address Component": "Box Name"
+            },
+            {
+                "Mask Token": "N",
+                "Address Token": "41",
+                "Address Component": "Box Number"
+            },
+            {
+                "Mask Token": "W",
+                "Address Token": "BUFFALO",
+                "Address Component": "City Name"
+            },
+            {
+                "Mask Token": "F",
+                "Address Token": "GROVE",
+                "Address Component": "Highway Name"
+            },
+            {
+                "Mask Token": "T",
+                "Address Token": "IL",
+                "Address Component": "State Name"
+            },
+            {
+                "Mask Token": "N",
+                "Address Token": "60089",
+                "Address Component": "Highway Number"
+            }
+        ],
+        "Approved By": "admin at 2024-10-27 18:59:24.889031"
+    },
+    {
+        "Record Id": "5",
+        "Timetamp": "2024-10-27 13:54:21.934691",
+        "Input": "HC 81 BOX 32 Lancaster NY 14086",
+        "Mask Pattern": "FNXNWTN",
+        "Region": "US",
+        "Type": "street address",
+        "Address Approved?": "Yes",
+        "Comment": "",
+        "User": "admin",
+        "Mapping Data": [
+            {
+                "Mask Token": "F",
+                "Address Token": "HC",
+                "Address Component": "Organization Name"
+            },
+            {
+                "Mask Token": "N",
+                "Address Token": "81",
+                "Address Component": "Highway Number"
+            },
+            {
+                "Mask Token": "X",
+                "Address Token": "BOX",
+                "Address Component": "Box Name"
+            },
+            {
+                "Mask Token": "N",
+                "Address Token": "32",
+                "Address Component": "Box Number"
+            },
+            {
+                "Mask Token": "W",
+                "Address Token": "LANCASTER",
+                "Address Component": "City Name"
+            },
+            {
+                "Mask Token": "T",
+                "Address Token": "NY",
+                "Address Component": "State Name"
+            },
+            {
+                "Mask Token": "N",
+                "Address Token": "14086",
+                "Address Component": "Zip Code"
+            }
+        ],
+        "Approved By": "admin at 2024-10-27 19:04:34.658985"
+    },
+    {
+        "Record Id": "6",
+        "Timetamp": "2024-10-27 13:54:21.934691",
+        "Input": "HC 22 BOX 12 Baton Rouge LA 70806",
+        "Mask Pattern": "FNXNWWTN",
+        "Region": "US",
+        "Type": "street address",
+        "Address Approved?": "Yes",
+        "Comment": "",
+        "User": "admin",
+        "Mapping Data": [
+            {
+                "Mask Token": "F",
+                "Address Token": "HC",
+                "Address Component": "Organization Name"
+            },
+            {
+                "Mask Token": "N",
+                "Address Token": "22",
+                "Address Component": "Highway Number"
+            },
+            {
+                "Mask Token": "X",
+                "Address Token": "BOX",
+                "Address Component": "Box Name"
+            },
+            {
+                "Mask Token": "N",
+                "Address Token": "12",
+                "Address Component": "Box Number"
+            },
+            {
+                "Mask Token": "W",
+                "Address Token": "BATON",
+                "Address Component": "City Name"
+            },
+            {
+                "Mask Token": "W",
+                "Address Token": "ROUGE",
+                "Address Component": "City Name"
+            },
+            {
+                "Mask Token": "T",
+                "Address Token": "LA",
+                "Address Component": "State Name"
+            },
+            {
+                "Mask Token": "N",
+                "Address Token": "70806",
+                "Address Component": "Zip Code"
+            }
+        ],
+        "Approved By": "admin at 2024-10-27 19:04:54.256958"
+    },
+    {
+        "Record Id": "7",
+        "Timetamp": "2024-10-27 13:54:21.934691",
+        "Input": "HC 5323 BOX 25 Feasterville Trevose PA 19053",
+        "Mask Pattern": "FNXNWWTN",
+        "Region": "Puerto Rico",
+        "Type": "street address",
+        "Address Approved?": "Yes",
+        "Comment": "",
+        "User": "admin",
+        "Mapping Data": [
+            {
+                "Mask Token": "F",
+                "Address Token": "HC",
+                "Address Component": "Organization Name"
+            },
+            {
+                "Mask Token": "N",
+                "Address Token": "5323",
+                "Address Component": "Highway Number"
+            },
+            {
+                "Mask Token": "X",
+                "Address Token": "BOX",
+                "Address Component": "Box Name"
+            },
+            {
+                "Mask Token": "N",
+                "Address Token": "25",
+                "Address Component": "Box Number"
+            },
+            {
+                "Mask Token": "W",
+                "Address Token": "FEASTERVILLE",
+                "Address Component": "City Name"
+            },
+            {
+                "Mask Token": "W",
+                "Address Token": "TREVOSE",
+                "Address Component": "City Name"
+            },
+            {
+                "Mask Token": "T",
+                "Address Token": "PA",
+                "Address Component": "State Name"
+            },
+            {
+                "Mask Token": "N",
+                "Address Token": "19053",
+                "Address Component": "Zip Code"
+            }
+        ],
+        "Approved By": "admin at 2024-10-27 19:54:17.983014"
     }
 ]

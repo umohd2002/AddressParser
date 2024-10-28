@@ -681,14 +681,16 @@ def Edit_Components():
             step_start = time.time()
             existing_component = session.query(ComponentTable).filter(func.lower(ComponentTable.component) == func.lower(component_data['newComponent'])).all()
             existing_desc = session.query(ComponentTable).filter(func.lower(ComponentTable.description) == func.lower(component_data['newDescription'])).all()
-
+            existing_components = session.query(ComponentTable).filter(func.lower(ComponentTable.component))
+            print("--------------------------------------")
+            print(existing_components)
             print(f"\n\n\nExc Comp: {existing_component}\n\n\n")
             print(f"\n\n\nLength of Exc Desc: {len(existing_desc)}\n\n\n")
             if len(existing_component) >1 or len(existing_desc) >1:
                 # Handle duplicate component or description
-                if len(existing_component) >1:
+                if existing_component :
                     result['error'] = 'Component already exists'
-                if len(existing_desc) >1:
+                if existing_desc:
                     result['error'] = 'Component description already exists'
                 return jsonify(result=result)
             # Identify the old component

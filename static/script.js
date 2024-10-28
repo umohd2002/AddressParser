@@ -515,7 +515,6 @@ document.getElementById("loadFileBtn").addEventListener("click", function () {
         }
     });
 });
-// document.getElementById("submit&NextBtn").addEventListener("click", submitButtonHandler);
 document.getElementById("clear&exitBtn").addEventListener("click", exitFunction);
 
 
@@ -801,93 +800,85 @@ document.getElementById("submitBtn").addEventListener("click", function () {
 });
 
 document.getElementById("submit&NextBtn").addEventListener("click", function () {
-    // setTimeout(() => {
-    // }, 100);
-    // return false;
     const data = collectData();
     submitButtonHandler(data, currentKeyIndex);
 });
 
 function submitButtonHandler(collectedData, index) {
-    // console.log("Submit Button Index:", index);
     const approved = document.getElementById("Approved?").value;
     const isDropdownsValid = validateDropdowns();
-    // console.log("isDropdownsValid received: ", isDropdownsValid)
     const commentValidation = document.getElementById("comment").value;
+    const commentField = document.getElementById("comment");
+    const approvedField = document.getElementById("Approved?");
+    
     document.getElementById("region").addEventListener('change', function () {
-        document.getElementById("region").style.border = "2px solid #2e4c8c";
-        document.getElementById("region").style.transition = "none";
+        this.style.border = "2px solid #2e4c8c";
+        this.style.transition = "none";
     });
     document.getElementById("AddressType").addEventListener('change', function () {
-        document.getElementById("AddressType").style.border = "2px solid #2e4c8c";
-        document.getElementById("AddressType").style.transition = "none";
+        this.style.border = "2px solid #2e4c8c";
+        this.style.transition = "none";
     });
-    document.getElementById("comment").addEventListener('change', function () {
-        document.getElementById("comment").style.border = "2px solid #2e4c8c";
-        document.getElementById("comment").style.transition = "none";
+    commentField.addEventListener('change', function () {
+        this.style.border = "2px solid #2e4c8c";
+        this.style.transition = "none";
     });
-    document.getElementById("Approved?").addEventListener('change', function () {
-        document.getElementById("Approved?").style.border = "2px solid #2e4c8c";
-        document.getElementById("Approved?").style.transition = "none";
+    approvedField.addEventListener('change', function () {
+        this.style.border = "2px solid #2e4c8c";
+        this.style.transition = "none";
+        // Remove highlight from comment if Approved? is changed to Yes
+        if (this.value === "Yes") {
+            commentField.style.border = "2px solid #2e4c8c";
+        }
     });
 
     if (approved === "Yes") {
-        if (isDropdownsValid === true) {
-
-            // console.log("Is Dropdown Valid: Yes : ", isDropdownsValid);
+        if (isDropdownsValid) {
             checkForExistingMask(collectedData["Mask Pattern"], collectedData, index);
         } else {
             if (document.getElementById("region").value === "") {
                 document.getElementById("region").style.border = "3px solid #FF1F1F";
-                // return alert("Region is not selected")
             }
             if (document.getElementById("AddressType").value === "") {
                 document.getElementById("AddressType").style.border = "3px solid #FF1F1F";
-                // return alert("Address Type is not selected")
             }
             alert("Please Fill all Required Fields!");
         }
-    } else if (approved === "No") {
+    } else if (approved === "No" || approved === null) {
+        // Highlight comment field if Approved? is No or null
+        commentField.style.border = "3px solid #FF1F1F";
 
         if (isDropdownsValid && commentValidation !== "") {
             sendDataToServer(collectedData, index);
-            // checkForExistingMask(collectedData["Mask Pattern"], collectedData, index);
         } else {
             if (document.getElementById("region").value === "") {
                 document.getElementById("region").style.border = "3px solid #FF1F1F";
-                // return alert("Region is not selected")
             }
             if (document.getElementById("AddressType").value === "") {
                 document.getElementById("AddressType").style.border = "3px solid #FF1F1F";
-                return alert("Address Type is not selected")
+                return alert("Address Type is not selected");
             }
-            if (document.getElementById("comment").value === "") {
-                document.getElementById("comment").style.border = "3px solid #FF1F1F";
-                return alert("Please provide the comment for the Rejection")
+            if (commentField.value === "") {
+                commentField.style.border = "3px solid #FF1F1F";
+                return alert("Please provide the comment for the Rejection");
             }
-            // if (document.getElementById("approvedby").value === ""){
-            //     document.getElementById("approvedby").style.border="4px solid red";
-            //     // return alert("Approved by is not selected")
-            // }
             alert("Please fill in all required fields!");
         }
     } else {
-        document.getElementById("Approved?").style.border = "3px solid #FF1F1F";
+        approvedField.style.border = "3px solid #FF1F1F";
         alert("Please fill in all required fields!");
         if (document.getElementById("region").value === "") {
             document.getElementById("region").style.border = "3px solid #FF1F1F";
-            // return alert("Region is not selected")
         }
         if (document.getElementById("AddressType").value === "") {
             document.getElementById("AddressType").style.border = "3px solid #FF1F1F";
-            // return alert("Address Type is not selected")
         }
-        if (document.getElementById("comment").value === "") {
-            document.getElementById("comment").style.border = "3px solid #FF1F1F";
-            // return alert("Please provide the comment for the Rejection")
+        if (commentField.value === "") {
+            commentField.style.border = "3px solid #FF1F1F";
         }
     }
 }
+
 
 
 
@@ -1162,7 +1153,6 @@ function cancelAddRow(button) {
 
 var oldComponent, oldDescription;
 function editRow(button, event) {
-    // console.log('Edit button clicked');
 
     var row = $(button).closest("tr");
     var cells = row.find("td:not(.actions)");
@@ -1196,6 +1186,7 @@ function editRow(button, event) {
     delButtons.forEach(function (button) {
         button.disabled = true;
     });
+    document.getElementById('addComponent').disabled = true;
 }
 
 
@@ -1220,7 +1211,7 @@ function cancelEditRow(button) {
     oldDescription = cells.eq(1).text();
     const editButtons = document.querySelectorAll('.edit-btn');
     const delButtons = document.querySelectorAll('.delete-btn');
-
+    document.getElementById('addComponent').removeAttribute('disabled');
     // Loop through the NodeList and disable each button
     editButtons.forEach(function (button) {
         button.removeAttribute('disabled');
@@ -1328,9 +1319,6 @@ function saveChangesToServer(payload, event) {
                                     document.getElementById('uspinner').style.display = 'none';
                                     location.reload();// reload when the save button is clicked
                                 }
-                                // console.log('Response:', response);
-                                // console.log(response.message);
-                                // Handle success
                             },
                             error: function (error) {
                                 console.error('Error Editing record:', error);
@@ -2191,6 +2179,7 @@ function cancelClueEditRow(button, event) {
 // }
 
 function saveClueRow(button, event) {
+    event.stopPropagation();
     var row = $(button).closest('tr');
     var cells = row.find('td:not(.actions)');
 
