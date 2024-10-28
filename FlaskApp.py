@@ -1083,7 +1083,7 @@ def add_new_ClueComponent():
         # Check if the token already exists in the clue table
         existing_clue = session.query(ClueTable).filter_by(component_desc=new_mask).first()
         if existing_clue:
-            result['error'] = f"Token '{new_token}' already exists in the clue table."
+            result['error'] = f"Token '{new_mask}' already exists in the clue table."
         else:
             # Add the new Clue component
             new_Clue_component = ClueTable(component_desc=new_mask, token=new_token)
