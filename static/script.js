@@ -776,7 +776,7 @@ function collectData() {
     // console.log("Data collected", mappingData);
     result = {
         "Record Id": record_Id,
-        "Timetamp": timestamp,
+        "Timestamp": timestamp,
         "Input": input_Value,
         "Mask Pattern": mask,
         "Region": address_region,
@@ -850,6 +850,7 @@ function submitButtonHandler(collectedData, index) {
 
         if (isDropdownsValid && commentValidation !== "") {
             sendDataToServer(collectedData, index);
+            commentField.style.border = "2px solid #2e4c8c";
         } else {
             if (document.getElementById("region").value === "") {
                 document.getElementById("region").style.border = "3px solid #FF1F1F";
@@ -2227,7 +2228,7 @@ function saveClueRow(button, event) {
         },
         error: function (error) {
             // console.error('Error updating clue:', error);
-            alert('Token Alreadyt Exist.');
+            alert('Token Already Exist.');
         }
     });
 }

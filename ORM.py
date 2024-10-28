@@ -116,3 +116,5 @@ class ClueTable(Base):
     __tablename__ = 'clueTable'
     component_desc = Column(String, primary_key=True)
     token = Column(String)
+
+# Base.metadata.create_all(engine)

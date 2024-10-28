@@ -1,8 +1,8 @@
 {
     "HC_Test.txt": {
-        "result": "Detailed_Report of HC_Test.txt is Generated! \n\nThe HC_Test_Output.zip is downloaded, please check your download's directory. \n\n\nTotal Number of Addresses: -\t59\nUnique Pattern Count: -\t14\n\n\nNumber of Pattern Parsed Addresses: -\t34\nPercentage of Patterns Parsed Result:  -\t57.63%\n\nNumber of Exceptions Thrown: -\t\t25\nPercentage of RuleBased Parsed Result: -\t42.37%\n",
+        "result": "Detailed_Report of HC_Test.txt is Generated! \n\nThe HC_Test_Output.zip is downloaded, please check your download's directory. \n\n\nTotal Number of Addresses: -\t59\nUnique Pattern Count: -\t14\n\n\nNumber of Pattern Parsed Addresses: -\t51\nPercentage of Patterns Parsed Result:  -\t86.44%\n\nNumber of Exceptions Thrown: -\t\t8\nPercentage of RuleBased Parsed Result: -\t13.56%\n",
         "metrics": {
-            "metrics": "Detailed_Report of HC_Test.txt is Generated! \n\nThe HC_Test_Output.zip is downloaded, please check your download's directory. \n\n\nTotal Number of Addresses: -\t59\nUnique Pattern Count: -\t14\n\n\nNumber of Pattern Parsed Addresses: -\t34\nPercentage of Patterns Parsed Result:  -\t57.63%\n\nNumber of Exceptions Thrown: -\t\t25\nPercentage of RuleBased Parsed Result: -\t42.37%\n"
+            "metrics": "Detailed_Report of HC_Test.txt is Generated! \n\nThe HC_Test_Output.zip is downloaded, please check your download's directory. \n\n\nTotal Number of Addresses: -\t59\nUnique Pattern Count: -\t14\n\n\nNumber of Pattern Parsed Addresses: -\t51\nPercentage of Patterns Parsed Result:  -\t86.44%\n\nNumber of Exceptions Thrown: -\t\t8\nPercentage of RuleBased Parsed Result: -\t13.56%\n"
         },
         "output_file_path": "Output/Batch File Output/HC_Test_output.zip"
     }

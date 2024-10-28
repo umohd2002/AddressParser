@@ -532,7 +532,7 @@ def MapCreationForm():
         # Using hardcoded username for now, replace with session user when available
         username = "admin"
         Address_ID = mapdata.get("Record Id")
-        timestamp = mapdata.get('Timetamp')
+        timestamp = mapdata.get('Timestamp')
         keys = list(mapdata.keys())
 
         # Extract the first 10 keys for Vdbs and the rest for Kbs
@@ -1081,8 +1081,7 @@ def add_new_ClueComponent():
         new_token = data.get('newToken')
         print(new_mask)
         # Check if the token already exists in the clue table
-        existing_clue = session.query(ClueTable).filter_by(component_desc=new_token).first()
-        print(existing_clue)
+        existing_clue = session.query(ClueTable).filter_by(component_desc=new_mask).first()
         if existing_clue:
             result['error'] = 'Token already exists in the clue table.'
         else:
