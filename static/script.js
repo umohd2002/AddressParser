@@ -2105,13 +2105,13 @@ async function editClueRow(button, event) {
     const editButtons = document.querySelectorAll('.edit-btn');
     const delButtons = document.querySelectorAll('.delete-btn');
     // Loop through the NodeList and disable each button
+    document.getElementById("addClueComponent").disabled = true;
     editButtons.forEach(function (button) {
         button.disabled = true;
     });
     delButtons.forEach(function (button) {
         button.disabled = true;
     });
-    document.getElementById("addClueComponent").disabled = true;
 }
 
 
@@ -2231,9 +2231,21 @@ function saveClueRow(button, event) {
             alert('Token Already Exist.');
         }
     });
+    enableAllButtons()
 }
 
+function enableAllButtons() {
+    const editButtons = document.querySelectorAll('.edit-btn');
+    const delButtons = document.querySelectorAll('.delete-btn');
+    document.getElementById("addClueComponent").disabled = false;
 
+    editButtons.forEach(function (button) {
+        button.disabled = false;
+    });
+    delButtons.forEach(function (button) {
+        button.disabled = false;
+    });
+}
 
 
 // --------------------Adding New Mask Token------------------------------------
