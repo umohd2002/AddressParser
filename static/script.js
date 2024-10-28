@@ -2188,7 +2188,9 @@ function saveClueRow(button, event) {
     var componentCell = cells.eq(0);
     var componentInput = componentCell.find('input');
     var newComponent = componentInput.val();  // Get the value from the input field
-
+    if (newComponent == ","){
+        return alert("Component description is restricted with ',' Comma! ")
+    }
     if (newComponent.trim() === "") {
         alert('Token name cannot be empty.');
         return;
@@ -2217,7 +2219,7 @@ function saveClueRow(button, event) {
                 // Update the table cells only if the update is successful
                 componentCell.text(newComponent);  // Set the cell text to the new component value
                 descriptionCell.text(newDescription);  // Set the cell text to the new description value
-
+                alert('Edit Clue Token is Successful!');
                 var actionsCell = row.find('.actions');
                 actionsCell.html('<button class="edit-btn" onclick="editClueRow(this, event)">Edit</button>' +
                     '<button class="delete-btn" onclick="deleteClueRow(this, event)">Delete</button>');
@@ -2284,11 +2286,14 @@ async function addClueComponent() {
 
 function saveNewClueRow(button,event) {
     event.stopPropagation();
+    event.preventDefault();
     var newRow = $(button).closest('tr.new-row');
     var cells = newRow.find('td:not(.actions)');
     var newMask = cells.eq(0).find('input').val().toUpperCase();
     var newToken = cells.eq(1).find('select').val();
-
+    if (newMask == ","){
+        return alert("Component description is restricted with ',' Comma! ")
+    }
     if (newMask.trim() === "") {
         alert('Component description cannot be empty.');
         return;
@@ -2305,7 +2310,7 @@ function saveNewClueRow(button,event) {
                     alert(response.error);
                     location.reload();
                 } else {
-                    alert(response.message);
+                    alert("New Token '"+ newMask +"' is added Successfully!");
                     newRow.remove();
                     fetchClueData();
                     // location.reload();
