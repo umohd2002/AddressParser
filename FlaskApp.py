@@ -674,25 +674,33 @@ def Edit_Components():
         start_time = time.time()
         received_data = request.json['components']  # Get the combined old and modified data
         print("SaveChanges UDF Received data:", received_data)
-        # Process and update Component Table using SQLAlchemy ORM
-
-
+        
         for component_data in received_data:
             step_start = time.time()
-            existing_component = session.query(ComponentTable).filter(func.lower(ComponentTable.component) == func.lower(component_data['newComponent'])).all()
-            existing_desc = session.query(ComponentTable).filter(func.lower(ComponentTable.description) == func.lower(component_data['newDescription'])).all()
-            existing_components = session.query(ComponentTable).filter(func.lower(ComponentTable.component))
+            
+            # Check if the new component already exists, ignoring the current record being updated
+            existing_component = session.query(ComponentTable).filter(
+                func.lower(ComponentTable.component) == func.lower(component_data['newComponent']),
+                ComponentTable.component != component_data['oldComponent']
+            ).first()
+            
+            # Check if the new description already exists, ignoring the current record being updated
+            existing_description = session.query(ComponentTable).filter(
+                func.lower(ComponentTable.description) == func.lower(component_data['newDescription']),
+                ComponentTable.description != component_data['oldDescription']
+            ).first()
+
             print("--------------------------------------")
-            print(existing_components)
-            print(f"\n\n\nExc Comp: {existing_component}\n\n\n")
-            print(f"\n\n\nLength of Exc Desc: {len(existing_desc)}\n\n\n")
-            if len(existing_component) >1 or len(existing_desc) >1:
+            print(f"\n\n\nExisting Component: {existing_component}\nExisting Description: {existing_description}\n\n\n")
+            
+            if existing_component or existing_description:
                 # Handle duplicate component or description
-                if existing_component :
+                if existing_component:
                     result['error'] = 'Component already exists'
-                if existing_desc:
+                elif existing_description:
                     result['error'] = 'Component description already exists'
                 return jsonify(result=result)
+            
             # Identify the old component
             old_component = session.query(ComponentTable).filter_by(
                 component=component_data['oldComponent'],
@@ -712,7 +720,7 @@ def Edit_Components():
                     component_index=component_data['oldComponent']
                 ).update(
                     {"component_index": component_data['newComponent']},
-                    synchronize_session=False  # Can be used for performance gain
+                    synchronize_session=False
                 )
                 print(f"Update MappingJSON: {time.time() - step_start:.2f}s")
                 step_start = time.time()
@@ -740,6 +748,7 @@ def Edit_Components():
 
     finally:
         session.close()  # Ensure the session is always closed
+
 
 
 @app.route("/get_mask_count", methods=["GET"])

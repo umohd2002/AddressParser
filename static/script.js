@@ -1313,6 +1313,7 @@ function saveChangesToServer(payload, event) {
                                 if (response.result.error){
                                     alert(response.result.error)
                                     document.getElementById('uspinner').style.display = 'none';
+                                    location.reload();
                                 } else
                                 {
                                     alert(response.result.message)

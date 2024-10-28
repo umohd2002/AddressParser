@@ -3160,5 +3160,54 @@
             }
         ],
         "Approved By": "admin at 2024-10-27 19:54:17.983014"
+    },
+    {
+        "Record Id": "8",
+        "Timetamp": "2024-10-27 13:54:21.934691",
+        "Input": "HC 91 BOX 54 Blacksburg VA 24060",
+        "Mask Pattern": "FNXNWTN",
+        "Region": "US",
+        "Type": "street address",
+        "Address Approved?": "Yes",
+        "Comment": "",
+        "User": "admin",
+        "Mapping Data": [
+            {
+                "Mask Token": "F",
+                "Address Token": "HC",
+                "Address Component": "Organization Name"
+            },
+            {
+                "Mask Token": "N",
+                "Address Token": "91",
+                "Address Component": "Highway Number"
+            },
+            {
+                "Mask Token": "X",
+                "Address Token": "BOX",
+                "Address Component": "Box Name"
+            },
+            {
+                "Mask Token": "N",
+                "Address Token": "54",
+                "Address Component": "Box Number"
+            },
+            {
+                "Mask Token": "W",
+                "Address Token": "BLACKSBURG",
+                "Address Component": "City Name"
+            },
+            {
+                "Mask Token": "T",
+                "Address Token": "VA",
+                "Address Component": "State Name"
+            },
+            {
+                "Mask Token": "N",
+                "Address Token": "24060",
+                "Address Component": "Zip Code"
+            }
+        ],
+        "Approved By": "admin at 2024-10-27 20:08:30.005691"
     }
 ]
